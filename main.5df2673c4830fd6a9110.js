@@ -160,7 +160,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 // Module
-var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <h1>JDDDDDDDDDDDDDDDDDDDD</h1>\r\n</body>\r\n</html>";
+var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <h1>HELLO MIR MIR</h1>\r\n</body>\r\n</html>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -572,9 +572,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-console.log('ffdfdfd');
+console.log('OOOOOOOO');
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=main.331f471f691184d6a3d0.js.map
+//# sourceMappingURL=main.5df2673c4830fd6a9110.js.map
