@@ -22,8 +22,9 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `body {
-    background-color: rgb(29, 102, 102);
-}`, "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;IACI,mCAAmC;AACvC","sourcesContent":["body {\r\n    background-color: rgb(29, 102, 102);\r\n}"],"sourceRoot":""}]);
+    background-color: rgb(143, 177, 177);
+    color: bisque;
+}`, "",{"version":3,"sources":["webpack://./src/index.css"],"names":[],"mappings":"AAAA;IACI,oCAAoC;IACpC,aAAa;AACjB","sourcesContent":["body {\r\n    background-color: rgb(143, 177, 177);\r\n    color: bisque;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -692,4 +693,4 @@ console.log('OOOOOOOO');
 
 /******/ })()
 ;
-//# sourceMappingURL=main.87b9718e9bc934120cf3.js.map
+//# sourceMappingURL=main.10ce39cae53a275ca47d.js.map
