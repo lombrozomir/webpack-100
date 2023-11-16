@@ -1,4 +1,7 @@
+import "@babel/polyfill";
 import "./index.html";
-import "./index.css";
+import "./index.scss";
+import { multiply, sum } from "./modules/calc";
 
-console.log('OOOOOOOO');
+console.log(multiply(3, 4));
+console.log(sum(3, 4));
