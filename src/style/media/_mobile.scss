@@ -1,0 +1,21 @@
+@media only screen and (min-width: $screen-size-mobileA) and (max-width: $screen-size-mobileB) {
+    
+  @mixin header-style-mobile {
+    width: $max-width-mobile;
+    height: $header-height-mobile;
+    display: $header-display-mobile;
+    background-color: white;
+    justify-content: space-evenly;
+  }
+
+  .header--mobile {
+    @include header-style-mobile;
+
+    .header__item {
+      margin: auto 0;
+    }
+    .header__item--divider {
+      height: 32px;
+    }
+  }
+}

@@ -1,3 +1,6 @@
-@import 'style/var';
-@import 'style/style';
-@import 'style/fonts';
+@import 'style/vars/var'; //подключение общих переменных
+@import 'style/style';  // подключение общих стилей 
+@import 'style/fonts'; // подключение шрифтов
+
+@import 'style/vars/var-mobile'; // подключение переменных для мобильных устройств
+@import 'style/media/mobile'; // подключение медиа-запроса для мобильных устройств
