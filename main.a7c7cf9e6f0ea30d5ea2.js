@@ -844,11 +844,48 @@ try {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_polyfill__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/polyfill */ "./node_modules/@babel/polyfill/lib/index.js");
 /* harmony import */ var _babel_polyfill__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_polyfill__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.html */ "./src/index.html");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.html */ "./src/index.html");
+/* harmony import */ var _scripts_show_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scripts/show.js */ "./src/scripts/show.js");
+/* harmony import */ var _scripts_show_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scripts_show_js__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
+
+
+/***/ }),
+
+/***/ "./src/scripts/show.js":
+/*!*****************************!*\
+  !*** ./src/scripts/show.js ***!
+  \*****************************/
+/***/ (() => {
+
+const btn = document.querySelector(".info-read__button");
+const hiddenItems = document.querySelectorAll(".hidden-item");
+btn.addEventListener("click", function () {
+  if (btn.textContent === "Читать далее") {
+    hiddenItems.forEach(function (item) {
+      item.style.display = "block";
+    });
+    btn.textContent = "Скрыть";
+  } else {
+    hiddenItems.forEach(function (item) {
+      item.style.display = "none";
+    });
+    btn.textContent = "Читать далее";
+  }
+});
+const img = document.getElementById('info-read__img');
+let rotated = false;
+btn.addEventListener('click', function () {
+  if (!rotated) {
+    img.style.transform = 'rotate(180deg)';
+  } else {
+    img.style.transform = 'rotate(0deg)';
+  }
+  rotated = !rotated;
+});
 
 /***/ }),
 
@@ -9944,7 +9981,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `* {
 
 body {
   background-color: #F8F8F8;
-  color: rgb(133, 133, 78);
+  color: black;
   font-family: "TTLakes Regular";
 }
 
@@ -9978,13 +10015,47 @@ body {
     background-color: white;
     justify-content: space-evenly;
   }
-  .header--mobile .header__item {
+  .header--mobile .header--mobile__item {
     margin: auto 0;
   }
   .header--mobile .header__item--divider {
     height: 32px;
   }
-}`, "",{"version":3,"sources":["webpack://./src/style/_style.scss","webpack://./src/index.scss","webpack://./src/style/vars/_var.scss","webpack://./src/style/_fonts.scss","webpack://./src/style/media/_mobile.scss","webpack://./src/style/vars/_var-mobile.scss"],"names":[],"mappings":"AAAA;EACE,SAAA;EACA,UAAA;ACCF;;ADEA;EACE,yBENK;EFOL,wBENK;EFOL,8BAAA;ACCF;;ADEA;EACE,sBAAA;ACCF;;AEbA;EACI,8BAAA;EACA,2DAAA;EACA,gBAAA;EACA,kBAAA;AFgBJ;AEbA;EACI,6BAAA;EACA,2DAAA;EACA,gBAAA;EACA,kBAAA;AFeJ;AEZA;EACI,2BAAA;EACA,2DAAA;EACA,gBAAA;EACA,kBAAA;AFcJ;AGhCA;EAUE;IAPE,WCCe;IDAf,YCCmB;IDAnB,aCCoB;IDApB,uBAAA;IACA,6BAAA;EHiCF;EG3BE;IACE,cAAA;EH6BJ;EG3BE;IACE,YAAA;EH6BJ;AACF","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\nbody {\r\n  background-color: $back;\r\n  color: $text;\r\n  font-family: \"TTLakes Regular\";\r\n}\r\n\r\n.header {\r\n  background-color: aqua;\r\n}\r\n","* {\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  background-color: #F8F8F8;\n  color: rgb(133, 133, 78);\n  font-family: \"TTLakes Regular\";\n}\n\n.header {\n  background-color: aqua;\n}\n\n@font-face {\n  font-family: \"TTLakes Regular\";\n  src: url(\"./assets/fonts/TTLakes-Regular.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"TTLakes Medium\";\n  src: url(\"./assets/fonts/TTLakes-Medium.woff\") format(\"woff\");\n  font-weight: 500;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"TTLakes Bold\";\n  src: url(\"./assets/fonts/TTLakes-Bold.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n}\n@media only screen and (min-width: 320px) and (max-width: 767px) {\n  .header--mobile {\n    width: 100%;\n    height: 88px;\n    display: flex;\n    background-color: white;\n    justify-content: space-evenly;\n  }\n  .header--mobile .header__item {\n    margin: auto 0;\n  }\n  .header--mobile .header__item--divider {\n    height: 32px;\n  }\n}","$back: #F8F8F8;\r\n$text: rgb(133, 133, 78);\r\n\r\n","@font-face {\r\n    font-family: 'TTLakes Regular';\r\n    src: url('./assets/fonts/TTLakes-Regular.woff') format('woff');\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face {\r\n    font-family: 'TTLakes Medium';\r\n    src: url('./assets/fonts/TTLakes-Medium.woff') format('woff');\r\n    font-weight: 500;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face {\r\n    font-family: 'TTLakes Bold';\r\n    src: url('./assets/fonts/TTLakes-Bold.woff') format('woff');\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}","@media only screen and (min-width: $screen-size-mobileA) and (max-width: $screen-size-mobileB) {\r\n    \r\n  @mixin header-style-mobile {\r\n    width: $max-width-mobile;\r\n    height: $header-height-mobile;\r\n    display: $header-display-mobile;\r\n    background-color: white;\r\n    justify-content: space-evenly;\r\n  }\r\n\r\n  .header--mobile {\r\n    @include header-style-mobile;\r\n\r\n    .header__item {\r\n      margin: auto 0;\r\n    }\r\n    .header__item--divider {\r\n      height: 32px;\r\n    }\r\n  }\r\n}\r\n","$screen-size-mobileA: 320px;\r\n$screen-size-mobileB: 767px;\r\n\r\n// стили для header\r\n$max-width-mobile: 100%;\r\n$header-height-mobile: 88px;\r\n$header-display-mobile: flex;\r\n\r\n"],"sourceRoot":""}]);
+  .header--mobile .header--mobile-container {
+    display: flex;
+    gap: 16px;
+  }
+  .title__item {
+    display: flex;
+    margin: 25px 0 24px;
+  }
+  .title__item .title__item-greenLine {
+    margin-right: 12px;
+  }
+  .title__item h1 {
+    font-family: "TTLakes Bold";
+    margin: auto 0;
+  }
+  .slide--menu {
+    display: flex;
+    list-style-type: none;
+    overflow-x: auto;
+  }
+  .slide--menu li {
+    padding: 9px 15px;
+    white-space: nowrap;
+    margin-right: 10px;
+  }
+  .slide--menu li:focus {
+    border: 2px solid #b8ffec;
+    border-radius: 10px;
+    background-color: white;
+    color: #7E7E82;
+  }
+  .info .hidden-item {
+    display: none;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/style/_style.scss","webpack://./src/index.scss","webpack://./src/style/vars/_var.scss","webpack://./src/style/_fonts.scss","webpack://./src/style/media/_mobile.scss","webpack://./src/style/vars/_var-mobile.scss"],"names":[],"mappings":"AAAA;EACE,SAAA;EACA,UAAA;ACCF;;ADIA;EACE,yBERK;EFSL,YERK;EFSL,8BAAA;ACDF;;ADKA;EACE,sBAAA;ACFF;;AEbA;EACI,8BAAA;EACA,2DAAA;EACA,gBAAA;EACA,kBAAA;AFgBJ;AEbA;EACI,6BAAA;EACA,2DAAA;EACA,gBAAA;EACA,kBAAA;AFeJ;AEZA;EACI,2BAAA;EACA,2DAAA;EACA,gBAAA;EACA,kBAAA;AFcJ;AGhCA;EAUE;IAPE,WAAA;IACA,YAAA;IACA,aAAA;IACA,uBCHY;IDIZ,6BAAA;EHiCF;EG3BE;IACE,cAAA;EH6BJ;EG3BE;IACE,YAAA;EH6BJ;EG3BE;IACE,aAAA;IACA,SAAA;EH6BJ;EGxBA;IACE,aAAA;IACA,mBAAA;EH0BF;EGxBE;IACE,kBAAA;EH0BJ;EGvBE;IACE,2BAAA;IACA,cAAA;EHyBJ;EGpBA;IACE,aAAA;IACA,qBAAA;IACA,gBAAA;EHsBF;EGpBE;IACE,iBAAA;IACA,mBAAA;IACA,kBAAA;EHsBJ;EGnBE;IACE,yBAAA;IACA,mBAAA;IACA,uBClDW;IDmDX,cChDe;EJqEnB;EGfE;IACE,aAAA;EHiBJ;AACF","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n\r\n\r\nbody {\r\n  background-color: $back;\r\n  color: $text;\r\n  font-family: \"TTLakes Regular\";\r\n\r\n}\r\n\r\n.header {\r\n  background-color: aqua;\r\n}\r\n","* {\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  background-color: #F8F8F8;\n  color: black;\n  font-family: \"TTLakes Regular\";\n}\n\n.header {\n  background-color: aqua;\n}\n\n@font-face {\n  font-family: \"TTLakes Regular\";\n  src: url(\"./assets/fonts/TTLakes-Regular.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"TTLakes Medium\";\n  src: url(\"./assets/fonts/TTLakes-Medium.woff\") format(\"woff\");\n  font-weight: 500;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"TTLakes Bold\";\n  src: url(\"./assets/fonts/TTLakes-Bold.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n}\n@media only screen and (min-width: 320px) and (max-width: 767px) {\n  .header--mobile {\n    width: 100%;\n    height: 88px;\n    display: flex;\n    background-color: white;\n    justify-content: space-evenly;\n  }\n  .header--mobile .header--mobile__item {\n    margin: auto 0;\n  }\n  .header--mobile .header__item--divider {\n    height: 32px;\n  }\n  .header--mobile .header--mobile-container {\n    display: flex;\n    gap: 16px;\n  }\n  .title__item {\n    display: flex;\n    margin: 25px 0 24px;\n  }\n  .title__item .title__item-greenLine {\n    margin-right: 12px;\n  }\n  .title__item h1 {\n    font-family: \"TTLakes Bold\";\n    margin: auto 0;\n  }\n  .slide--menu {\n    display: flex;\n    list-style-type: none;\n    overflow-x: auto;\n  }\n  .slide--menu li {\n    padding: 9px 15px;\n    white-space: nowrap;\n    margin-right: 10px;\n  }\n  .slide--menu li:focus {\n    border: 2px solid #b8ffec;\n    border-radius: 10px;\n    background-color: white;\n    color: #7E7E82;\n  }\n  .info .hidden-item {\n    display: none;\n  }\n}","$back: #F8F8F8;\r\n$text: black;\r\n","@font-face {\r\n    font-family: 'TTLakes Regular';\r\n    src: url('./assets/fonts/TTLakes-Regular.woff') format('woff');\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face {\r\n    font-family: 'TTLakes Medium';\r\n    src: url('./assets/fonts/TTLakes-Medium.woff') format('woff');\r\n    font-weight: 500;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face {\r\n    font-family: 'TTLakes Bold';\r\n    src: url('./assets/fonts/TTLakes-Bold.woff') format('woff');\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}","@media only screen and (min-width: $screen-size-mobileA) and (max-width: $screen-size-mobileB) {\r\n  // настройка header\r\n  @mixin header-style-mobile {\r\n    width: 100%;\r\n    height: 88px;\r\n    display: flex;\r\n    background-color: $bgColorHeader;\r\n    justify-content: space-evenly;\r\n  }\r\n\r\n  .header--mobile {\r\n    @include header-style-mobile;\r\n\r\n    .header--mobile__item {\r\n      margin: auto 0;\r\n    }\r\n    .header__item--divider {\r\n      height: 32px;\r\n    }\r\n    .header--mobile-container {\r\n      display: flex;\r\n      gap: 16px;\r\n    }\r\n  }\r\n\r\n  // настройка тайтла \"Услуги и сервисы\"\r\n  .title__item {\r\n    display: flex;\r\n    margin: 25px 0 24px;\r\n\r\n    .title__item-greenLine {\r\n      margin-right: 12px;\r\n    }\r\n\r\n    h1 {\r\n      font-family: \"TTLakes Bold\";\r\n      margin: auto 0;\r\n    }\r\n  }\r\n\r\n  // настройка slide-menu\r\n  .slide--menu {\r\n    display: flex;\r\n    list-style-type: none;\r\n    overflow-x: auto;\r\n\r\n    li {\r\n      padding: 9px 15px;\r\n      white-space: nowrap;\r\n      margin-right: 10px;\r\n    }\r\n\r\n    li:focus {\r\n      border: 2px solid $bgColorBorder;\r\n      border-radius: 10px;\r\n      background-color: $bgColorLiFocus;\r\n      color: $colorTextSlideMenu;\r\n    }\r\n  }\r\n\r\n  // настройка info\r\n  .info {\r\n    .hidden-item {\r\n      display: none;\r\n    }\r\n  }\r\n}\r\n","$screen-size-mobileA: 320px;\r\n$screen-size-mobileB: 767px;\r\n\r\n$bgColorHeader: white;\r\n\r\n$bgColorLiFocus: white;\r\n$bgColorBorder: #b8ffec;\r\n\r\n$colorTextSlideMenu: #7E7E82;\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10168,13 +10239,17 @@ var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(
 var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/svg/divider.svg */ "./src/assets/svg/divider.svg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/svg/repair.svg */ "./src/assets/svg/repair.svg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/svg/status.svg */ "./src/assets/svg/status.svg"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/svg/greenLine.svg */ "./src/assets/svg/greenLine.svg"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/svg/doubleDown.svg */ "./src/assets/svg/doubleDown.svg"), __webpack_require__.b);
 // Module
 var ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);
 var ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);
 var ___HTML_LOADER_REPLACEMENT_2___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_2___);
 var ___HTML_LOADER_REPLACEMENT_3___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_3___);
 var ___HTML_LOADER_REPLACEMENT_4___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_4___);
-var code = "<!DOCTYPE html>\r\n<html lang=\"ru\">\r\n<head class=\"page\">\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n\r\n    <title>CPS</title>\r\n</head>\r\n<body class=\"page__body\">\r\n    <header class=\"header header--mobile\">\r\n        <a class=\"header__item header__item--burger\" href=\"#\">\r\n            <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"burger\">\r\n        </a>\r\n        <a class=\"header__item header__item--logo\" href=\"#\">\r\n            <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"logo\">\r\n        </a>\r\n\r\n        <img class=\"header__item header__item--divider\" src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"divider\">\r\n\r\n        <a class=\"header__item header__item--repair\" href=\"#\">\r\n            <img src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"repair\">\r\n        </a>\r\n        <a class=\"header__item header__item--status\" href=\"#\">\r\n            <img src=\"" + ___HTML_LOADER_REPLACEMENT_4___ + "\" alt=\"status\">\r\n        </a>\r\n    </header>\r\n</body>\r\n</html>";
+var ___HTML_LOADER_REPLACEMENT_5___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_5___);
+var ___HTML_LOADER_REPLACEMENT_6___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_6___);
+var code = "<!DOCTYPE html>\r\n<html lang=\"ru\">\r\n  <head class=\"page\">\r\n    <meta charset=\"UTF-8\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n\r\n    <title>CPS</title>\r\n  </head>\r\n  <body class=\"page__body\">\r\n    <header class=\"header--mobile\">\r\n      <div class=\"header--mobile-container\">\r\n        <a\r\n          class=\"header--mobile__item header--mobile-container__burger\"\r\n          href=\"#\"\r\n        >\r\n          <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"burger\" />\r\n        </a>\r\n        <a class=\"header--mobile__item header--mobile-container__logo\" href=\"#\">\r\n          <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"logo\" />\r\n        </a>\r\n      </div>\r\n\r\n      <img\r\n        class=\"header--mobile__item header--mobile__divider\"\r\n        src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\"\r\n        alt=\"divider\"\r\n      />\r\n      <div class=\"header--mobile-container\">\r\n        <a\r\n          class=\"header--mobile__item header--mobile-container__repair\"\r\n          href=\"#\"\r\n        >\r\n          <img src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"repair\" />\r\n        </a>\r\n        <a\r\n          class=\"header--mobile__item header--mobile-container__status\"\r\n          href=\"#\"\r\n        >\r\n          <img src=\"" + ___HTML_LOADER_REPLACEMENT_4___ + "\" alt=\"status\" />\r\n        </a>\r\n      </div>\r\n    </header>\r\n    <main class=\"page__main\">\r\n      <div class=\"title\">\r\n        <section class=\"title__item\">\r\n          <img\r\n            class=\"title__item-greenLine\"\r\n            src=\"" + ___HTML_LOADER_REPLACEMENT_5___ + "\"\r\n            alt=\"greenLine\"\r\n          />\r\n          <h1>Услуги и сервисы</h1>\r\n        </section>\r\n      </div>\r\n\r\n      <ul class=\"slide--menu\">\r\n        <li tabindex=\"0\">Ремонтируемые устройства</li>\r\n        <li tabindex=\"0\">Дополнительные услуги</li>\r\n        <li tabindex=\"0\">Цены на услуги</li>\r\n        <li tabindex=\"0\">Адреса сервисных центров</li>\r\n        <li tabindex=\"0\">Специальные цены</li>\r\n        <li tabindex=\"0\">Отзывы</li>\r\n      </ul>\r\n      <div class=\"info\">\r\n        <p>\r\n          Мы являемся авторизованным сервисным центром по ремонту техники Dell.\r\n          Только у нас вы можете отремонтировать свой ноутбук Dell с официальной\r\n          гарантией производителя.\r\n        </p>\r\n        <div class=\"info-read\">\r\n          <img id=\"info-read__img\" src=\"" + ___HTML_LOADER_REPLACEMENT_6___ + "\" alt=\"doubleDown\" />\r\n          <button class=\"info-read__button\">Читать далее</button>\r\n          <p class=\"hidden-item\">\r\n            Мы успешно работаем с 1992 года и заслужили репутацию надежного\r\n            партнера, что подтверждает большое количество постоянных клиентов.\r\n            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою\r\n            очередь, советуют нас родным и близким.\r\n          </p>\r\n        </div>\r\n      </div>\r\n    </main>\r\n  </body>\r\n</html>\r\n";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -10599,6 +10674,28 @@ module.exports = __webpack_require__.p + "6c615906d9ae088c71cc.svg";
 
 /***/ }),
 
+/***/ "./src/assets/svg/doubleDown.svg":
+/*!***************************************!*\
+  !*** ./src/assets/svg/doubleDown.svg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "6e9f5d15380822c24a72.svg";
+
+/***/ }),
+
+/***/ "./src/assets/svg/greenLine.svg":
+/*!**************************************!*\
+  !*** ./src/assets/svg/greenLine.svg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "f9313bac2e7faa2d83ed.svg";
+
+/***/ }),
+
 /***/ "./src/assets/svg/logo.svg":
 /*!*********************************!*\
   !*** ./src/assets/svg/logo.svg ***!
@@ -10778,4 +10875,4 @@ module.exports = __webpack_require__.p + "1cf760cf73dc28b199ae.svg";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.f54ed323091aebec6142.js.map
+//# sourceMappingURL=main.a7c7cf9e6f0ea30d5ea2.js.map
