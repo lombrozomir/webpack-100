@@ -1,4 +1,4 @@
 import "@babel/polyfill";
-import "./index.html";
 import "./index.scss";
-
+import "./index.html";
+import "./scripts/show.js";

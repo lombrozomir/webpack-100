@@ -1,21 +1,67 @@
 @media only screen and (min-width: $screen-size-mobileA) and (max-width: $screen-size-mobileB) {
-    
+  // настройка header
   @mixin header-style-mobile {
-    width: $max-width-mobile;
-    height: $header-height-mobile;
-    display: $header-display-mobile;
-    background-color: white;
+    width: 100%;
+    height: 88px;
+    display: flex;
+    background-color: $bgColorHeader;
     justify-content: space-evenly;
   }
 
   .header--mobile {
     @include header-style-mobile;
 
-    .header__item {
+    .header--mobile__item {
       margin: auto 0;
     }
     .header__item--divider {
       height: 32px;
+    }
+    .header--mobile-container {
+      display: flex;
+      gap: 16px;
+    }
+  }
+
+  // настройка тайтла "Услуги и сервисы"
+  .title__item {
+    display: flex;
+    margin: 25px 0 24px;
+
+    .title__item-greenLine {
+      margin-right: 12px;
+    }
+
+    h1 {
+      font-family: "TTLakes Bold";
+      margin: auto 0;
+    }
+  }
+
+  // настройка slide-menu
+  .slide--menu {
+    display: flex;
+    list-style-type: none;
+    overflow-x: auto;
+
+    li {
+      padding: 9px 15px;
+      white-space: nowrap;
+      margin-right: 10px;
+    }
+
+    li:focus {
+      border: 2px solid $bgColorBorder;
+      border-radius: 10px;
+      background-color: $bgColorLiFocus;
+      color: $colorTextSlideMenu;
+    }
+  }
+
+  // настройка info
+  .info {
+    .hidden-item {
+      display: none;
     }
   }
 }
