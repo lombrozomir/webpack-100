@@ -846,30 +846,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_polyfill__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_polyfill__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.html */ "./src/index.html");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
-/* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/calc */ "./src/modules/calc.js");
 
 
 
-
-console.log((0,_modules_calc__WEBPACK_IMPORTED_MODULE_3__.multiply)(3, 4));
-console.log((0,_modules_calc__WEBPACK_IMPORTED_MODULE_3__.sum)(3, 4));
-
-/***/ }),
-
-/***/ "./src/modules/calc.js":
-/*!*****************************!*\
-  !*** ./src/modules/calc.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   multiply: () => (/* binding */ multiply),
-/* harmony export */   sum: () => (/* binding */ sum)
-/* harmony export */ });
-const multiply = (a, b) => a * b;
-const sum = async (a, b) => a + b;
 
 /***/ }),
 
@@ -9950,18 +9929,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./fonts/TTLakes-Regular.woff */ "./src/fonts/TTLakes-Regular.woff"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./fonts/TTLakes-Medium.woff */ "./src/fonts/TTLakes-Medium.woff"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./fonts/TTLakes-Bold.woff */ "./src/fonts/TTLakes-Bold.woff"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/fonts/TTLakes-Regular.woff */ "./src/assets/fonts/TTLakes-Regular.woff"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/fonts/TTLakes-Medium.woff */ "./src/assets/fonts/TTLakes-Medium.woff"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/fonts/TTLakes-Bold.woff */ "./src/assets/fonts/TTLakes-Bold.woff"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `body {
-  background-color: rgb(85, 85, 43);
+___CSS_LOADER_EXPORT___.push([module.id, `* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F8F8F8;
   color: rgb(133, 133, 78);
   font-family: "TTLakes Regular";
+}
+
+.header {
+  background-color: aqua;
 }
 
 @font-face {
@@ -9981,7 +9969,22 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
   src: url(${___CSS_LOADER_URL_REPLACEMENT_2___}) format("woff");
   font-weight: 700;
   font-style: normal;
-}`, "",{"version":3,"sources":["webpack://./src/style/_style.scss","webpack://./src/style/_var.scss","webpack://./src/index.scss","webpack://./src/style/_fonts.scss"],"names":[],"mappings":"AAAA;EACE,iCCDK;EDEL,wBCDK;EDEL,8BAAA;AECF;;ACJA;EACI,8BAAA;EACA,2DAAA;EACA,gBAAA;EACA,kBAAA;ADOJ;ACJA;EACI,6BAAA;EACA,2DAAA;EACA,gBAAA;EACA,kBAAA;ADMJ;ACHA;EACI,2BAAA;EACA,2DAAA;EACA,gBAAA;EACA,kBAAA;ADKJ","sourcesContent":["body {\r\n  background-color: $back;\r\n  color: $text;\r\n  font-family: \"TTLakes Regular\";\r\n}\r\n","$back: rgb(85, 85, 43);\r\n$text: rgb(133, 133, 78);","body {\n  background-color: rgb(85, 85, 43);\n  color: rgb(133, 133, 78);\n  font-family: \"TTLakes Regular\";\n}\n\n@font-face {\n  font-family: \"TTLakes Regular\";\n  src: url(\"./fonts/TTLakes-Regular.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"TTLakes Medium\";\n  src: url(\"./fonts/TTLakes-Medium.woff\") format(\"woff\");\n  font-weight: 500;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"TTLakes Bold\";\n  src: url(\"./fonts/TTLakes-Bold.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n}","@font-face {\r\n    font-family: 'TTLakes Regular';\r\n    src: url('./fonts/TTLakes-Regular.woff') format('woff');\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face {\r\n    font-family: 'TTLakes Medium';\r\n    src: url('./fonts/TTLakes-Medium.woff') format('woff');\r\n    font-weight: 500;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face {\r\n    font-family: 'TTLakes Bold';\r\n    src: url('./fonts/TTLakes-Bold.woff') format('woff');\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}"],"sourceRoot":""}]);
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .header--mobile {
+    width: 100%;
+    height: 88px;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+  }
+  .header--mobile .header__item {
+    margin: auto 0;
+  }
+  .header--mobile .header__item--divider {
+    height: 32px;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/style/_style.scss","webpack://./src/index.scss","webpack://./src/style/vars/_var.scss","webpack://./src/style/_fonts.scss","webpack://./src/style/media/_mobile.scss","webpack://./src/style/vars/_var-mobile.scss"],"names":[],"mappings":"AAAA;EACE,SAAA;EACA,UAAA;ACCF;;ADEA;EACE,yBENK;EFOL,wBENK;EFOL,8BAAA;ACCF;;ADEA;EACE,sBAAA;ACCF;;AEbA;EACI,8BAAA;EACA,2DAAA;EACA,gBAAA;EACA,kBAAA;AFgBJ;AEbA;EACI,6BAAA;EACA,2DAAA;EACA,gBAAA;EACA,kBAAA;AFeJ;AEZA;EACI,2BAAA;EACA,2DAAA;EACA,gBAAA;EACA,kBAAA;AFcJ;AGhCA;EAUE;IAPE,WCCe;IDAf,YCCmB;IDAnB,aCCoB;IDApB,uBAAA;IACA,6BAAA;EHiCF;EG3BE;IACE,cAAA;EH6BJ;EG3BE;IACE,YAAA;EH6BJ;AACF","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\nbody {\r\n  background-color: $back;\r\n  color: $text;\r\n  font-family: \"TTLakes Regular\";\r\n}\r\n\r\n.header {\r\n  background-color: aqua;\r\n}\r\n","* {\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  background-color: #F8F8F8;\n  color: rgb(133, 133, 78);\n  font-family: \"TTLakes Regular\";\n}\n\n.header {\n  background-color: aqua;\n}\n\n@font-face {\n  font-family: \"TTLakes Regular\";\n  src: url(\"./assets/fonts/TTLakes-Regular.woff\") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"TTLakes Medium\";\n  src: url(\"./assets/fonts/TTLakes-Medium.woff\") format(\"woff\");\n  font-weight: 500;\n  font-style: normal;\n}\n@font-face {\n  font-family: \"TTLakes Bold\";\n  src: url(\"./assets/fonts/TTLakes-Bold.woff\") format(\"woff\");\n  font-weight: 700;\n  font-style: normal;\n}\n@media only screen and (min-width: 320px) and (max-width: 767px) {\n  .header--mobile {\n    width: 100%;\n    height: 88px;\n    display: flex;\n    background-color: white;\n    justify-content: space-evenly;\n  }\n  .header--mobile .header__item {\n    margin: auto 0;\n  }\n  .header--mobile .header__item--divider {\n    height: 32px;\n  }\n}","$back: #F8F8F8;\r\n$text: rgb(133, 133, 78);\r\n\r\n","@font-face {\r\n    font-family: 'TTLakes Regular';\r\n    src: url('./assets/fonts/TTLakes-Regular.woff') format('woff');\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face {\r\n    font-family: 'TTLakes Medium';\r\n    src: url('./assets/fonts/TTLakes-Medium.woff') format('woff');\r\n    font-weight: 500;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face {\r\n    font-family: 'TTLakes Bold';\r\n    src: url('./assets/fonts/TTLakes-Bold.woff') format('woff');\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}","@media only screen and (min-width: $screen-size-mobileA) and (max-width: $screen-size-mobileB) {\r\n    \r\n  @mixin header-style-mobile {\r\n    width: $max-width-mobile;\r\n    height: $header-height-mobile;\r\n    display: $header-display-mobile;\r\n    background-color: white;\r\n    justify-content: space-evenly;\r\n  }\r\n\r\n  .header--mobile {\r\n    @include header-style-mobile;\r\n\r\n    .header__item {\r\n      margin: auto 0;\r\n    }\r\n    .header__item--divider {\r\n      height: 32px;\r\n    }\r\n  }\r\n}\r\n","$screen-size-mobileA: 320px;\r\n$screen-size-mobileB: 767px;\r\n\r\n// стили для header\r\n$max-width-mobile: 100%;\r\n$header-height-mobile: 88px;\r\n$header-display-mobile: flex;\r\n\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10160,10 +10163,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
-var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./img/acer.svg */ "./src/img/acer.svg"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/svg/burger.svg */ "./src/assets/svg/burger.svg"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/svg/logo.svg */ "./src/assets/svg/logo.svg"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/svg/divider.svg */ "./src/assets/svg/divider.svg"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/svg/repair.svg */ "./src/assets/svg/repair.svg"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/svg/status.svg */ "./src/assets/svg/status.svg"), __webpack_require__.b);
 // Module
 var ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);
-var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <h1>HELLO MIR MIR</h1>\r\n    <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\">\r\n</body>\r\n</html>";
+var ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);
+var ___HTML_LOADER_REPLACEMENT_2___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_2___);
+var ___HTML_LOADER_REPLACEMENT_3___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_3___);
+var ___HTML_LOADER_REPLACEMENT_4___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_4___);
+var code = "<!DOCTYPE html>\r\n<html lang=\"ru\">\r\n<head class=\"page\">\r\n    <meta charset=\"UTF-8\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n\r\n    <title>CPS</title>\r\n</head>\r\n<body class=\"page__body\">\r\n    <header class=\"header header--mobile\">\r\n        <a class=\"header__item header__item--burger\" href=\"#\">\r\n            <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"burger\">\r\n        </a>\r\n        <a class=\"header__item header__item--logo\" href=\"#\">\r\n            <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"logo\">\r\n        </a>\r\n\r\n        <img class=\"header__item header__item--divider\" src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"divider\">\r\n\r\n        <a class=\"header__item header__item--repair\" href=\"#\">\r\n            <img src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"repair\">\r\n        </a>\r\n        <a class=\"header__item header__item--status\" href=\"#\">\r\n            <img src=\"" + ___HTML_LOADER_REPLACEMENT_4___ + "\" alt=\"status\">\r\n        </a>\r\n    </header>\r\n</body>\r\n</html>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -10533,47 +10544,91 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/fonts/TTLakes-Bold.woff":
-/*!*************************************!*\
-  !*** ./src/fonts/TTLakes-Bold.woff ***!
-  \*************************************/
+/***/ "./src/assets/fonts/TTLakes-Bold.woff":
+/*!********************************************!*\
+  !*** ./src/assets/fonts/TTLakes-Bold.woff ***!
+  \********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "fonts/TTLakes-Bold..woff";
+module.exports = __webpack_require__.p + "assets/fonts/TTLakes-Bold..woff";
 
 /***/ }),
 
-/***/ "./src/fonts/TTLakes-Medium.woff":
-/*!***************************************!*\
-  !*** ./src/fonts/TTLakes-Medium.woff ***!
-  \***************************************/
+/***/ "./src/assets/fonts/TTLakes-Medium.woff":
+/*!**********************************************!*\
+  !*** ./src/assets/fonts/TTLakes-Medium.woff ***!
+  \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "fonts/TTLakes-Medium..woff";
+module.exports = __webpack_require__.p + "assets/fonts/TTLakes-Medium..woff";
 
 /***/ }),
 
-/***/ "./src/fonts/TTLakes-Regular.woff":
-/*!****************************************!*\
-  !*** ./src/fonts/TTLakes-Regular.woff ***!
-  \****************************************/
+/***/ "./src/assets/fonts/TTLakes-Regular.woff":
+/*!***********************************************!*\
+  !*** ./src/assets/fonts/TTLakes-Regular.woff ***!
+  \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "fonts/TTLakes-Regular..woff";
+module.exports = __webpack_require__.p + "assets/fonts/TTLakes-Regular..woff";
 
 /***/ }),
 
-/***/ "./src/img/acer.svg":
-/*!**************************!*\
-  !*** ./src/img/acer.svg ***!
-  \**************************/
+/***/ "./src/assets/svg/burger.svg":
+/*!***********************************!*\
+  !*** ./src/assets/svg/burger.svg ***!
+  \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "d32fd4dff30aac5b7a41.svg";
+module.exports = __webpack_require__.p + "febda17be9dd81fbe180.svg";
+
+/***/ }),
+
+/***/ "./src/assets/svg/divider.svg":
+/*!************************************!*\
+  !*** ./src/assets/svg/divider.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "6c615906d9ae088c71cc.svg";
+
+/***/ }),
+
+/***/ "./src/assets/svg/logo.svg":
+/*!*********************************!*\
+  !*** ./src/assets/svg/logo.svg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "15dcb45c4da98856ad7e.svg";
+
+/***/ }),
+
+/***/ "./src/assets/svg/repair.svg":
+/*!***********************************!*\
+  !*** ./src/assets/svg/repair.svg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "5d17477aaf61729e8cef.svg";
+
+/***/ }),
+
+/***/ "./src/assets/svg/status.svg":
+/*!***********************************!*\
+  !*** ./src/assets/svg/status.svg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "1cf760cf73dc28b199ae.svg";
 
 /***/ })
 
@@ -10723,4 +10778,4 @@ module.exports = __webpack_require__.p + "d32fd4dff30aac5b7a41.svg";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.507b3e2efb2ef152e06b.js.map
+//# sourceMappingURL=main.f54ed323091aebec6142.js.map
