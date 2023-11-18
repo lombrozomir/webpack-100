@@ -60,8 +60,28 @@
 
   // настройка info
   .info {
+    margin: 16px;
+
     .hidden-item {
       display: none;
     }
+    .info-read {
+      margin: 16px;
+
+      .info-read__button {
+        background: none;
+        border: none;
+        font-family: "TTLakes Medium";
+        font-size: 16px;
+      }
+      #info-read__img {
+        transition: transform 0.5s;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .imgCPS {
+    width: 100%;
   }
 }
