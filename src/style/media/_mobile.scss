@@ -54,7 +54,7 @@
       border: 2px solid $bgColorBorder;
       border-radius: 10px;
       background-color: $bgColorLiFocus;
-      color: $colorTextSlideMenu;
+      color: $colorText;
     }
   }
 
@@ -83,5 +83,40 @@
 
   .imgCPS {
     width: 100%;
+  }
+
+  .brand--container {
+    .brand--container-text {
+      margin-top: 24px;
+      border-top: solid 1px #d9fff5;
+      background-color: white;
+      height: 80px;
+
+      p {
+        padding: 16px;
+        margin: 0;
+        margin-bottom: 16px;
+        color: $colorText;
+      }
+    }
+    .brand--container-swiper {
+      position: relative;
+      overflow: hidden;
+      margin-left: 16px;
+
+      .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        .swiper-slide {
+          width: 80%;
+        }
+      }
+      .swiper-pagination {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    }
   }
 }
