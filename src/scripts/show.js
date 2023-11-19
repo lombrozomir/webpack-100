@@ -29,5 +29,3 @@ btn.addEventListener('click', function () {
 
     rotated = !rotated;
 });
-
-console.log(new Swiper());

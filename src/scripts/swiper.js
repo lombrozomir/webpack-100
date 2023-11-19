@@ -7,7 +7,6 @@ var swiper = new Swiper('.brand--container-swiper', {
 
     slidesPerView: 'auto',
     autoHeight: false,
-    centeredSlides: false,
     spaceBetween: 10,
     centeredSlides: false,
     
@@ -16,10 +15,6 @@ var swiper = new Swiper('.brand--container-swiper', {
       el: ".swiper-pagination",
       clickable: true,
     },
-    // pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true
-    // },
 
     scrollbar: {
         hide: true

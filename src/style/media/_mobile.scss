@@ -80,16 +80,18 @@
       }
     }
   }
-
+  // настройка картинки
   .imgCPS {
     width: 100%;
   }
 
+  // настройка swiper
   .brand--container {
     .brand--container-text {
       margin-top: 24px;
-      border-top: solid 1px #d9fff5;
-      background-color: white;
+      margin-bottom: 16px;
+      border-top: solid 1px $colorBorderBrandContainer;
+      background-color: $bgColorBrandContainer;
       height: 80px;
 
       p {
@@ -103,12 +105,56 @@
       position: relative;
       overflow: hidden;
       margin-left: 16px;
+      margin-right: 16px;
 
       .swiper-wrapper {
         position: relative;
         width: 100%;
         .swiper-slide {
           width: 80%;
+        }
+        .swiper-slide-next {
+          filter: blur(1px);
+        }
+        .swiper-wrapper__item-tech {
+          position: relative;
+          width: 240px;
+          height: 160px;
+          border-radius: 5px;
+          border: 1px solid #eaeaea;
+          background-color: white;
+          p {
+            font-family: "TTLakes Medium";
+            margin-top: 16px;
+            margin-left: 16px;
+          }
+          img {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+          }
+        }
+        .swiper-wrapper__item-price {
+          padding: 16px;
+          position: relative;
+          width: 260px;
+          height: 200px;
+          border-radius: 5px;
+          background-color: white;
+
+          .swiper-wrapper__item-price_text {
+            margin-bottom: 16px;
+
+            .swiper-wrapper__item-price_text__title {
+              color: #7e7e82;
+            }
+          }
+
+          img {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+          }
         }
       }
       .swiper-pagination {
@@ -117,6 +163,31 @@
         justify-content: center;
         margin-top: 20px;
       }
+      .swiper-pagination-bullet {
+        background-color: $bgColorSwiperPagination;
+        width: 10px;
+        height: 10px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: $bgColorSwiperPaginationActive;
+      }
+    }
+  }
+
+  .container-3 {
+    margin-bottom: 10px;
+    .brand--container-text {
+      height: 56px;
+    }
+  }
+  
+
+  // настройка нижнего title
+  .info {
+    .info__text-bold {
+      font-family: "TTLakes Medium";
+      margin-top: 20px;
     }
   }
 }
