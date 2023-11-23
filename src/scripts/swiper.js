@@ -22,7 +22,10 @@ var swiper = new Swiper(".brand--container-swiper", {
 
   breakpoints: {
     320: {
-      slidesPerView: 1.25,
+      enabled: true,
+      loop: true,
+      spaceBetween: 16,
+      slidesPerView: 1.2,
     },
   },
 });
