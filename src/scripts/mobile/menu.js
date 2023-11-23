@@ -10,11 +10,21 @@ openBtn.addEventListener("click", () => {
   menu.style.display = "block";
   menu.classList.add("modal-open");
   document.body.style.overflow = "hidden";
-//   document.body.style.pointerEvents = "none";
 });
 
 closeBtn.addEventListener("click", () => {
- 
   menu.style.display = "none";
   document.body.style.overflow = "auto";
 });
+
+// функционал закрытия меню по клику на свободную область
+// openBtn.addEventListener("click", (e) => {
+//   e.stopPropagation(); 
+//   menu.style.display = "block";
+// });
+
+// document.addEventListener("click", (e) => {
+//   if (e.target === openBtn) return;
+//   if (menu.contains(e.target)) return;
+//   menu.style.display = "none";
+// });

@@ -11,7 +11,10 @@
     <div class="page__body-mobile">
       <header class="header--mobile">
         <div class="header--mobile-container">
-          <button id="open-menu" class="header--mobile__item header--mobile-container__burger">
+          <button
+            id="open-menu"
+            class="header--mobile__item header--mobile-container__burger btn-no-style"
+          >
             <img src="./assets/svg/burger.svg" alt="burger" />
           </button>
           <a
@@ -45,12 +48,15 @@
       <div id="menu">
         <header class="menu__header">
           <div class="container">
-            <button id="close-menu" class="item close">
-              <img src="./assets/svg/close.svg" alt="close" />
-            </button>
-            <a class="item logo" href="#">
-              <img src="assets/svg/logo.svg" alt="Лого" />
-            </a>
+            <div class="container-logo">
+              <button id="close-menu" class="item close btn-no-style">
+                <img src="./assets/svg/close.svg" alt="close" />
+              </button>
+              <a class="logo" href="#">
+                <img src="assets/svg/logo.svg" alt="Лого" />
+              </a>
+            </div>
+
             <a class="item search" href="#">
               <img src="assets/svg/search.svg" alt="Поиск" />
             </a>
@@ -94,9 +100,9 @@
               <img src="assets/svg/call.svg" alt="Трубка" />
             </a>
 
-            <a class="sms" href="#">
-              <img src="assets/svg/sms.svg" alt="СМС" />
-            </a>
+            <button id="open-feedback" class="sms btn-no-style">
+              <img src="./assets/svg/sms.svg" alt="sms" />
+            </button>
 
             <a class="profile" href="#">
               <img src="assets/svg/profile.svg" alt="Профиль" />
@@ -120,6 +126,29 @@
             </a>
           </div>
         </div>
+      </div>
+
+      <div id="menu__feedback">
+        <button id="close-feedback" class="btn-no-style">
+          <img src="./assets/svg/close.svg" alt="close" />
+        </button>
+        <div class="title">
+          <section class="title__item">
+            <img
+              class="title__item-greenLine"
+              src="./assets/svg/greenLine.svg"
+              alt="greenLine"
+            />
+            <h1>Обратная связь</h1>
+          </section>
+        </div>
+        <form class="sidebar__form" action="" method="post">
+          <div class="sidebar__field">
+            <input type="text" placeholder="Имя" />
+            <input type="text" placeholder="Телефон" />
+            <input type="text" placeholder="Электронная почта" />
+          </div>
+        </form>
       </div>
 
       <main class="page__main">
