@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>CPS</title>
-  <script defer src="main.4baba805e397226f4f58.js"></script></head>
+  <script defer src="main.5aa874023e699cf70ac0.js"></script></head>
   <body class="page__body">
     <div class="page__body-mobile">
       <header class="header--mobile">
         <div class="header--mobile-container">
-          <button id="open-menu" class="header--mobile__item header--mobile-container__burger">
+          <button
+            id="open-menu"
+            class="header--mobile__item header--mobile-container__burger btn-no-style"
+          >
             <img src="febda17be9dd81fbe180.svg" alt="burger" />
           </button>
           <a
@@ -45,12 +48,15 @@
       <div id="menu">
         <header class="menu__header">
           <div class="container">
-            <button id="close-menu" class="item close">
-              <img src="66cc31aab0ddfd1c3197.svg" alt="close" />
-            </button>
-            <a class="item logo" href="#">
-              <img src="15dcb45c4da98856ad7e.svg" alt="Лого" />
-            </a>
+            <div class="container-logo">
+              <button id="close-menu" class="item close btn-no-style">
+                <img src="66cc31aab0ddfd1c3197.svg" alt="close" />
+              </button>
+              <a class="logo" href="#">
+                <img src="15dcb45c4da98856ad7e.svg" alt="Лого" />
+              </a>
+            </div>
+
             <a class="item search" href="#">
               <img src="83f3e279e0f58942443b.svg" alt="Поиск" />
             </a>
@@ -94,9 +100,9 @@
               <img src="a28f84d657fbea487336.svg" alt="Трубка" />
             </a>
 
-            <a class="sms" href="#">
-              <img src="b90495a6685d94d1c0f4.svg" alt="СМС" />
-            </a>
+            <button id="open-feedback" class="sms btn-no-style">
+              <img src="b90495a6685d94d1c0f4.svg" alt="sms" />
+            </button>
 
             <a class="profile" href="#">
               <img src="ae85981350f2d871efc0.svg" alt="Профиль" />
@@ -120,6 +126,29 @@
             </a>
           </div>
         </div>
+      </div>
+
+      <div id="menu__feedback">
+        <button id="close-feedback" class="btn-no-style">
+          <img src="66cc31aab0ddfd1c3197.svg" alt="close" />
+        </button>
+        <div class="title">
+          <section class="title__item">
+            <img
+              class="title__item-greenLine"
+              src="f9313bac2e7faa2d83ed.svg"
+              alt="greenLine"
+            />
+            <h1>Обратная связь</h1>
+          </section>
+        </div>
+        <form class="sidebar__form" action="" method="post">
+          <div class="sidebar__field">
+            <input type="text" placeholder="Имя" />
+            <input type="text" placeholder="Телефон" />
+            <input type="text" placeholder="Электронная почта" />
+          </div>
+        </form>
       </div>
 
       <main class="page__main">
