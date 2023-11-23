@@ -3,26 +3,26 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-var swiper = new Swiper('.brand--container-swiper', {
+var swiper = new Swiper(".brand--container-swiper", {
+  loop: true,
+  slidesPerView: "auto",
+  autoHeight: false,
+  spaceBetween: 10,
+  centeredSlides: false,
 
-    slidesPerView: 'auto',
-    autoHeight: false,
-    spaceBetween: 10,
-    centeredSlides: false,
-    
-    modules: [Pagination],
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+  modules: [Pagination],
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  scrollbar: {
+    hide: true,
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1.25,
     },
-
-    scrollbar: {
-        hide: true
-    },
-
-    breakpoints: {
-        320: {
-            slidesPerView: 1.25
-        }
-    }
+  },
 });

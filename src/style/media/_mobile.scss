@@ -1,6 +1,4 @@
 @media only screen and (min-width: 320px) and (max-width: 767px) {
- 
-
   // настройка header
   @mixin header-style-mobile {
     width: 100%;
@@ -13,7 +11,7 @@
   .header--mobile {
     @include header-style-mobile;
 
-    .header--mobile__item {
+    &__item {
       margin: auto 0;
     }
 
@@ -32,17 +30,19 @@
   }
 
   // настройка тайтла "Услуги и сервисы"
-  .title__item {
-    display: flex;
-    margin: 25px 0 24px;
+  .title {
+    .title__item {
+      display: flex;
+      margin: 25px 0 24px;
 
-    .title__item-greenLine {
-      margin-right: 12px;
-    }
+      .title__item-greenLine {
+        margin-right: 12px;
+      }
 
-    h1 {
-      font-family: "TTLakes Bold";
-      margin: auto 0;
+      h1 {
+        font-family: "TTLakes Bold";
+        margin: auto 0;
+      }
     }
   }
 
