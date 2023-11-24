@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>CPS</title>
-  <script defer src="main.5aa874023e699cf70ac0.js"></script></head>
+  <script defer src="main.ec235d2f88193a1bfbe0.js"></script></head>
   <body class="page__body">
     <div class="page__body-mobile">
       <header class="header--mobile">
@@ -96,9 +96,9 @@
         </nav>
         <div class="navigation__info">
           <div class="action-buttons">
-            <a class="call" href="#">
-              <img src="a28f84d657fbea487336.svg" alt="Трубка" />
-            </a>
+            <button id="open-call" class="call btn-no-style">
+              <img src="a28f84d657fbea487336.svg" alt="sms" />
+            </button>
 
             <button id="open-feedback" class="sms btn-no-style">
               <img src="b90495a6685d94d1c0f4.svg" alt="sms" />
@@ -127,11 +127,15 @@
           </div>
         </div>
       </div>
+      <div id="menu__feedback" class="modal-menu">
+        <header class="modal-menu__header">
+          <div class="modal-menu__container">
+            <button id="close-feedback" class="btn-no-style">
+              <img src="66cc31aab0ddfd1c3197.svg" alt="close" />
+            </button>
+          </div>
+        </header>
 
-      <div id="menu__feedback">
-        <button id="close-feedback" class="btn-no-style">
-          <img src="66cc31aab0ddfd1c3197.svg" alt="close" />
-        </button>
         <div class="title">
           <section class="title__item">
             <img
@@ -142,15 +146,81 @@
             <h1>Обратная связь</h1>
           </section>
         </div>
-        <form class="sidebar__form" action="" method="post">
-          <div class="sidebar__field">
-            <input type="text" placeholder="Имя" />
-            <input type="text" placeholder="Телефон" />
-            <input type="text" placeholder="Электронная почта" />
-          </div>
-        </form>
+        <div class="sidebar">
+          <form class="sidebar__form" action="" method="post">
+            <div class="sidebar__field">
+              <input class="sidebar__input" type="text" placeholder="Имя" />
+              <input class="sidebar__input" type="text" placeholder="Телефон" />
+              <input
+                class="sidebar__input"
+                type="text"
+                placeholder="Электронная почта"
+              />
+              <input
+                class="sidebar__input message"
+                type="text"
+                placeholder="Сообщение"
+              />
+            </div>
+            <div class="sidebar__text">
+              <p>
+                Нажимая “отправить”, вы даете согласие на
+                <a href="#" class="sidebar__text--link"
+                  >обработку персональных данных</a
+                >
+                и соглашаетесь с нашей
+                <a href="#" class="sidebar__text--link"
+                  >политикой конфиденциальности</a
+                >
+              </p>
+            </div>
+            <div class="sidebar__form--image">
+              <img src="b5188ac322f6e8a59f61.svg" alt="submit" />
+            </div>
+          </form>
+        </div>
       </div>
-
+      <div id="menu__call" class="modal-menu">
+        <header class="modal-menu__header">
+          <div class="modal-menu__container">
+            <button id="close-call" class="btn-no-style">
+              <img src="66cc31aab0ddfd1c3197.svg" alt="close" />
+            </button>
+          </div>
+        </header>
+        <div class="title">
+          <section class="title__item">
+            <img
+              class="title__item-greenLine"
+              src="f9313bac2e7faa2d83ed.svg"
+              alt="greenLine"
+            />
+            <h1>Обратная связь</h1>
+          </section>
+        </div>
+        <div class="sidebar">
+          <form class="sidebar__form" action="" method="post">
+            <div class="sidebar__field">
+              <input class="sidebar__input" type="text" placeholder="Телефон" />
+            </div>
+            <div class="sidebar__text">
+              <p>
+                Нажимая “отправить”, вы даете согласие на
+                <a href="#" class="sidebar__text--link"
+                  >обработку персональных данных</a
+                >
+                и соглашаетесь с нашей
+                <a href="#" class="sidebar__text--link"
+                  >политикой конфиденциальности</a
+                >
+              </p>
+            </div>
+            <div class="sidebar__form--image">
+              <img src="b5188ac322f6e8a59f61.svg" alt="submit" />
+            </div>
+          </form>
+        </div>
+      </div>
       <main class="page__main">
         <div class="title">
           <section class="title__item">
