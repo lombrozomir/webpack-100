@@ -24,7 +24,7 @@ $pink: #FF3E79;
 }
 
 .call__title::before {
-    content: url('../img/highlight-mobile.svg');
+    content: url('../img/ic-other/highlight-mobile.svg');
     position: absolute;
     left: -16px;
     top: 36px;
@@ -100,7 +100,7 @@ $pink: #FF3E79;
     }
 
     .call__title::before {
-        content: url('../img/highlight.svg');
+        content: url('../img/ic-other/highlight.svg');
         position: absolute;
         left: -32px;
         top: -8px;

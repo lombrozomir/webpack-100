@@ -20,7 +20,7 @@
 }
 
 .title-1::before {
-    content: url('../img/highlight-mobile.svg');
+    content: url('../img/ic-other/highlight-mobile.svg');
     position: absolute;
     left: 0;
 }
@@ -77,7 +77,7 @@
     }
 
     .title-1::before {
-        content: url('../img/highlight.svg');
+        content: url('../img/ic-other/highlight.svg');
         margin-left: 320px;
     }
 

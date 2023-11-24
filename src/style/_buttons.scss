@@ -1,6 +1,8 @@
+$buttonColor: black;
+
 button {
     cursor: pointer;
-    color: black;
+    color: $buttonColor;
 }
 
 .button--read-more {

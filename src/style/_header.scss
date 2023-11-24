@@ -40,7 +40,7 @@ $white: #fff;
 }
 
 .button-nav--repair::before {
-    content: url('../img/divider.svg');
+    content: url('../img/ic-other/divider.svg');
     position: absolute;
     top: 4px;
     left: -20px;
@@ -62,7 +62,7 @@ $white: #fff;
         position: relative;
     }
     .button-nav--menu::after {
-        content: url('../img/divider.svg');
+        content: url('../img/ic-other/divider.svg');
         position: absolute;
         pointer-events: none;
         left: 60px;
