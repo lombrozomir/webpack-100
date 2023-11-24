@@ -846,7 +846,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_polyfill__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_polyfill__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.html */ "./src/index.html");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
-/* harmony import */ var _modules_scripts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/scripts */ "./src/modules/scripts.js");
+/* harmony import */ var _scripts_scripts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scripts/scripts */ "./src/scripts/scripts.js");
+/* harmony import */ var _scripts_call__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scripts/call */ "./src/scripts/call.js");
+/* harmony import */ var _scripts_callback__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./scripts/callback */ "./src/scripts/callback.js");
+/* harmony import */ var _scripts_sidebar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./scripts/sidebar */ "./src/scripts/sidebar.js");
+
+
+
 
 
 
@@ -854,49 +860,174 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/modules/scripts.js":
-/*!********************************!*\
-  !*** ./src/modules/scripts.js ***!
-  \********************************/
+/***/ "./src/scripts/call.js":
+/*!*****************************!*\
+  !*** ./src/scripts/call.js ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   blurItems: () => (/* binding */ blurItems),
-/* harmony export */   button: () => (/* binding */ button),
 /* harmony export */   call: () => (/* binding */ call),
 /* harmony export */   callButton: () => (/* binding */ callButton),
 /* harmony export */   closeCall: () => (/* binding */ closeCall),
 /* harmony export */   closeCallButton: () => (/* binding */ closeCallButton),
+/* harmony export */   content: () => (/* binding */ content),
+/* harmony export */   footer: () => (/* binding */ footer),
+/* harmony export */   header: () => (/* binding */ header),
+/* harmony export */   openCall: () => (/* binding */ openCall),
+/* harmony export */   openTabletCall: () => (/* binding */ openTabletCall),
+/* harmony export */   sideMenu: () => (/* binding */ sideMenu),
+/* harmony export */   tabletCallButton: () => (/* binding */ tabletCallButton)
+/* harmony export */ });
+// Модуль "Заказать звонок"
+let header = document.querySelector(".header");
+let sideMenu = document.querySelector(".side-menu");
+let content = document.querySelector(".content"); //export let contnet = document.querySelector(".content");
+let footer = document.querySelector(".footer");
+let blurItems = document.querySelectorAll(".blur");
+let callButton = document.querySelector('.icon__phone');
+let tabletCallButton = document.querySelector('.button-nav--call');
+let call = document.querySelector('.call');
+let closeCallButton = document.querySelector('.close-call');
+const openCall = callButton.addEventListener('click', function () {
+  call.classList.remove('hidden');
+  if (window.innerWidth >= 768) {
+    sideMenu.classList.add('blur');
+    header.classList.add('blur');
+    content.classList.add('blur'); //contnet.classList.add('blur');
+    footer.classList.add('blur');
+  }
+}, {
+  capture: true
+});
+const openTabletCall = tabletCallButton.addEventListener('click', function () {
+  call.classList.remove('hidden');
+  if (window.innerWidth < 1120 && window.innerWidth >= 768) {
+    header.classList.add('blur');
+    content.classList.add('blur'); //contnet.classList.add('blur');
+    footer.classList.add('blur');
+  }
+}, {
+  capture: true
+});
+const closeCall = closeCallButton.addEventListener('click', function () {
+  call.classList.add('hidden');
+  sideMenu.classList.remove('blur');
+  header.classList.remove('blur');
+  content.classList.remove('blur');
+  footer.classList.remove('blur');
+});
+document.addEventListener('click', function (evt) {
+  if (!evt.composedPath().includes(sideMenu) && !evt.composedPath().includes(feedback) && !evt.composedPath().includes(call)) {
+    call.classList.add('hidden');
+    sideMenu.classList.remove('blur');
+    header.classList.remove('blur');
+    content.classList.remove('blur');
+    footer.classList.remove('blur');
+  }
+}, {
+  capture: true
+});
+
+/***/ }),
+
+/***/ "./src/scripts/callback.js":
+/*!*********************************!*\
+  !*** ./src/scripts/callback.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   blurItems: () => (/* binding */ blurItems),
 /* harmony export */   closeFeedback: () => (/* binding */ closeFeedback),
 /* harmony export */   closeFeedbackButton: () => (/* binding */ closeFeedbackButton),
-/* harmony export */   closeMenu: () => (/* binding */ closeMenu),
-/* harmony export */   contnet: () => (/* binding */ contnet),
-/* harmony export */   descriptionButton: () => (/* binding */ descriptionButton),
-/* harmony export */   descriptionHidden: () => (/* binding */ descriptionHidden),
-/* harmony export */   desktopItems: () => (/* binding */ desktopItems),
+/* harmony export */   content: () => (/* binding */ content),
 /* harmony export */   feedback: () => (/* binding */ feedback),
 /* harmony export */   feedbackButton: () => (/* binding */ feedbackButton),
 /* harmony export */   footer: () => (/* binding */ footer),
 /* harmony export */   header: () => (/* binding */ header),
-/* harmony export */   hiddenMenu: () => (/* binding */ hiddenMenu),
-/* harmony export */   openCall: () => (/* binding */ openCall),
 /* harmony export */   openFeedback: () => (/* binding */ openFeedback),
-/* harmony export */   openMenu: () => (/* binding */ openMenu),
-/* harmony export */   openTabletCall: () => (/* binding */ openTabletCall),
 /* harmony export */   openTabletFeedback: () => (/* binding */ openTabletFeedback),
-/* harmony export */   showDescription: () => (/* binding */ showDescription),
-/* harmony export */   showMenu: () => (/* binding */ showMenu),
 /* harmony export */   sideMenu: () => (/* binding */ sideMenu),
-/* harmony export */   tabletCallButton: () => (/* binding */ tabletCallButton),
-/* harmony export */   tabletFeedbackButton: () => (/* binding */ tabletFeedbackButton),
+/* harmony export */   tabletFeedbackButton: () => (/* binding */ tabletFeedbackButton)
+/* harmony export */ });
+// Модуль "Обратная связь"
+let header = document.querySelector(".header");
+let sideMenu = document.querySelector(".side-menu");
+let content = document.querySelector(".content");
+let footer = document.querySelector(".footer");
+let blurItems = document.querySelectorAll(".blur");
+let feedbackButton = document.querySelector(".icon__chat");
+let tabletFeedbackButton = document.querySelector(".button-nav--chat");
+let feedback = document.querySelector(".feedback");
+let closeFeedbackButton = document.querySelector(".close-feedback");
+const openFeedback = feedbackButton.addEventListener("click", function () {
+  feedback.classList.remove("hidden");
+  if (window.innerWidth >= 768) {
+    sideMenu.classList.add("blur");
+    header.classList.add("blur");
+    content.classList.add("blur");
+    footer.classList.add("blur");
+  }
+}, {
+  capture: true
+});
+const openTabletFeedback = tabletFeedbackButton.addEventListener("click", function () {
+  feedback.classList.remove("hidden");
+  if (window.innerWidth < 1120 && window.innerWidth >= 768) {
+    header.classList.add("blur");
+    content.classList.add("blur");
+    footer.classList.add("blur");
+  }
+}, {
+  capture: true
+});
+const closeFeedback = closeFeedbackButton.addEventListener("click", function () {
+  feedback.classList.add("hidden");
+  sideMenu.classList.remove("blur");
+  header.classList.remove("blur");
+  content.classList.remove("blur");
+  footer.classList.remove("blur");
+});
+document.addEventListener("click", function (evt) {
+  if (!evt.composedPath().includes(sideMenu) && !evt.composedPath().includes(feedback) && !evt.composedPath().includes(call)) {
+    feedback.classList.add("hidden");
+    sideMenu.classList.remove("blur");
+    header.classList.remove("blur");
+    content.classList.remove("blur");
+    footer.classList.remove("blur");
+  }
+}, {
+  capture: true
+});
+
+/***/ }),
+
+/***/ "./src/scripts/scripts.js":
+/*!********************************!*\
+  !*** ./src/scripts/scripts.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   button: () => (/* binding */ button),
+/* harmony export */   descriptionButton: () => (/* binding */ descriptionButton),
+/* harmony export */   descriptionHidden: () => (/* binding */ descriptionHidden),
+/* harmony export */   desktopItems: () => (/* binding */ desktopItems),
+/* harmony export */   showDescription: () => (/* binding */ showDescription),
 /* harmony export */   tabletItems: () => (/* binding */ tabletItems),
 /* harmony export */   typeContButton: () => (/* binding */ typeContButton),
 /* harmony export */   typeContDesktopItems: () => (/* binding */ typeContDesktopItems),
 /* harmony export */   typeContTabletItems: () => (/* binding */ typeContTabletItems)
 /* harmony export */ });
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener("DOMContentLoaded", function () {
   const resizableSwiper = function (breakpoint, swiperClass, swiperSettings) {
     let swiper;
     breakpoint = window.matchMedia(breakpoint);
@@ -911,10 +1042,10 @@ window.addEventListener('DOMContentLoaded', function () {
         return;
       }
     };
-    breakpoint.addEventListener('change', checker);
+    breakpoint.addEventListener("change", checker);
     checker();
   };
-  resizableSwiper('(max-width: 767px)', '.swiper-1', {
+  resizableSwiper("(max-width: 767px)", ".swiper-1", {
     direction: "horizontal",
     loop: true,
     spaceBetween: 16,
@@ -931,7 +1062,7 @@ window.addEventListener('DOMContentLoaded', function () {
       clickable: "true"
     }
   });
-  resizableSwiper('(max-width: 767px)', '.swiper-2', {
+  resizableSwiper("(max-width: 767px)", ".swiper-2", {
     direction: "horizontal",
     loop: true,
     spaceBetween: 16,
@@ -948,7 +1079,7 @@ window.addEventListener('DOMContentLoaded', function () {
       clickable: "true"
     }
   });
-  resizableSwiper('(max-width: 767px)', '.swiper-3', {
+  resizableSwiper("(max-width: 767px)", ".swiper-3", {
     direction: "horizontal",
     loop: true,
     spaceBetween: 16,
@@ -1030,131 +1161,60 @@ const showDescription = descriptionButton.addEventListener("click", function (ev
   }
 });
 
+/***/ }),
+
+/***/ "./src/scripts/sidebar.js":
+/*!********************************!*\
+  !*** ./src/scripts/sidebar.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   blurItems: () => (/* binding */ blurItems),
+/* harmony export */   closeMenu: () => (/* binding */ closeMenu),
+/* harmony export */   content: () => (/* binding */ content),
+/* harmony export */   footer: () => (/* binding */ footer),
+/* harmony export */   header: () => (/* binding */ header),
+/* harmony export */   hiddenMenu: () => (/* binding */ hiddenMenu),
+/* harmony export */   openMenu: () => (/* binding */ openMenu),
+/* harmony export */   showMenu: () => (/* binding */ showMenu),
+/* harmony export */   sideMenu: () => (/* binding */ sideMenu)
+/* harmony export */ });
 // Боковое меню
 
-let closeMenu = document.querySelector('.icon__burger');
-let openMenu = document.querySelector('.button-nav--menu');
-let sideMenu = document.querySelector('.side-menu');
-let header = document.querySelector('.header');
-let contnet = document.querySelector('.content');
-let footer = document.querySelector('.footer');
-let blurItems = document.querySelectorAll('.blur');
-const showMenu = openMenu.addEventListener('click', function () {
-  sideMenu.classList.remove('side-menu-hidden');
+let closeMenu = document.querySelector(".icon__burger");
+let openMenu = document.querySelector(".button-nav--menu");
+let sideMenu = document.querySelector(".side-menu");
+let header = document.querySelector(".header");
+let content = document.querySelector(".content");
+let footer = document.querySelector(".footer");
+let blurItems = document.querySelectorAll(".blur");
+const showMenu = openMenu.addEventListener("click", function () {
+  sideMenu.classList.remove("side-menu-hidden");
   if (window.innerWidth < 1120 && window.innerWidth >= 768) {
-    header.classList.toggle('blur');
-    contnet.classList.toggle('blur');
-    footer.classList.toggle('blur');
+    header.classList.toggle("blur");
+    content.classList.toggle("blur");
+    footer.classList.toggle("blur");
   }
 }, {
   capture: true
 });
-const hiddenMenu = closeMenu.addEventListener('click', function () {
-  sideMenu.classList.add('side-menu-hidden');
+const hiddenMenu = closeMenu.addEventListener("click", function () {
+  sideMenu.classList.add("side-menu-hidden");
   if (window.innerWidth < 1120 && window.innerWidth >= 768) {
-    header.classList.remove('blur');
-    contnet.classList.remove('blur');
-    footer.classList.remove('blur');
+    header.classList.remove("blur");
+    content.classList.remove("blur");
+    footer.classList.remove("blur");
   }
 });
-document.addEventListener('click', function (evt) {
+document.addEventListener("click", function (evt) {
   if (!evt.composedPath().includes(sideMenu) && !evt.composedPath().includes(feedback) && !evt.composedPath().includes(call)) {
-    sideMenu.classList.add('side-menu-hidden');
-    header.classList.remove('blur');
-    contnet.classList.remove('blur');
-    footer.classList.remove('blur');
-  }
-}, {
-  capture: true
-});
-
-// Модуль "Обратная связь"
-
-let feedbackButton = document.querySelector('.icon__chat');
-let tabletFeedbackButton = document.querySelector('.button-nav--chat');
-let feedback = document.querySelector('.feedback');
-let closeFeedbackButton = document.querySelector('.close-feedback');
-const openFeedback = feedbackButton.addEventListener('click', function () {
-  feedback.classList.remove('hidden');
-  if (window.innerWidth >= 768) {
-    sideMenu.classList.add('blur');
-    header.classList.add('blur');
-    contnet.classList.add('blur');
-    footer.classList.add('blur');
-  }
-}, {
-  capture: true
-});
-const openTabletFeedback = tabletFeedbackButton.addEventListener('click', function () {
-  feedback.classList.remove('hidden');
-  if (window.innerWidth < 1120 && window.innerWidth >= 768) {
-    header.classList.add('blur');
-    contnet.classList.add('blur');
-    footer.classList.add('blur');
-  }
-}, {
-  capture: true
-});
-const closeFeedback = closeFeedbackButton.addEventListener('click', function () {
-  feedback.classList.add('hidden');
-  sideMenu.classList.remove('blur');
-  header.classList.remove('blur');
-  contnet.classList.remove('blur');
-  footer.classList.remove('blur');
-});
-document.addEventListener('click', function (evt) {
-  if (!evt.composedPath().includes(sideMenu) && !evt.composedPath().includes(feedback) && !evt.composedPath().includes(call)) {
-    feedback.classList.add('hidden');
-    sideMenu.classList.remove('blur');
-    header.classList.remove('blur');
-    contnet.classList.remove('blur');
-    footer.classList.remove('blur');
-  }
-}, {
-  capture: true
-});
-
-// Модуль "Заказать звонок"
-
-let callButton = document.querySelector('.icon__phone');
-let tabletCallButton = document.querySelector('.button-nav--call');
-let call = document.querySelector('.call');
-let closeCallButton = document.querySelector('.close-call');
-const openCall = callButton.addEventListener('click', function () {
-  call.classList.remove('hidden');
-  if (window.innerWidth >= 768) {
-    sideMenu.classList.add('blur');
-    header.classList.add('blur');
-    contnet.classList.add('blur');
-    footer.classList.add('blur');
-  }
-}, {
-  capture: true
-});
-const openTabletCall = tabletCallButton.addEventListener('click', function () {
-  call.classList.remove('hidden');
-  if (window.innerWidth < 1120 && window.innerWidth >= 768) {
-    header.classList.add('blur');
-    contnet.classList.add('blur');
-    footer.classList.add('blur');
-  }
-}, {
-  capture: true
-});
-const closeCall = closeCallButton.addEventListener('click', function () {
-  call.classList.add('hidden');
-  sideMenu.classList.remove('blur');
-  header.classList.remove('blur');
-  contnet.classList.remove('blur');
-  footer.classList.remove('blur');
-});
-document.addEventListener('click', function (evt) {
-  if (!evt.composedPath().includes(sideMenu) && !evt.composedPath().includes(feedback) && !evt.composedPath().includes(call)) {
-    call.classList.add('hidden');
-    sideMenu.classList.remove('blur');
-    header.classList.remove('blur');
-    contnet.classList.remove('blur');
-    footer.classList.remove('blur');
+    sideMenu.classList.add("side-menu-hidden");
+    header.classList.remove("blur");
+    content.classList.remove("blur");
+    footer.classList.remove("blur");
   }
 }, {
   capture: true
@@ -10625,13 +10685,13 @@ var ___CSS_LOADER_URL_IMPORT_4___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_URL_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ./font/TTLakes/TTLakes-Bold.ttf */ "./src/font/TTLakes/TTLakes-Bold.ttf"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! ./font/TTLakes/TTLakes-Medium.woff */ "./src/font/TTLakes/TTLakes-Medium.woff"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(/*! ./font/TTLakes/TTLakes-Medium.ttf */ "./src/font/TTLakes/TTLakes-Medium.ttf"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(/*! ./img/highlight-mobile.svg */ "./src/img/highlight-mobile.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(/*! ./img/highlight-nav.svg */ "./src/img/highlight-nav.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(/*! ./img/divider.svg */ "./src/img/divider.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-other/highlight-mobile.svg */ "./src/img/ic-other/highlight-mobile.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-other/highlight-nav.svg */ "./src/img/ic-other/highlight-nav.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-other/divider.svg */ "./src/img/ic-other/divider.svg"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_11___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-more/line.svg */ "./src/img/ic-more/line.svg"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_12___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-4/icon.svg */ "./src/img/ic-4/icon.svg"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_13___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-up/icon-up.svg */ "./src/img/ic-up/icon-up.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_14___ = new URL(/* asset import */ __webpack_require__(/*! ./img/highlight.svg */ "./src/img/highlight.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_14___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-other/highlight.svg */ "./src/img/ic-other/highlight.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_node_modules_normalize_css_normalize_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_0___);
@@ -11756,7 +11816,7 @@ button {
   .button-nav--call, .button-nav--chat, .button-nav--profile, .buttoun--hidden, .button--show-all, .price-table {
     display: none;
   }
-}`, "",{"version":3,"sources":["webpack://./src/style/_fonts.scss","webpack://./src/index.scss","webpack://./src/style/_style.scss","webpack://./src/style/_feedback.scss","webpack://./src/style/_nav.scss","webpack://./src/style/_call.scss","webpack://./src/style/_header.scss","webpack://./src/style/_content-description.scss","webpack://./src/style/_slide-menu.scss","webpack://./src/style/_swiper.scss","webpack://./src/style/_content-brands.scss","webpack://./src/style/_content-types.scss","webpack://./src/style/_price-container.scss","webpack://./src/style/_commercial-content.scss","webpack://./src/style/_footer.scss","webpack://./src/style/_buttons.scss","webpack://./src/style/_titles.scss","webpack://./<no source>"],"names":[],"mappings":"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","sourcesContent":["@font-face {\r\n  font-family: \"TT Lakes\";\r\n  src: local(\"TT Lakes Regular\"), local(\"TT-Lakes-Regular\"),\r\n      url(\"../font/TTLakes/TTLakes-Regular.woff\") format(\"woff\"),\r\n      url(\"../font/TTLakes/TTLakes-Regular.eot\") format(\"eot\"),\r\n      url(\"../font/TTLakes/TTLakes-Regular.ttf\") format(\"ttf\");\r\n  font-weight: 400;\r\n  font-style: normal;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'TT Lakes';\r\n  src: url('../font/TTLakes/TTLakes-Bold.eot');\r\n  src: local('../font/TTLakes/TT Lakes Bold'), local('TTLakes-Bold'),\r\n      url('../font/TTLakes/TTLakes-Bold.eot') format('embedded-opentype'),\r\n      url('../font/TTLakes/TTLakes-Bold.woff') format('woff'),\r\n      url('../font/TTLakes/TTLakes-Bold.ttf') format('truetype');\r\n  font-weight: bold;\r\n  font-style: normal;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'TT Lakes';\r\n  src: url('../font/TTLakes/TTLakes-Medium.woff');\r\n  src: local('TT Lakes Medium'), local('TTLakes-Medium'),\r\n      url('../font/TTLakes/TTLakes-Medium.woff') format('woff'),\r\n      url('../font/TTLakes/TTLakes-Medium.ttf') format('truetype');\r\n  font-weight: 500;\r\n  font-style: normal;\r\n}","@import '~normalize.css';\r\n@import 'style/fonts';\r\n@import 'style/style';\r\n@import 'style/feedback';\r\n@import 'style/nav';\r\n@import 'style/call';\r\n@import 'style/header';\r\n@import 'style/content-description';\r\n@import 'style/slide-menu';\r\n@import 'style/swiper';\r\n@import 'style/content-brands';\r\n@import 'style/content-types';\r\n@import 'style/price-container';\r\n@import 'style/commercial-content';\r\n@import 'style/footer';\r\n@import 'style/buttons';\r\n@import 'style/titles';","$background-color: #F8F8F8;\r\n\r\nhtml {\r\n    box-sizing: border-box;\r\n}\r\n*, *::after, *::before {\r\n    box-sizing: inherit;\r\n}\r\n\r\nbody {\r\n    font-family: 'TT Lakes';\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: $background-color;\r\n}\r\n\r\n.hidden {\r\n    display: none;\r\n}\r\n\r\n.description-hidden {\r\n    display: none;;\r\n}\r\n\r\n.blur {\r\n    opacity: 4%;\r\n    pointer-events: none;\r\n}\r\n\r\n@media (max-width: 767px) {\r\n    .button-nav--call, .button-nav--chat, .button-nav--profile, .buttoun--hidden, .button--show-all, .price-table {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .hidden, .type-container--tablet-hidden, .tablet-hidden {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n\r\n    .content {\r\n        margin-left: 320px;\r\n    }\r\n\r\n    .tablet-hidden, .type-container--tablet-hidden {\r\n        display: flex;\r\n    }\r\n\r\n    .desktop-hidden, .type-container--desktop-hidden {\r\n        display: none;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n$input-placeholder: #B5B6BC;\r\n$pink: #FF3E79;\r\n\r\n.feedback {\r\n    padding: 24px 16px 75px;\r\n    background-color: $white;\r\n    z-index: 11;\r\n    position: fixed;\r\n    height: 100%;\r\n    overflow: auto;\r\n}\r\n\r\n.feedback__title {\r\n    position: relative;\r\n    margin: 0;\r\n    margin-bottom: 24px;\r\n    padding-top: 40px;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    letter-spacing: -0.6px;\r\n}\r\n\r\n.feedback__title::before {\r\n    content: url('../img/highlight-mobile.svg');\r\n    position: absolute;\r\n    left: -16px;\r\n    top: 36px;\r\n}\r\n\r\n.feedback__input, .feedback__textarea {\r\n    width: 100%;\r\n    padding: 12px 16px;\r\n    margin-bottom: 16px;\r\n    border-radius: 10px;\r\n    border: 1px solid $border;\r\n}\r\n\r\n.feedback__input::placeholder, .feedback__textarea::placeholder {\r\n    color: $input-placeholder;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n}\r\n\r\n.feedback__textarea {\r\n    height: 118px;\r\n}\r\n\r\n.feedback__caption {\r\n    margin: 0;\r\n    margin-bottom: 19px;\r\n    color: #7E7E82;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n}\r\n\r\n.feedback__link {\r\n    text-decoration: none;\r\n    color: $pink;\r\n}\r\n\r\n.button-send {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    position: absolute;\r\n    right: 32px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .feedback {\r\n        width: 42%;\r\n        padding: 24px 24px 75px;\r\n        box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);\r\n    }\r\n\r\n    .feedback__title::before {\r\n        left: -24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .feedback {\r\n        width: 30%;\r\n        padding: 40px 32px;\r\n        right: 0;\r\n    }\r\n\r\n    .close-feedback {\r\n        position: fixed;\r\n        left: 64%;\r\n        top: 32px;\r\n        z-index: 12;\r\n    }\r\n\r\n    .feedback__title {\r\n        padding: 0;\r\n    }\r\n\r\n    .feedback__title::before {\r\n        content: url('../img/highlight.svg');\r\n        position: absolute;\r\n        left: -32px;\r\n        top: -8px;\r\n    }\r\n\r\n    .button-send {\r\n        right: 48px;\r\n    }\r\n}","$gray: #7E7E82;\r\n$white: #fff;\r\n$black: #1B1C21;\r\n\r\n.side-menu {\r\n    font-family: 'TT Lakes';\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    font-weight: 500;\r\n    color: $black;\r\n    margin: 0;\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n    width: 100%;\r\n    height: 100%;\r\n    position: fixed;\r\n    overflow: auto;\r\n    left: 0;\r\n    top: 0;\r\n    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);\r\n    min-height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    background-color: $white;\r\n    z-index: 8;\r\n}\r\n\r\n.side-menu-hidden {\r\n    display: none;\r\n}\r\n\r\n.side-menu__header {\r\n    display: flex;\r\n    align-items: center;\r\n    padding-top: 18px;\r\n}\r\n\r\n.icon {\r\n    border: none;\r\n    border-radius: 50%;\r\n    background: transparent;\r\n    padding: 0;\r\n    width: 40px;\r\n    height: 40px;\r\n    cursor: pointer;\r\n}\r\n\r\n.icon:hover {\r\n    transition-duration: 1s;\r\n    opacity: 0.5;\r\n}\r\n\r\n.icon__burger {\r\n    margin-right: 16px;\r\n}\r\n\r\n.side-menu__logo {\r\n    width: 98px;\r\n    height: 52px;\r\n    margin-right: auto;\r\n}\r\n\r\n.main-menu {\r\n    margin: 0;\r\n    padding: 0;\r\n    padding-top: 22px;\r\n    padding-bottom: 32px;\r\n    list-style: none;\r\n    flex: 1 1 auto;\r\n}\r\n\r\n.main-menu__item {\r\n    position: relative;\r\n    padding-top: 24px;\r\n}\r\n\r\n.main-menu__item:hover {\r\n    color: $gray;\r\n}\r\n\r\n.main-menu__item:first-child {\r\n    padding-top: 0;\r\n}\r\n\r\n.main-menu__item a {\r\n    text-decoration: none;\r\n    color: inherit;\r\n}\r\n\r\n.main-menu__item:hover::before {\r\n    content: url('../img/highlight-nav.svg');\r\n    position: absolute;\r\n    left: -16px;\r\n    bottom: -12px;\r\n}\r\n\r\n.fotter__icons {\r\n    display: flex;\r\n}\r\n\r\n.icon__phone {\r\n    margin-right: 16px;\r\n}\r\n\r\n.icon__chat {\r\n    margin-right: 16px;\r\n}\r\n\r\n.footer__mail {\r\n    padding-top: 16px;\r\n    display: block;\r\n    text-decoration: none;\r\n    color: inherit;\r\n}\r\n\r\n.footer__phone {\r\n    padding-top: 12px;\r\n    display: block;\r\n    text-decoration: none;\r\n    color: inherit;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    font-weight: 600;\r\n}\r\n\r\n.footer__language {\r\n    padding-top: 8px;\r\n    display: inline-block;\r\n    text-decoration: none;\r\n    color: inherit;\r\n    margin-right: 8px;\r\n    padding-bottom: 32px;\r\n}\r\n\r\n.footer__language--active {\r\n    color: $gray;\r\n}\r\n\r\n@media (min-width: 321px) {\r\n    .side-menu {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    } \r\n    .main-menu__item:hover::before {\r\n        left: -24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .side-menu {\r\n        width: 40%;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .side-menu-hidden {\r\n        display: flex;\r\n    }\r\n\r\n    .icon__burger {\r\n        display: none;\r\n    }\r\n\r\n    .side-menu {\r\n        max-width: 320px;\r\n        box-shadow: none;\r\n    }\r\n\r\n    .side-menu__header {\r\n        padding-top: 30px;\r\n    }\r\n}","$white: #fff;\r\n$input-border: #EAEAEA;\r\n$input-placeholder: #B5B6BC;\r\n$gray: #7E7E82;\r\n$pink: #FF3E79;\r\n\r\n.call {\r\n    padding: 24px 16px 75px;\r\n    background-color: $white;\r\n    z-index: 12;\r\n    position: fixed;\r\n    height: 100%;\r\n    overflow: auto;\r\n}\r\n\r\n.call__title {\r\n    position: relative;\r\n    margin: 0;\r\n    margin-bottom: 24px;\r\n    padding-top: 40px;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    letter-spacing: -0.6px;\r\n}\r\n\r\n.call__title::before {\r\n    content: url('../img/highlight-mobile.svg');\r\n    position: absolute;\r\n    left: -16px;\r\n    top: 36px;\r\n}\r\n\r\n.call__input  {\r\n    width: 100%;\r\n    padding: 12px 16px;\r\n    margin-bottom: 16px;\r\n    border-radius: 10px;\r\n    border: 1px solid $input-border;\r\n}\r\n\r\n.call__input::placeholder {\r\n    color: $input-placeholder;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n}\r\n\r\n.call__caption {\r\n    margin: 0;\r\n    margin-bottom: 19px;\r\n    color: $gray;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n}\r\n\r\n.call__link {\r\n    text-decoration: none;\r\n    color: $pink;\r\n}\r\n\r\n.button-send {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    position: absolute;\r\n    right: 32px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .call {\r\n        width: 42%;\r\n        padding: 24px 24px 75px;\r\n        box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);\r\n    }\r\n\r\n    .call__title::before {\r\n        left: -24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .call {\r\n        width: 30%;\r\n        padding: 40px 32px;\r\n        right: 0;\r\n    }\r\n\r\n    .close-call {\r\n        position: fixed;\r\n        left: 64%;\r\n        top: 32px;\r\n        z-index: 12;\r\n    }\r\n\r\n    .call__title {\r\n        padding: 0;\r\n    }\r\n\r\n    .call__title::before {\r\n        content: url('../img/highlight.svg');\r\n        position: absolute;\r\n        left: -32px;\r\n        top: -8px;\r\n    }\r\n\r\n    .button-send {\r\n        right: 48px;\r\n    }\r\n}","$lite-green: #D9FFF5;\r\n$white: #fff;\r\n\r\n.header {\r\n    display: flex;\r\n    align-items: center;\r\n    background-color: $white;\r\n    height: 87px;\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n}\r\n\r\n.header::after{\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 1px;\r\n    background: $lite-green;\r\n    top: 87px;\r\n}\r\n\r\n.button-nav {\r\n    width: 40px;\r\n    height: 40px;\r\n    background: none;\r\n    border: none;\r\n    border-radius: 50%;\r\n    cursor: pointer;\r\n    padding: 0;\r\n}\r\n\r\n.button-nav--menu {\r\n    margin-right: 16px;\r\n}\r\n\r\n.button-nav--repair {\r\n    margin-right: 16px;\r\n    position: relative;\r\n}\r\n\r\n.button-nav--repair::before {\r\n    content: url('../img/divider.svg');\r\n    position: absolute;\r\n    top: 4px;\r\n    left: -20px;\r\n    pointer-events: none;\r\n}\r\n\r\n.logo {\r\n    margin-right: auto;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .header {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .button-nav--menu {\r\n        margin-right: 42px;\r\n        position: relative;\r\n    }\r\n    .button-nav--menu::after {\r\n        content: url('../img/divider.svg');\r\n        position: absolute;\r\n        pointer-events: none;\r\n        left: 60px;\r\n        top: 4px;\r\n    }\r\n\r\n    .button-nav--repair, .button-nav--chat, .button-nav--call {\r\n        margin-right: 16px;\r\n    }\r\n\r\n    .button-nav--profile {\r\n        margin-right: 40px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .header {\r\n        display: none;\r\n    }\r\n}",".content__description {\r\n    padding-top: 24px;\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n}\r\n\r\n.description {\r\n    font-size: 14px;\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n}\r\n\r\n.title-1 {\r\n    margin: 0;\r\n    font-size: 28px;\r\n    font-weight: bold;\r\n    line-height: 40px;\r\n    margin-bottom: 24px;\r\n    left: 16px;\r\n}\r\n\r\n.title-1::before {\r\n    content: url('../img/highlight-mobile.svg');\r\n    position: absolute;\r\n    left: 0;\r\n}\r\n\r\n.contetnt__button--repair, .content__button--check-status {\r\n    display: none;\r\n}\r\n\r\n.description__all-p {\r\n    letter-spacing: 0.2px;\r\n    margin-bottom: 16px;\r\n}\r\n.description__p1, .description__p2 {\r\n    margin: 0;\r\n    margin-bottom: 16px;\r\n}\r\n\r\n.description__image {\r\n    width: 100%;\r\n    margin-bottom: 24px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .content__description {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .description {\r\n        display: flex;\r\n        flex-wrap: nowrap;\r\n    }\r\n\r\n    .description__all-p {\r\n        width: 50%;\r\n        padding-right: 48px;\r\n        margin: 0;\r\n    }\r\n\r\n    .description__p2 {\r\n        margin-bottom: 10px;\r\n    }\r\n\r\n    .description__image {\r\n        width: 50%;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n\r\n    .content__description {\r\n        padding: 0;\r\n    }\r\n\r\n    .title-1::before {\r\n        content: url('../img/highlight.svg');\r\n        margin-left: 320px;\r\n    }\r\n\r\n    .title-1 {\r\n        margin-right: auto;\r\n        margin-bottom: 0;\r\n    }\r\n\r\n    .contetnt__button--repair {\r\n        display: flex;\r\n        background: none;\r\n        border: none;\r\n        cursor: pointer;\r\n        align-items: center;\r\n        margin-right: 32px;\r\n        text-decoration: none;\r\n        height: 40px;\r\n        padding: 0;\r\n    }\r\n\r\n    .content__button--check-status {\r\n        display: flex;\r\n        background: none;\r\n        border: none;\r\n        align-items: center;\r\n        cursor: pointer;\r\n        text-decoration: none;\r\n        height: 40px;\r\n        padding: 0;\r\n    }\r\n\r\n    .content__button-text {\r\n        font-family: 'TT Lakes';\r\n        color: black;\r\n        margin-right: 8px;\r\n    }\r\n\r\n    .content__description {\r\n        padding: 0;\r\n    }\r\n\r\n    .content__top-box {\r\n        display: flex;\r\n        align-items: center;\r\n        padding-top: 42px;\r\n        padding-left: 32px;\r\n        padding-right: 32px;\r\n        margin-bottom: 8px;\r\n    }\r\n\r\n    .description__image {\r\n        padding-right: 28px;\r\n    }\r\n\r\n    .description__all-p {\r\n        padding-left: 34px;\r\n        padding-right: 36px;\r\n    }\r\n\r\n    .description__p2 {\r\n        margin-bottom: 14px;\r\n    }\r\n}","$gray: #7E7E82;\r\n$white: #fff;\r\n$lite-green: #B8FFEC;\r\n\r\n.content__slide-menu {\r\n    display: flex;\r\n    font-size: 16px;\r\n    overflow-x: scroll;\r\n    margin-bottom: 24px;\r\n}\r\n\r\n.content__link {\r\n    white-space: nowrap;\r\n    color: $gray;\r\n    font-family: \"TT Lakes\";\r\n    text-decoration: none;\r\n    padding-top: 8px;\r\n    padding-right: 10px;\r\n    padding-bottom: 8px;\r\n    padding-left: 16px;\r\n}\r\n\r\n.content__link:hover {\r\n    border: 2px solid $lite-green;\r\n    background-color: $white;\r\n    border-radius: 5px;\r\n    padding-top: 6px;\r\n    padding-right: 8px;\r\n    padding-bottom: 6px;\r\n    padding-left: 14px;\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .content__links {\r\n        height: 88px;\r\n        padding-top: 30px;\r\n    }\r\n\r\n    .content__link:first-child{\r\n        margin-left: 0;\r\n    }\r\n\r\n    .content__link {\r\n        padding-left: 22px;\r\n        padding-right: 22px;\r\n        margin-bottom: 0;\r\n    }\r\n\r\n    .content__link:hover {\r\n        padding-left: 20px;\r\n        padding-right: 20px;\r\n    }\r\n\r\n    .content__slide-menu {\r\n        flex-wrap: wrap;\r\n        margin-bottom: 16px;\r\n        padding-left: 32px;\r\n    }\r\n}","$background-color: #DDDDDD;\r\n$active-color: #B5B6BC;\r\n\r\n.swiper-1, .swiper-2, .swiper-3 {\r\n    padding-bottom: 20px;\r\n    padding-left: 16px;\r\n}\r\n\r\n.swiper-wrapper {\r\n    align-items: center;\r\n}\r\n\r\n.swiper-slide__button {\r\n    align-self: flex-end;\r\n    margin-left: auto;\r\n}\r\n\r\n.swiper-slide__image {\r\n    margin-right: auto;\r\n}\r\n\r\n.swiper-pagination-bullet{\r\n    background-color: $background-color;\r\n    opacity: 1;\r\n}\r\n\r\n.swiper-pagination {\r\n    padding-top: 12px;\r\n    position: static;\r\n}\r\n\r\n.swiper-pagination-bullet-active {\r\n    background-color: $active-color;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .swiper--hidden {\r\n        display: none;\r\n    }\r\n\r\n    .swiper-pagination {\r\n        display: none;\r\n    }\r\n\r\n    .swiper-1, .swiper-2, .swiper-3 {\r\n        padding: 0 24px 24px 24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .swiper-1, .swiper-2, .swiper-3 {\r\n        padding-left: 32px;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n\r\n.brand-container {\r\n    max-height: 72px;\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    align-items: center;\r\n    background-color: $white;\r\n    border: 1px solid $border;\r\n    border-radius: 5px;\r\n    padding: 16px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .content__brands {\r\n        display: flex;\r\n        align-items: center;\r\n        align-content: center;\r\n        flex-wrap: wrap;\r\n        row-gap: 16px;\r\n        column-gap: 24px;\r\n    }\r\n\r\n    .content__brands--item {\r\n        max-height: 72px;\r\n        min-width: 224px;\r\n        max-width: 224px;\r\n        box-sizing: border-box;\r\n        display: flex;\r\n        align-items: center;\r\n        background-color: $white;\r\n        border: 1px solid $border;\r\n        border-radius: 5px;\r\n        padding: 16px;\r\n    }\r\n\r\n    .tablet-hidden {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .content__brands--item {\r\n        min-width: 240px;\r\n        max-width: 240px;\r\n    }\r\n\r\n    .tablet-hidden {\r\n        display: flex;\r\n    }\r\n\r\n    .desktop-hidden {\r\n        display: none;\r\n    }\r\n\r\n    .contant__brands-hidden {\r\n        column-gap: 32px;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n\r\n.type-container {\r\n    width: 240px;\r\n    height: 160px;\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    background-color: $white;\r\n    border: 1px solid $border;\r\n    border-radius: 5px;\r\n    padding: 16px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .content__brands, .content__types {\r\n        display: flex;\r\n        align-items: center;\r\n        align-content: center;\r\n        flex-wrap: wrap;\r\n        row-gap: 16px;\r\n        column-gap: 24px;\r\n    }\r\n\r\n    .type-container--size {\r\n        min-width: 224px;\r\n        max-width: 224px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .type-container--size {\r\n        min-width: 240px;\r\n        max-width: 240px;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n$gray: #7E7E82;\r\n\r\n.price-container {\r\n    width: 260px;\r\n    height: 200px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    box-sizing: border-box;\r\n    background-color: $white;\r\n    border: 1px solid $border;\r\n    border-radius: 5px;\r\n    padding: 16px;\r\n}\r\n\r\n.price-container__description{\r\n    line-height: 18px;\r\n    letter-spacing: 0.2px;\r\n    margin-bottom: 16px;\r\n}\r\n\r\n.price-container__title {\r\n    color: $gray;\r\n    line-height: 16px;\r\n    margin-bottom: 4px;\r\n}\r\n\r\n.price-container__button-order {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    position: absolute;\r\n    align-self: flex-end;\r\n    bottom: 16px;\r\n}","$white: #fff;\r\n$border-bottom: #EAEAEA;\r\n$gray: #7E7E82;\r\n\r\n.commercial-content {\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n    font-size: 14px;\r\n}\r\n\r\n.commercial-content__note {\r\n    margin: 0;\r\n    margin-bottom: 20px;\r\n    padding: 0;\r\n    line-height: 20px;\r\n    letter-spacing: 0.2px;\r\n}\r\n\r\n.commercial-content__offer {\r\n    padding: 0;\r\n    margin-bottom: 40px;\r\n}\r\n\r\n.commercial-content__offer-link {\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n    text-decoration: none;\r\n    color: #1B1C21;\r\n    font-weight: 500;\r\n\r\n}\r\n\r\n.commercial-content__offer-link::after {\r\n    content: url('../img/ic-more/line.svg');\r\n    position: absolute;\r\n    padding-left: 12px;\r\n    padding-top: 2px;\r\n}\r\n\r\n.price-table {\r\n    border-collapse: collapse;\r\n    width: 100%;\r\n    margin-bottom: 24px;\r\n}\r\n\r\n.price-table td {\r\n    padding-left: 16px;\r\n    padding-top: 16px;\r\n    padding-bottom: 16px;\r\n}\r\n\r\n.price-table__rows {\r\n    background-color: $white;\r\n    border-bottom: 1px solid $border-bottom;\r\n}\r\n\r\n.price-table__rows:last-child {\r\n    border-bottom: none;\r\n}\r\n\r\n.price-table__title {\r\n    text-align: left;\r\n    font-weight: normal;\r\n    color: $gray;\r\n    line-height: 16px;\r\n    padding-bottom: 16px;\r\n    padding-left: 16px;\r\n}\r\n\r\n.button-make-order {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    cursor: pointer;\r\n}\r\n\r\n.price-table__buttton {\r\n    padding-right: 16px;\r\n    text-align: right;\r\n}\r\n\r\n.price-table__rbb {\r\n    border-bottom-right-radius: 7px;\r\n}\r\n\r\n.price-table__lbb {\r\n    border-bottom-left-radius: 7px;\r\n}\r\n\r\n.price-table__rtb {\r\n    border-top-right-radius: 7px;\r\n}\r\n\r\n.price-table__ltb {\r\n    border-top-left-radius: 7px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .commercial-content {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .commercial-content__description {\r\n        background-color: $white;\r\n        margin: 0 24px;\r\n    }\r\n\r\n    .commercial-content__note {\r\n        width: 60%;\r\n    }\r\n\r\n    .commercial-content__offer {\r\n        margin-bottom: 47px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n\r\n    .price-table__title, .price-table td {\r\n        padding-left: 24px;\r\n    }\r\n\r\n    .price-table__buttton {\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .commercial-content__note {\r\n        width: 44%;\r\n    }\r\n\r\n    .price-table {\r\n        margin-bottom: 32px;\r\n    }\r\n\r\n    .commercial-content__offer {\r\n        margin-bottom: 50px;\r\n    }\r\n}","$lite-green: #D9FFF5;\r\n$gray: #7E7E82;\r\n\r\n.footer {\r\n    margin: 0;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n    padding: 0 4px 19px;\r\n    text-align: center;\r\n    color: $gray;\r\n}\r\n\r\n.footer::before {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 1px;\r\n    background: $lite-green;\r\n}\r\n\r\n.footer__description {\r\n    margin: 0;\r\n    padding-top: 16px;\r\n    margin-bottom: 16px;\r\n}\r\n\r\n.footer__description:first-child {\r\n    white-space: pre;\r\n}\r\n\r\n.footer__description:last-child {\r\n    margin: 0;\r\n}\r\n\r\n.footer__privacy-policy {\r\n    text-decoration: none;\r\n    color: $gray;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .footer {\r\n        display: flex;\r\n        padding: 0 24px;\r\n        padding-bottom: 25px;\r\n        justify-content: space-between;\r\n\r\n    }\r\n\r\n    .footer__description {\r\n        padding-top: 32px;\r\n        max-width: 30%;\r\n    }\r\n\r\n    .footer__description:first-child {\r\n        text-align: left;\r\n    }\r\n\r\n    .footer__description:last-child {\r\n        text-align: right;\r\n    }\r\n\r\n    .footer__privacy-policy {\r\n        padding-top: 32px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .footer {\r\n        margin-left: 320px;\r\n        padding-bottom: 21px;\r\n    }\r\n}","button {\r\n    cursor: pointer;\r\n    color: black;\r\n}\r\n\r\n.button--read-more {\r\n    cursor: pointer;\r\n    display: block;\r\n    border: none;\r\n    font-family: 'TT Lakes';\r\n    font-size: 16px;\r\n    background: transparent;\r\n    position: relative;\r\n    padding-left: 32px;\r\n}\r\n\r\n.button--read-more::before{\r\n    content: url('../img/ic-4/icon.svg');\r\n    position:absolute;\r\n    left: 8px;\r\n}\r\n\r\n.button--hidden{\r\n    cursor: pointer;\r\n    display: block;\r\n    border: none;\r\n    font-family: 'TT Lakes';\r\n    font-size: 16px;\r\n    background: transparent;\r\n    position: relative;\r\n    padding-left: 32px;\r\n    margin-bottom: 14px;\r\n}\r\n\r\n.button--hidden::before{\r\n    content: url('../img/ic-up/icon-up.svg');\r\n    position:absolute;\r\n    left: 8px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .button--show-all {\r\n        left: 24px;\r\n        margin-bottom: 32px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .button--show-all {\r\n        margin-bottom: 50px;\r\n    }\r\n}","$lite-green: #D9FFF5;\r\n$gray: #7E7E82;\r\n\r\n.brands__title::before {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 1px;\r\n    background: $lite-green;\r\n}\r\n\r\n.brands__title{\r\n    position: relative;\r\n    background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);\r\n    padding: 16px;\r\n    margin-bottom: 16px;\r\n\r\n}\r\n\r\n.brands__title--mod {\r\n    margin: 0;\r\n    font-size: 16px;\r\n    text-transform: uppercase;\r\n    font-weight: normal;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n    color: $gray;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .brands__title{\r\n        padding-left: 24px;\r\n        margin-bottom: 24px;\r\n    }\r\n\r\n    .brands__title-price {\r\n        margin-bottom: 31px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .brands__title{\r\n        padding-left: 32px;\r\n    }\r\n}",null],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/style/_fonts.scss","webpack://./src/index.scss","webpack://./src/style/_style.scss","webpack://./src/style/_feedback.scss","webpack://./src/style/_nav.scss","webpack://./src/style/_call.scss","webpack://./src/style/_header.scss","webpack://./src/style/_content-description.scss","webpack://./src/style/_slide-menu.scss","webpack://./src/style/_swiper.scss","webpack://./src/style/_content-brands.scss","webpack://./src/style/_content-types.scss","webpack://./src/style/_price-container.scss","webpack://./src/style/_commercial-content.scss","webpack://./src/style/_footer.scss","webpack://./src/style/_buttons.scss","webpack://./src/style/_titles.scss","webpack://./<no source>"],"names":[],"mappings":"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","sourcesContent":["@font-face {\r\n  font-family: \"TT Lakes\";\r\n  src: local(\"TT Lakes Regular\"), local(\"TT-Lakes-Regular\"),\r\n      url(\"../font/TTLakes/TTLakes-Regular.woff\") format(\"woff\"),\r\n      url(\"../font/TTLakes/TTLakes-Regular.eot\") format(\"eot\"),\r\n      url(\"../font/TTLakes/TTLakes-Regular.ttf\") format(\"ttf\");\r\n  font-weight: 400;\r\n  font-style: normal;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'TT Lakes';\r\n  src: url('../font/TTLakes/TTLakes-Bold.eot');\r\n  src: local('../font/TTLakes/TT Lakes Bold'), local('TTLakes-Bold'),\r\n      url('../font/TTLakes/TTLakes-Bold.eot') format('embedded-opentype'),\r\n      url('../font/TTLakes/TTLakes-Bold.woff') format('woff'),\r\n      url('../font/TTLakes/TTLakes-Bold.ttf') format('truetype');\r\n  font-weight: bold;\r\n  font-style: normal;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'TT Lakes';\r\n  src: url('../font/TTLakes/TTLakes-Medium.woff');\r\n  src: local('TT Lakes Medium'), local('TTLakes-Medium'),\r\n      url('../font/TTLakes/TTLakes-Medium.woff') format('woff'),\r\n      url('../font/TTLakes/TTLakes-Medium.ttf') format('truetype');\r\n  font-weight: 500;\r\n  font-style: normal;\r\n}","@import '~normalize.css';\r\n@import 'style/fonts';\r\n@import 'style/style';\r\n@import 'style/feedback';\r\n@import 'style/nav';\r\n@import 'style/call';\r\n@import 'style/header';\r\n@import 'style/content-description';\r\n@import 'style/slide-menu';\r\n@import 'style/swiper';\r\n@import 'style/content-brands';\r\n@import 'style/content-types';\r\n@import 'style/price-container';\r\n@import 'style/commercial-content';\r\n@import 'style/footer';\r\n@import 'style/buttons';\r\n@import 'style/titles';","$background-color: #F8F8F8;\r\n\r\nhtml {\r\n    box-sizing: border-box;\r\n}\r\n*, *::after, *::before {\r\n    box-sizing: inherit;\r\n}\r\n\r\nbody {\r\n    font-family: 'TT Lakes';\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: $background-color;\r\n}\r\n\r\n.hidden {\r\n    display: none;\r\n}\r\n\r\n.description-hidden {\r\n    display: none;;\r\n}\r\n\r\n.blur {\r\n    opacity: 4%;\r\n    pointer-events: none;\r\n}\r\n\r\n@media (max-width: 767px) {\r\n    .button-nav--call, .button-nav--chat, .button-nav--profile, .buttoun--hidden, .button--show-all, .price-table {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .hidden, .type-container--tablet-hidden, .tablet-hidden {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n\r\n    .content {\r\n        margin-left: 320px;\r\n    }\r\n\r\n    .tablet-hidden, .type-container--tablet-hidden {\r\n        display: flex;\r\n    }\r\n\r\n    .desktop-hidden, .type-container--desktop-hidden {\r\n        display: none;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n$input-placeholder: #B5B6BC;\r\n$pink: #FF3E79;\r\n\r\n.feedback {\r\n    padding: 24px 16px 75px;\r\n    background-color: $white;\r\n    z-index: 11;\r\n    position: fixed;\r\n    height: 100%;\r\n    overflow: auto;\r\n}\r\n\r\n.feedback__title {\r\n    position: relative;\r\n    margin: 0;\r\n    margin-bottom: 24px;\r\n    padding-top: 40px;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    letter-spacing: -0.6px;\r\n}\r\n\r\n.feedback__title::before {\r\n    content: url('../img/ic-other/highlight-mobile.svg');\r\n    position: absolute;\r\n    left: -16px;\r\n    top: 36px;\r\n}\r\n\r\n.feedback__input, .feedback__textarea {\r\n    width: 100%;\r\n    padding: 12px 16px;\r\n    margin-bottom: 16px;\r\n    border-radius: 10px;\r\n    border: 1px solid $border;\r\n}\r\n\r\n.feedback__input::placeholder, .feedback__textarea::placeholder {\r\n    color: $input-placeholder;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n}\r\n\r\n.feedback__textarea {\r\n    height: 118px;\r\n}\r\n\r\n.feedback__caption {\r\n    margin: 0;\r\n    margin-bottom: 19px;\r\n    color: #7E7E82;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n}\r\n\r\n.feedback__link {\r\n    text-decoration: none;\r\n    color: $pink;\r\n}\r\n\r\n.button-send {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    position: absolute;\r\n    right: 32px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .feedback {\r\n        width: 42%;\r\n        padding: 24px 24px 75px;\r\n        box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);\r\n    }\r\n\r\n    .feedback__title::before {\r\n        left: -24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .feedback {\r\n        width: 30%;\r\n        padding: 40px 32px;\r\n        right: 0;\r\n    }\r\n\r\n    .close-feedback {\r\n        position: fixed;\r\n        left: 64%;\r\n        top: 32px;\r\n        z-index: 12;\r\n    }\r\n\r\n    .feedback__title {\r\n        padding: 0;\r\n    }\r\n\r\n    .feedback__title::before {\r\n        content: url('../img/ic-other/highlight.svg');\r\n        position: absolute;\r\n        left: -32px;\r\n        top: -8px;\r\n    }\r\n\r\n    .button-send {\r\n        right: 48px;\r\n    }\r\n}","$gray: #7E7E82;\r\n$white: #fff;\r\n$black: #1B1C21;\r\n\r\n.side-menu {\r\n    font-family: 'TT Lakes';\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    font-weight: 500;\r\n    color: $black;\r\n    margin: 0;\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n    width: 100%;\r\n    height: 100%;\r\n    position: fixed;\r\n    overflow: auto;\r\n    left: 0;\r\n    top: 0;\r\n    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);\r\n    min-height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    background-color: $white;\r\n    z-index: 8;\r\n}\r\n\r\n.side-menu-hidden {\r\n    display: none;\r\n}\r\n\r\n.side-menu__header {\r\n    display: flex;\r\n    align-items: center;\r\n    padding-top: 18px;\r\n}\r\n\r\n.icon {\r\n    border: none;\r\n    border-radius: 50%;\r\n    background: transparent;\r\n    padding: 0;\r\n    width: 40px;\r\n    height: 40px;\r\n    cursor: pointer;\r\n}\r\n\r\n.icon:hover {\r\n    transition-duration: 1s;\r\n    opacity: 0.5;\r\n}\r\n\r\n.icon__burger {\r\n    margin-right: 16px;\r\n}\r\n\r\n.side-menu__logo {\r\n    width: 98px;\r\n    height: 52px;\r\n    margin-right: auto;\r\n}\r\n\r\n.main-menu {\r\n    margin: 0;\r\n    padding: 0;\r\n    padding-top: 22px;\r\n    padding-bottom: 32px;\r\n    list-style: none;\r\n    flex: 1 1 auto;\r\n}\r\n\r\n.main-menu__item {\r\n    position: relative;\r\n    padding-top: 24px;\r\n}\r\n\r\n.main-menu__item:hover {\r\n    color: $gray;\r\n}\r\n\r\n.main-menu__item:first-child {\r\n    padding-top: 0;\r\n}\r\n\r\n.main-menu__item a {\r\n    text-decoration: none;\r\n    color: inherit;\r\n}\r\n\r\n.main-menu__item:hover::before {\r\n    content: url('../img/ic-other/highlight-nav.svg');\r\n    position: absolute;\r\n    left: -16px;\r\n    bottom: -12px;\r\n}\r\n\r\n.fotter__icons {\r\n    display: flex;\r\n}\r\n\r\n.icon__phone {\r\n    margin-right: 16px;\r\n}\r\n\r\n.icon__chat {\r\n    margin-right: 16px;\r\n}\r\n\r\n.footer__mail {\r\n    padding-top: 16px;\r\n    display: block;\r\n    text-decoration: none;\r\n    color: inherit;\r\n}\r\n\r\n.footer__phone {\r\n    padding-top: 12px;\r\n    display: block;\r\n    text-decoration: none;\r\n    color: inherit;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    font-weight: 600;\r\n}\r\n\r\n.footer__language {\r\n    padding-top: 8px;\r\n    display: inline-block;\r\n    text-decoration: none;\r\n    color: inherit;\r\n    margin-right: 8px;\r\n    padding-bottom: 32px;\r\n}\r\n\r\n.footer__language--active {\r\n    color: $gray;\r\n}\r\n\r\n@media (min-width: 321px) {\r\n    .side-menu {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    } \r\n    .main-menu__item:hover::before {\r\n        left: -24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .side-menu {\r\n        width: 40%;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .side-menu-hidden {\r\n        display: flex;\r\n    }\r\n\r\n    .icon__burger {\r\n        display: none;\r\n    }\r\n\r\n    .side-menu {\r\n        max-width: 320px;\r\n        box-shadow: none;\r\n    }\r\n\r\n    .side-menu__header {\r\n        padding-top: 30px;\r\n    }\r\n}","$white: #fff;\r\n$input-border: #EAEAEA;\r\n$input-placeholder: #B5B6BC;\r\n$gray: #7E7E82;\r\n$pink: #FF3E79;\r\n\r\n.call {\r\n    padding: 24px 16px 75px;\r\n    background-color: $white;\r\n    z-index: 12;\r\n    position: fixed;\r\n    height: 100%;\r\n    overflow: auto;\r\n}\r\n\r\n.call__title {\r\n    position: relative;\r\n    margin: 0;\r\n    margin-bottom: 24px;\r\n    padding-top: 40px;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    letter-spacing: -0.6px;\r\n}\r\n\r\n.call__title::before {\r\n    content: url('../img/ic-other/highlight-mobile.svg');\r\n    position: absolute;\r\n    left: -16px;\r\n    top: 36px;\r\n}\r\n\r\n.call__input  {\r\n    width: 100%;\r\n    padding: 12px 16px;\r\n    margin-bottom: 16px;\r\n    border-radius: 10px;\r\n    border: 1px solid $input-border;\r\n}\r\n\r\n.call__input::placeholder {\r\n    color: $input-placeholder;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n}\r\n\r\n.call__caption {\r\n    margin: 0;\r\n    margin-bottom: 19px;\r\n    color: $gray;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n}\r\n\r\n.call__link {\r\n    text-decoration: none;\r\n    color: $pink;\r\n}\r\n\r\n.button-send {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    position: absolute;\r\n    right: 32px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .call {\r\n        width: 42%;\r\n        padding: 24px 24px 75px;\r\n        box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);\r\n    }\r\n\r\n    .call__title::before {\r\n        left: -24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .call {\r\n        width: 30%;\r\n        padding: 40px 32px;\r\n        right: 0;\r\n    }\r\n\r\n    .close-call {\r\n        position: fixed;\r\n        left: 64%;\r\n        top: 32px;\r\n        z-index: 12;\r\n    }\r\n\r\n    .call__title {\r\n        padding: 0;\r\n    }\r\n\r\n    .call__title::before {\r\n        content: url('../img/ic-other/highlight.svg');\r\n        position: absolute;\r\n        left: -32px;\r\n        top: -8px;\r\n    }\r\n\r\n    .button-send {\r\n        right: 48px;\r\n    }\r\n}","$lite-green: #D9FFF5;\r\n$white: #fff;\r\n\r\n.header {\r\n    display: flex;\r\n    align-items: center;\r\n    background-color: $white;\r\n    height: 87px;\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n}\r\n\r\n.header::after{\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 1px;\r\n    background: $lite-green;\r\n    top: 87px;\r\n}\r\n\r\n.button-nav {\r\n    width: 40px;\r\n    height: 40px;\r\n    background: none;\r\n    border: none;\r\n    border-radius: 50%;\r\n    cursor: pointer;\r\n    padding: 0;\r\n}\r\n\r\n.button-nav--menu {\r\n    margin-right: 16px;\r\n}\r\n\r\n.button-nav--repair {\r\n    margin-right: 16px;\r\n    position: relative;\r\n}\r\n\r\n.button-nav--repair::before {\r\n    content: url('../img/ic-other/divider.svg');\r\n    position: absolute;\r\n    top: 4px;\r\n    left: -20px;\r\n    pointer-events: none;\r\n}\r\n\r\n.logo {\r\n    margin-right: auto;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .header {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .button-nav--menu {\r\n        margin-right: 42px;\r\n        position: relative;\r\n    }\r\n    .button-nav--menu::after {\r\n        content: url('../img/ic-other/divider.svg');\r\n        position: absolute;\r\n        pointer-events: none;\r\n        left: 60px;\r\n        top: 4px;\r\n    }\r\n\r\n    .button-nav--repair, .button-nav--chat, .button-nav--call {\r\n        margin-right: 16px;\r\n    }\r\n\r\n    .button-nav--profile {\r\n        margin-right: 40px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .header {\r\n        display: none;\r\n    }\r\n}",".content__description {\r\n    padding-top: 24px;\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n}\r\n\r\n.description {\r\n    font-size: 14px;\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n}\r\n\r\n.title-1 {\r\n    margin: 0;\r\n    font-size: 28px;\r\n    font-weight: bold;\r\n    line-height: 40px;\r\n    margin-bottom: 24px;\r\n    left: 16px;\r\n}\r\n\r\n.title-1::before {\r\n    content: url('../img/ic-other/highlight-mobile.svg');\r\n    position: absolute;\r\n    left: 0;\r\n}\r\n\r\n.contetnt__button--repair, .content__button--check-status {\r\n    display: none;\r\n}\r\n\r\n.description__all-p {\r\n    letter-spacing: 0.2px;\r\n    margin-bottom: 16px;\r\n}\r\n.description__p1, .description__p2 {\r\n    margin: 0;\r\n    margin-bottom: 16px;\r\n}\r\n\r\n.description__image {\r\n    width: 100%;\r\n    margin-bottom: 24px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .content__description {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .description {\r\n        display: flex;\r\n        flex-wrap: nowrap;\r\n    }\r\n\r\n    .description__all-p {\r\n        width: 50%;\r\n        padding-right: 48px;\r\n        margin: 0;\r\n    }\r\n\r\n    .description__p2 {\r\n        margin-bottom: 10px;\r\n    }\r\n\r\n    .description__image {\r\n        width: 50%;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n\r\n    .content__description {\r\n        padding: 0;\r\n    }\r\n\r\n    .title-1::before {\r\n        content: url('../img/ic-other/highlight.svg');\r\n        margin-left: 320px;\r\n    }\r\n\r\n    .title-1 {\r\n        margin-right: auto;\r\n        margin-bottom: 0;\r\n    }\r\n\r\n    .contetnt__button--repair {\r\n        display: flex;\r\n        background: none;\r\n        border: none;\r\n        cursor: pointer;\r\n        align-items: center;\r\n        margin-right: 32px;\r\n        text-decoration: none;\r\n        height: 40px;\r\n        padding: 0;\r\n    }\r\n\r\n    .content__button--check-status {\r\n        display: flex;\r\n        background: none;\r\n        border: none;\r\n        align-items: center;\r\n        cursor: pointer;\r\n        text-decoration: none;\r\n        height: 40px;\r\n        padding: 0;\r\n    }\r\n\r\n    .content__button-text {\r\n        font-family: 'TT Lakes';\r\n        color: black;\r\n        margin-right: 8px;\r\n    }\r\n\r\n    .content__description {\r\n        padding: 0;\r\n    }\r\n\r\n    .content__top-box {\r\n        display: flex;\r\n        align-items: center;\r\n        padding-top: 42px;\r\n        padding-left: 32px;\r\n        padding-right: 32px;\r\n        margin-bottom: 8px;\r\n    }\r\n\r\n    .description__image {\r\n        padding-right: 28px;\r\n    }\r\n\r\n    .description__all-p {\r\n        padding-left: 34px;\r\n        padding-right: 36px;\r\n    }\r\n\r\n    .description__p2 {\r\n        margin-bottom: 14px;\r\n    }\r\n}","$gray: #7E7E82;\r\n$white: #fff;\r\n$lite-green: #B8FFEC;\r\n\r\n.content__slide-menu {\r\n    display: flex;\r\n    font-size: 16px;\r\n    overflow-x: scroll;\r\n    margin-bottom: 24px;\r\n}\r\n\r\n.content__link {\r\n    white-space: nowrap;\r\n    color: $gray;\r\n    font-family: \"TT Lakes\";\r\n    text-decoration: none;\r\n    padding-top: 8px;\r\n    padding-right: 10px;\r\n    padding-bottom: 8px;\r\n    padding-left: 16px;\r\n}\r\n\r\n.content__link:hover {\r\n    border: 2px solid $lite-green;\r\n    background-color: $white;\r\n    border-radius: 5px;\r\n    padding-top: 6px;\r\n    padding-right: 8px;\r\n    padding-bottom: 6px;\r\n    padding-left: 14px;\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .content__links {\r\n        height: 88px;\r\n        padding-top: 30px;\r\n    }\r\n\r\n    .content__link:first-child{\r\n        margin-left: 0;\r\n    }\r\n\r\n    .content__link {\r\n        padding-left: 22px;\r\n        padding-right: 22px;\r\n        margin-bottom: 0;\r\n    }\r\n\r\n    .content__link:hover {\r\n        padding-left: 20px;\r\n        padding-right: 20px;\r\n    }\r\n\r\n    .content__slide-menu {\r\n        flex-wrap: wrap;\r\n        margin-bottom: 16px;\r\n        padding-left: 32px;\r\n    }\r\n}","$background-color: #DDDDDD;\r\n$active-color: #B5B6BC;\r\n\r\n.swiper-1, .swiper-2, .swiper-3 {\r\n    padding-bottom: 20px;\r\n    padding-left: 16px;\r\n}\r\n\r\n.swiper-wrapper {\r\n    align-items: center;\r\n}\r\n\r\n.swiper-slide__button {\r\n    align-self: flex-end;\r\n    margin-left: auto;\r\n}\r\n\r\n.swiper-slide__image {\r\n    margin-right: auto;\r\n}\r\n\r\n.swiper-pagination-bullet{\r\n    background-color: $background-color;\r\n    opacity: 1;\r\n}\r\n\r\n.swiper-pagination {\r\n    padding-top: 12px;\r\n    position: static;\r\n}\r\n\r\n.swiper-pagination-bullet-active {\r\n    background-color: $active-color;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .swiper--hidden {\r\n        display: none;\r\n    }\r\n\r\n    .swiper-pagination {\r\n        display: none;\r\n    }\r\n\r\n    .swiper-1, .swiper-2, .swiper-3 {\r\n        padding: 0 24px 24px 24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .swiper-1, .swiper-2, .swiper-3 {\r\n        padding-left: 32px;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n\r\n.brand-container {\r\n    max-height: 72px;\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    align-items: center;\r\n    background-color: $white;\r\n    border: 1px solid $border;\r\n    border-radius: 5px;\r\n    padding: 16px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .content__brands {\r\n        display: flex;\r\n        align-items: center;\r\n        align-content: center;\r\n        flex-wrap: wrap;\r\n        row-gap: 16px;\r\n        column-gap: 24px;\r\n    }\r\n\r\n    .content__brands--item {\r\n        max-height: 72px;\r\n        min-width: 224px;\r\n        max-width: 224px;\r\n        box-sizing: border-box;\r\n        display: flex;\r\n        align-items: center;\r\n        background-color: $white;\r\n        border: 1px solid $border;\r\n        border-radius: 5px;\r\n        padding: 16px;\r\n    }\r\n\r\n    .tablet-hidden {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .content__brands--item {\r\n        min-width: 240px;\r\n        max-width: 240px;\r\n    }\r\n\r\n    .tablet-hidden {\r\n        display: flex;\r\n    }\r\n\r\n    .desktop-hidden {\r\n        display: none;\r\n    }\r\n\r\n    .contant__brands-hidden {\r\n        column-gap: 32px;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n\r\n.type-container {\r\n    width: 240px;\r\n    height: 160px;\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    background-color: $white;\r\n    border: 1px solid $border;\r\n    border-radius: 5px;\r\n    padding: 16px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .content__brands, .content__types {\r\n        display: flex;\r\n        align-items: center;\r\n        align-content: center;\r\n        flex-wrap: wrap;\r\n        row-gap: 16px;\r\n        column-gap: 24px;\r\n    }\r\n\r\n    .type-container--size {\r\n        min-width: 224px;\r\n        max-width: 224px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .type-container--size {\r\n        min-width: 240px;\r\n        max-width: 240px;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n$gray: #7E7E82;\r\n\r\n.price-container {\r\n    width: 260px;\r\n    height: 200px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    box-sizing: border-box;\r\n    background-color: $white;\r\n    border: 1px solid $border;\r\n    border-radius: 5px;\r\n    padding: 16px;\r\n}\r\n\r\n.price-container__description{\r\n    line-height: 18px;\r\n    letter-spacing: 0.2px;\r\n    margin-bottom: 16px;\r\n}\r\n\r\n.price-container__title {\r\n    color: $gray;\r\n    line-height: 16px;\r\n    margin-bottom: 4px;\r\n}\r\n\r\n.price-container__button-order {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    position: absolute;\r\n    align-self: flex-end;\r\n    bottom: 16px;\r\n}","$white: #fff;\r\n$border-bottom: #EAEAEA;\r\n$gray: #7E7E82;\r\n\r\n.commercial-content {\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n    font-size: 14px;\r\n}\r\n\r\n.commercial-content__note {\r\n    margin: 0;\r\n    margin-bottom: 20px;\r\n    padding: 0;\r\n    line-height: 20px;\r\n    letter-spacing: 0.2px;\r\n}\r\n\r\n.commercial-content__offer {\r\n    padding: 0;\r\n    margin-bottom: 40px;\r\n}\r\n\r\n.commercial-content__offer-link {\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n    text-decoration: none;\r\n    color: #1B1C21;\r\n    font-weight: 500;\r\n\r\n}\r\n\r\n.commercial-content__offer-link::after {\r\n    content: url('../img/ic-more/line.svg');\r\n    position: absolute;\r\n    padding-left: 12px;\r\n    padding-top: 2px;\r\n}\r\n\r\n.price-table {\r\n    border-collapse: collapse;\r\n    width: 100%;\r\n    margin-bottom: 24px;\r\n}\r\n\r\n.price-table td {\r\n    padding-left: 16px;\r\n    padding-top: 16px;\r\n    padding-bottom: 16px;\r\n}\r\n\r\n.price-table__rows {\r\n    background-color: $white;\r\n    border-bottom: 1px solid $border-bottom;\r\n}\r\n\r\n.price-table__rows:last-child {\r\n    border-bottom: none;\r\n}\r\n\r\n.price-table__title {\r\n    text-align: left;\r\n    font-weight: normal;\r\n    color: $gray;\r\n    line-height: 16px;\r\n    padding-bottom: 16px;\r\n    padding-left: 16px;\r\n}\r\n\r\n.button-make-order {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    cursor: pointer;\r\n}\r\n\r\n.price-table__buttton {\r\n    padding-right: 16px;\r\n    text-align: right;\r\n}\r\n\r\n.price-table__rbb {\r\n    border-bottom-right-radius: 7px;\r\n}\r\n\r\n.price-table__lbb {\r\n    border-bottom-left-radius: 7px;\r\n}\r\n\r\n.price-table__rtb {\r\n    border-top-right-radius: 7px;\r\n}\r\n\r\n.price-table__ltb {\r\n    border-top-left-radius: 7px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .commercial-content {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .commercial-content__description {\r\n        background-color: $white;\r\n        margin: 0 24px;\r\n    }\r\n\r\n    .commercial-content__note {\r\n        width: 60%;\r\n    }\r\n\r\n    .commercial-content__offer {\r\n        margin-bottom: 47px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n\r\n    .price-table__title, .price-table td {\r\n        padding-left: 24px;\r\n    }\r\n\r\n    .price-table__buttton {\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .commercial-content__note {\r\n        width: 44%;\r\n    }\r\n\r\n    .price-table {\r\n        margin-bottom: 32px;\r\n    }\r\n\r\n    .commercial-content__offer {\r\n        margin-bottom: 50px;\r\n    }\r\n}","$lite-green: #D9FFF5;\r\n$gray: #7E7E82;\r\n\r\n.footer {\r\n    margin: 0;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n    padding: 0 4px 19px;\r\n    text-align: center;\r\n    color: $gray;\r\n}\r\n\r\n.footer::before {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 1px;\r\n    background: $lite-green;\r\n}\r\n\r\n.footer__description {\r\n    margin: 0;\r\n    padding-top: 16px;\r\n    margin-bottom: 16px;\r\n}\r\n\r\n.footer__description:first-child {\r\n    white-space: pre;\r\n}\r\n\r\n.footer__description:last-child {\r\n    margin: 0;\r\n}\r\n\r\n.footer__privacy-policy {\r\n    text-decoration: none;\r\n    color: $gray;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .footer {\r\n        display: flex;\r\n        padding: 0 24px;\r\n        padding-bottom: 25px;\r\n        justify-content: space-between;\r\n\r\n    }\r\n\r\n    .footer__description {\r\n        padding-top: 32px;\r\n        max-width: 30%;\r\n    }\r\n\r\n    .footer__description:first-child {\r\n        text-align: left;\r\n    }\r\n\r\n    .footer__description:last-child {\r\n        text-align: right;\r\n    }\r\n\r\n    .footer__privacy-policy {\r\n        padding-top: 32px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .footer {\r\n        margin-left: 320px;\r\n        padding-bottom: 21px;\r\n    }\r\n}","$buttonColor: black;\r\n\r\nbutton {\r\n    cursor: pointer;\r\n    color: $buttonColor;\r\n}\r\n\r\n.button--read-more {\r\n    cursor: pointer;\r\n    display: block;\r\n    border: none;\r\n    font-family: 'TT Lakes';\r\n    font-size: 16px;\r\n    background: transparent;\r\n    position: relative;\r\n    padding-left: 32px;\r\n}\r\n\r\n.button--read-more::before{\r\n    content: url('../img/ic-4/icon.svg');\r\n    position:absolute;\r\n    left: 8px;\r\n}\r\n\r\n.button--hidden{\r\n    cursor: pointer;\r\n    display: block;\r\n    border: none;\r\n    font-family: 'TT Lakes';\r\n    font-size: 16px;\r\n    background: transparent;\r\n    position: relative;\r\n    padding-left: 32px;\r\n    margin-bottom: 14px;\r\n}\r\n\r\n.button--hidden::before{\r\n    content: url('../img/ic-up/icon-up.svg');\r\n    position:absolute;\r\n    left: 8px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .button--show-all {\r\n        left: 24px;\r\n        margin-bottom: 32px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .button--show-all {\r\n        margin-bottom: 50px;\r\n    }\r\n}","$lite-green: #D9FFF5;\r\n$gray: #7E7E82;\r\n\r\n.brands__title::before {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 1px;\r\n    background: $lite-green;\r\n}\r\n\r\n.brands__title{\r\n    position: relative;\r\n    background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);\r\n    padding: 16px;\r\n    margin-bottom: 16px;\r\n\r\n}\r\n\r\n.brands__title--mod {\r\n    margin: 0;\r\n    font-size: 16px;\r\n    text-transform: uppercase;\r\n    font-weight: normal;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n    color: $gray;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .brands__title{\r\n        padding-left: 24px;\r\n        margin-bottom: 24px;\r\n    }\r\n\r\n    .brands__title-price {\r\n        margin-bottom: 31px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .brands__title{\r\n        padding-left: 32px;\r\n    }\r\n}",null],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11936,16 +11996,16 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-close/close.svg */ "./src/img/ic-close/close.svg"), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./img/Group.svg */ "./src/img/Group.svg"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-other/Group.svg */ "./src/img/ic-other/Group.svg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-search/search.svg */ "./src/img/ic-search/search.svg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-5/call.svg */ "./src/img/ic-5/call.svg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-6/chat.svg */ "./src/img/ic-6/chat.svg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-7/profile.svg */ "./src/img/ic-7/profile.svg"), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! ./img/send-form.svg */ "./src/img/send-form.svg"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-other/send-form.svg */ "./src/img/ic-other/send-form.svg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic/burger.svg */ "./src/img/ic/burger.svg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-2/repair.svg */ "./src/img/ic-2/repair.svg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-3/checkstatus.svg */ "./src/img/ic-3/checkstatus.svg"), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(/*! ./img/MG_3223.jpg */ "./src/img/MG_3223.jpg"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-other/MG_3223.jpg */ "./src/img/ic-other/MG_3223.jpg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_11___ = new URL(/* asset import */ __webpack_require__(/*! ./img/brands/Lenovo.svg */ "./src/img/brands/Lenovo.svg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_12___ = new URL(/* asset import */ __webpack_require__(/*! ./img/brands/go.svg */ "./src/img/brands/go.svg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_13___ = new URL(/* asset import */ __webpack_require__(/*! ./img/brands/Samsung.svg */ "./src/img/brands/Samsung.svg"), __webpack_require__.b);
@@ -11955,7 +12015,7 @@ var ___HTML_LOADER_IMPORT_16___ = new URL(/* asset import */ __webpack_require__
 var ___HTML_LOADER_IMPORT_17___ = new URL(/* asset import */ __webpack_require__(/*! ./img/brands/hp.svg */ "./src/img/brands/hp.svg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_18___ = new URL(/* asset import */ __webpack_require__(/*! ./img/brands/acer.svg */ "./src/img/brands/acer.svg"), __webpack_require__.b);
 var ___HTML_LOADER_IMPORT_19___ = new URL(/* asset import */ __webpack_require__(/*! ./img/brands/sony.svg */ "./src/img/brands/sony.svg"), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_20___ = new URL(/* asset import */ __webpack_require__(/*! ./img/order.svg */ "./src/img/order.svg"), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_20___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-other/order.svg */ "./src/img/ic-other/order.svg"), __webpack_require__.b);
 // Module
 var ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);
 var ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);
@@ -12436,28 +12496,6 @@ module.exports = __webpack_require__.p + "assets/fonts/TTLakes-Regular..woff";
 
 /***/ }),
 
-/***/ "./src/img/Group.svg":
-/*!***************************!*\
-  !*** ./src/img/Group.svg ***!
-  \***************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/fonts/Group..svg";
-
-/***/ }),
-
-/***/ "./src/img/MG_3223.jpg":
-/*!*****************************!*\
-  !*** ./src/img/MG_3223.jpg ***!
-  \*****************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "b4908f9f6466908cade5.jpg";
-
-/***/ }),
-
 /***/ "./src/img/brands/Apple.svg":
 /*!**********************************!*\
   !*** ./src/img/brands/Apple.svg ***!
@@ -12557,50 +12595,6 @@ module.exports = __webpack_require__.p + "assets/fonts/sony..svg";
 
 /***/ }),
 
-/***/ "./src/img/divider.svg":
-/*!*****************************!*\
-  !*** ./src/img/divider.svg ***!
-  \*****************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/fonts/divider..svg";
-
-/***/ }),
-
-/***/ "./src/img/highlight-mobile.svg":
-/*!**************************************!*\
-  !*** ./src/img/highlight-mobile.svg ***!
-  \**************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/fonts/highlight-mobile..svg";
-
-/***/ }),
-
-/***/ "./src/img/highlight-nav.svg":
-/*!***********************************!*\
-  !*** ./src/img/highlight-nav.svg ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/fonts/highlight-nav..svg";
-
-/***/ }),
-
-/***/ "./src/img/highlight.svg":
-/*!*******************************!*\
-  !*** ./src/img/highlight.svg ***!
-  \*******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/fonts/highlight..svg";
-
-/***/ }),
-
 /***/ "./src/img/ic-2/repair.svg":
 /*!*********************************!*\
   !*** ./src/img/ic-2/repair.svg ***!
@@ -12689,6 +12683,94 @@ module.exports = __webpack_require__.p + "assets/fonts/line..svg";
 
 /***/ }),
 
+/***/ "./src/img/ic-other/Group.svg":
+/*!************************************!*\
+  !*** ./src/img/ic-other/Group.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/fonts/Group..svg";
+
+/***/ }),
+
+/***/ "./src/img/ic-other/MG_3223.jpg":
+/*!**************************************!*\
+  !*** ./src/img/ic-other/MG_3223.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "b4908f9f6466908cade5.jpg";
+
+/***/ }),
+
+/***/ "./src/img/ic-other/divider.svg":
+/*!**************************************!*\
+  !*** ./src/img/ic-other/divider.svg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/fonts/divider..svg";
+
+/***/ }),
+
+/***/ "./src/img/ic-other/highlight-mobile.svg":
+/*!***********************************************!*\
+  !*** ./src/img/ic-other/highlight-mobile.svg ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/fonts/highlight-mobile..svg";
+
+/***/ }),
+
+/***/ "./src/img/ic-other/highlight-nav.svg":
+/*!********************************************!*\
+  !*** ./src/img/ic-other/highlight-nav.svg ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/fonts/highlight-nav..svg";
+
+/***/ }),
+
+/***/ "./src/img/ic-other/highlight.svg":
+/*!****************************************!*\
+  !*** ./src/img/ic-other/highlight.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/fonts/highlight..svg";
+
+/***/ }),
+
+/***/ "./src/img/ic-other/order.svg":
+/*!************************************!*\
+  !*** ./src/img/ic-other/order.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/fonts/order..svg";
+
+/***/ }),
+
+/***/ "./src/img/ic-other/send-form.svg":
+/*!****************************************!*\
+  !*** ./src/img/ic-other/send-form.svg ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/fonts/send-form..svg";
+
+/***/ }),
+
 /***/ "./src/img/ic-search/search.svg":
 /*!**************************************!*\
   !*** ./src/img/ic-search/search.svg ***!
@@ -12719,28 +12801,6 @@ module.exports = __webpack_require__.p + "assets/fonts/icon-up..svg";
 
 "use strict";
 module.exports = __webpack_require__.p + "assets/fonts/burger..svg";
-
-/***/ }),
-
-/***/ "./src/img/order.svg":
-/*!***************************!*\
-  !*** ./src/img/order.svg ***!
-  \***************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/fonts/order..svg";
-
-/***/ }),
-
-/***/ "./src/img/send-form.svg":
-/*!*******************************!*\
-  !*** ./src/img/send-form.svg ***!
-  \*******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/fonts/send-form..svg";
 
 /***/ })
 
@@ -12890,4 +12950,4 @@ module.exports = __webpack_require__.p + "assets/fonts/send-form..svg";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.3f5af1de9b6d6845c059.js.map
+//# sourceMappingURL=main.2e9bd015eb18325af3f3.js.map
