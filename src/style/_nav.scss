@@ -88,7 +88,7 @@ $black: #1B1C21;
 }
 
 .main-menu__item:hover::before {
-    content: url('img/highlight-nav.svg');
+    content: url('../img/highlight-nav.svg');
     position: absolute;
     left: -16px;
     bottom: -12px;

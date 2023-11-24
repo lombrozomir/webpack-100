@@ -40,11 +40,28 @@ module.exports = {
         use: [
           devMode ? "style-loader" : MiniCssExtractPlugin.loader,
           "css-loader",
-          "sass-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [require("postcss-preset-env")],
+              },
+            },
+          },
+          "group-css-media-queries-loader",
+          {
+            loader: "resolve-url-loader",
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
         ],
       },
       {
-        test: /\.woff2?$/i,
+        test: /\.(eot|svg|ttf|woff|woff2)$/i,
         type: "asset/resource",
         generator: {
           filename: "assets/fonts/[name].[ext]",

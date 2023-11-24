@@ -23,7 +23,7 @@ $pink: #FF3E79;
 }
 
 .feedback__title::before {
-    content: url('img/highlight-mobile.svg');
+    content: url('../img/highlight-mobile.svg');
     position: absolute;
     left: -16px;
     top: 36px;
@@ -103,7 +103,7 @@ $pink: #FF3E79;
     }
 
     .feedback__title::before {
-        content: url('img/highlight.svg');
+        content: url('../img/highlight.svg');
         position: absolute;
         left: -32px;
         top: -8px;

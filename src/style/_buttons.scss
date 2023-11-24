@@ -15,7 +15,7 @@ button {
 }
 
 .button--read-more::before{
-    content: url('img/ic-4/icon.svg');
+    content: url('../img/ic-4/icon.svg');
     position:absolute;
     left: 8px;
 }
@@ -33,7 +33,7 @@ button {
 }
 
 .button--hidden::before{
-    content: url('img/ic-up/icon-up.svg');
+    content: url('../img/ic-up/icon-up.svg');
     position:absolute;
     left: 8px;
 }
