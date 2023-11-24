@@ -1,0 +1,37 @@
+$white: #fff;
+$border: #EAEAEA;
+
+.type-container {
+    width: 240px;
+    height: 160px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: $white;
+    border: 1px solid $border;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+@media (min-width: 768px) {
+
+    .content__brands, .content__types {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        row-gap: 16px;
+        column-gap: 24px;
+    }
+
+    .type-container--size {
+        min-width: 224px;
+        max-width: 224px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .type-container--size {
+        min-width: 240px;
+        max-width: 240px;
+    }
+}

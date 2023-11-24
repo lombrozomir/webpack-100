@@ -9,7 +9,7 @@
     "deploy": "gh-pages -d build",
     "build": "webpack",
     "build-prod": "webpack --node-env=production",
-    "clear": "rd /s /q build"
+    "clear": "rd /s /q dist"
   },
   "keywords": [],
   "author": "",
@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "normalize.css": "^8.0.1",
     "swiper": "^11.0.4"
   }
 }

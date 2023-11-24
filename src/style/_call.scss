@@ -1,0 +1,112 @@
+$white: #fff;
+$input-border: #EAEAEA;
+$input-placeholder: #B5B6BC;
+$gray: #7E7E82;
+$pink: #FF3E79;
+
+.call {
+    padding: 24px 16px 75px;
+    background-color: $white;
+    z-index: 12;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.call__title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 24px;
+    padding-top: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+}
+
+.call__title::before {
+    content: url('img/highlight-mobile.svg');
+    position: absolute;
+    left: -16px;
+    top: 36px;
+}
+
+.call__input  {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 1px solid $input-border;
+}
+
+.call__input::placeholder {
+    color: $input-placeholder;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.call__caption {
+    margin: 0;
+    margin-bottom: 19px;
+    color: $gray;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.call__link {
+    text-decoration: none;
+    color: $pink;
+}
+
+.button-send {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    width: 119px;
+    height: 32px;
+    position: absolute;
+    right: 32px;
+}
+
+@media (min-width: 768px) {
+    .call {
+        width: 42%;
+        padding: 24px 24px 75px;
+        box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    }
+
+    .call__title::before {
+        left: -24px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .call {
+        width: 30%;
+        padding: 40px 32px;
+        right: 0;
+    }
+
+    .close-call {
+        position: fixed;
+        left: 64%;
+        top: 32px;
+        z-index: 12;
+    }
+
+    .call__title {
+        padding: 0;
+    }
+
+    .call__title::before {
+        content: url('img/highlight.svg');
+        position: absolute;
+        left: -32px;
+        top: -8px;
+    }
+
+    .button-send {
+        right: 48px;
+    }
+}

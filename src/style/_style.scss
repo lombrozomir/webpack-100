@@ -1,21 +1,56 @@
-* {
-  margin: 0;
-  padding: 0;
+$background-color: #F8F8F8;
+
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
 }
 
-.page {
-  width: 100%;
+body {
+    font-family: 'TT Lakes';
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
 }
 
-.page__body {
-  background-color: $back;
-  color: $text;
-  font-family: "TTLakes Regular";
-  margin: 0;
-  width: 100vw;
-  overflow-x: hidden;
+.hidden {
+    display: none;
 }
 
-.btn-no-style {
-  all: initial;
+.description-hidden {
+    display: none;;
+}
+
+.blur {
+    opacity: 4%;
+    pointer-events: none;
+}
+
+@media (max-width: 767px) {
+    .button-nav--call, .button-nav--chat, .button-nav--profile, .buttoun--hidden, .button--show-all, .price-table {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .hidden, .type-container--tablet-hidden, .tablet-hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .content {
+        margin-left: 320px;
+    }
+
+    .tablet-hidden, .type-container--tablet-hidden {
+        display: flex;
+    }
+
+    .desktop-hidden, .type-container--desktop-hidden {
+        display: none;
+    }
 }

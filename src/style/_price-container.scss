@@ -1,0 +1,39 @@
+$white: #fff;
+$border: #EAEAEA;
+$gray: #7E7E82;
+
+.price-container {
+    width: 260px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: $white;
+    border: 1px solid $border;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+.price-container__description{
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+}
+
+.price-container__title {
+    color: $gray;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.price-container__button-order {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    width: 119px;
+    height: 32px;
+    position: absolute;
+    align-self: flex-end;
+    bottom: 16px;
+}

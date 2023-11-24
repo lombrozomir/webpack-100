@@ -1,0 +1,115 @@
+$white: #fff;
+$border: #EAEAEA;
+$input-placeholder: #B5B6BC;
+$pink: #FF3E79;
+
+.feedback {
+    padding: 24px 16px 75px;
+    background-color: $white;
+    z-index: 11;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.feedback__title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 24px;
+    padding-top: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+}
+
+.feedback__title::before {
+    content: url('img/highlight-mobile.svg');
+    position: absolute;
+    left: -16px;
+    top: 36px;
+}
+
+.feedback__input, .feedback__textarea {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 1px solid $border;
+}
+
+.feedback__input::placeholder, .feedback__textarea::placeholder {
+    color: $input-placeholder;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.feedback__textarea {
+    height: 118px;
+}
+
+.feedback__caption {
+    margin: 0;
+    margin-bottom: 19px;
+    color: #7E7E82;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.feedback__link {
+    text-decoration: none;
+    color: $pink;
+}
+
+.button-send {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    width: 119px;
+    height: 32px;
+    position: absolute;
+    right: 32px;
+}
+
+@media (min-width: 768px) {
+    .feedback {
+        width: 42%;
+        padding: 24px 24px 75px;
+        box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    }
+
+    .feedback__title::before {
+        left: -24px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .feedback {
+        width: 30%;
+        padding: 40px 32px;
+        right: 0;
+    }
+
+    .close-feedback {
+        position: fixed;
+        left: 64%;
+        top: 32px;
+        z-index: 12;
+    }
+
+    .feedback__title {
+        padding: 0;
+    }
+
+    .feedback__title::before {
+        content: url('img/highlight.svg');
+        position: absolute;
+        left: -32px;
+        top: -8px;
+    }
+
+    .button-send {
+        right: 48px;
+    }
+}

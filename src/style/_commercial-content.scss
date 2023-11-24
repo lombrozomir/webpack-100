@@ -1,0 +1,143 @@
+$white: #fff;
+$border-bottom: #EAEAEA;
+$gray: #7E7E82;
+
+.commercial-content {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+}
+
+.commercial-content__note {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.commercial-content__offer {
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.commercial-content__offer-link {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    color: #1B1C21;
+    font-weight: 500;
+
+}
+
+.commercial-content__offer-link::after {
+    content: url('img/ic-more/line.svg');
+    position: absolute;
+    padding-left: 12px;
+    padding-top: 2px;
+}
+
+.price-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.price-table td {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.price-table__rows {
+    background-color: $white;
+    border-bottom: 1px solid $border-bottom;
+}
+
+.price-table__rows:last-child {
+    border-bottom: none;
+}
+
+.price-table__title {
+    text-align: left;
+    font-weight: normal;
+    color: $gray;
+    line-height: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+}
+
+.button-make-order {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    width: 119px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.price-table__buttton {
+    padding-right: 16px;
+    text-align: right;
+}
+
+.price-table__rbb {
+    border-bottom-right-radius: 7px;
+}
+
+.price-table__lbb {
+    border-bottom-left-radius: 7px;
+}
+
+.price-table__rtb {
+    border-top-right-radius: 7px;
+}
+
+.price-table__ltb {
+    border-top-left-radius: 7px;
+}
+
+@media (min-width: 768px) {
+    .commercial-content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .commercial-content__description {
+        background-color: $white;
+        margin: 0 24px;
+    }
+
+    .commercial-content__note {
+        width: 60%;
+    }
+
+    .commercial-content__offer {
+        margin-bottom: 47px;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .price-table__title, .price-table td {
+        padding-left: 24px;
+    }
+
+    .price-table__buttton {
+        padding-right: 24px;
+    }
+
+    .commercial-content__note {
+        width: 44%;
+    }
+
+    .price-table {
+        margin-bottom: 32px;
+    }
+
+    .commercial-content__offer {
+        margin-bottom: 50px;
+    }
+}

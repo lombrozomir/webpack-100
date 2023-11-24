@@ -1,9 +1,17 @@
-@import 'style/vars/var'; //подключение общих переменных
-@import 'style/style';  // подключение общих стилей 
-@import 'style/fonts'; // подключение шрифтов
-
-@import 'style/vars/var-mobile'; // подключение переменных для мобильных устройств
-@import 'style/media/mobile'; // подключение медиа-запроса для мобильных устройств
-@import 'style/media/menu-navigation'; // подключение стилей для мобильного меню
-@import 'style/media/menu-feedback'; // подключение стилей для меню 
-@import 'style/media/menu-call'; // подключение стилей для меню звонка
+@import '~normalize.css';
+@import 'style/fonts';
+@import 'style/style';
+@import 'style/feedback';
+@import 'style/nav';
+@import 'style/call';
+@import 'style/header';
+@import 'style/content-description';
+@import 'style/slide-menu';
+@import 'style/swiper';
+@import 'style/content-brands';
+@import 'style/content-types';
+@import 'style/price-container';
+@import 'style/commercial-content';
+@import 'style/footer';
+@import 'style/buttons';
+@import 'style/titles';

@@ -17,7 +17,7 @@ module.exports = {
   devtool,
   entry: ["@babel/polyfill", path.resolve(__dirname, "src", "index.js")],
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, "dist"),
     filename: "[name].[contenthash].js",
     clean: true,
   },

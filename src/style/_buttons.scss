@@ -1,0 +1,52 @@
+button {
+    cursor: pointer;
+    color: black;
+}
+
+.button--read-more {
+    cursor: pointer;
+    display: block;
+    border: none;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    padding-left: 32px;
+}
+
+.button--read-more::before{
+    content: url('img/ic-4/icon.svg');
+    position:absolute;
+    left: 8px;
+}
+
+.button--hidden{
+    cursor: pointer;
+    display: block;
+    border: none;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 14px;
+}
+
+.button--hidden::before{
+    content: url('img/ic-up/icon-up.svg');
+    position:absolute;
+    left: 8px;
+}
+
+@media (min-width: 768px) {
+    .button--show-all {
+        left: 24px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .button--show-all {
+        margin-bottom: 50px;
+    }
+}
