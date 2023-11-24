@@ -7,3 +7,4 @@ import "./scripts/swiper.js";
 import "./scripts/mobile/show.js";
 import "./scripts/mobile/menu.js";
 import "./scripts/mobile/feedback.js";
+import "./scripts/mobile/call.js";

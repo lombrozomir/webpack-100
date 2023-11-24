@@ -1,4 +1,4 @@
-#menu__feedback {
+@mixin menu-feedback-style {
   position: fixed;
   top: 0;
   z-index: 100;
@@ -14,23 +14,61 @@
   box-shadow: 0 10px 40px -3px rgba(0, 0, 0, 0.5);
 }
 
+.modal-menu {
+  @include menu-feedback-style;
 
-.sidebar__field {
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
-  margin-left: 16px;
-  margin-right: 16px;
-
+  &__container {
+    margin-left: 16px;
+    margin-top: 28px;
+  }
 }
 
-input {
-  width: 90%;
-  height: 25px;
-  border: 1px solid #eaeaea;
-  border-radius: 4px;
-  padding: 12px 0;
-  padding-left: 16px;
-  font-family: "TTLakes Regular";
-  overflow: hidden;
+.sidebar {
+  &__form {
+    margin-left: 14px;
+    &--image {
+      margin-top: 15px;
+      margin-bottom: 40px;
+      margin-right: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  &__field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    .message {
+      height: 80px;
+    }
+    .message::placeholder {
+      position: relative;
+      top: -30px;
+    }
+  }
+
+  &__input {
+    width: 90%;
+    height: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    padding: 12px 0;
+    padding-left: 16px;
+    font-family: "TTLakes Regular";
+    overflow: hidden;
+  }
+
+  &__input::placeholder {
+    color: #b5b6bc;
+  }
+  &__text {
+    margin-top: 15px;
+    margin-right: 17px;
+    color: #7e7e82;
+    &--link {
+      text-decoration: none;
+      color: #ff3e79;
+    }
+  }
 }

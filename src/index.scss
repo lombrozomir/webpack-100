@@ -4,5 +4,6 @@
 
 @import 'style/vars/var-mobile'; // подключение переменных для мобильных устройств
 @import 'style/media/mobile'; // подключение медиа-запроса для мобильных устройств
-@import 'style/media/menu-mobile'; // подключение стилей для мобильного меню
-@import 'style/media/menu-feedback'; // подключение стилей для меню фидбэка
+@import 'style/media/menu-navigation'; // подключение стилей для мобильного меню
+@import 'style/media/menu-feedback'; // подключение стилей для меню 
+@import 'style/media/menu-call'; // подключение стилей для меню звонка
