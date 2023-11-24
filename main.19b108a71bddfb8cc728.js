@@ -10594,10 +10594,10 @@ template {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss":
-/*!*****************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
-  \*****************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/group-css-media-queries-loader/lib/index.js!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[5]!./src/index.scss":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/group-css-media-queries-loader/lib/index.js!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[5]!./src/index.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -10617,14 +10617,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./font/TTLakes/TTLakes-Medium.woff */ "./src/font/TTLakes/TTLakes-Medium.woff"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! img/highlight-mobile.svg */ "./src/img/highlight-mobile.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! img/highlight.svg */ "./src/img/highlight.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! img/highlight-nav.svg */ "./src/img/highlight-nav.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! img/divider.svg */ "./src/img/divider.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! img/ic-more/line.svg */ "./src/img/ic-more/line.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! img/ic-4/icon.svg */ "./src/img/ic-4/icon.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(/*! img/ic-up/icon-up.svg */ "./src/img/ic-up/icon-up.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./img/highlight-mobile.svg */ "./src/img/highlight-mobile.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./img/highlight-nav.svg */ "./src/img/highlight-nav.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./img/divider.svg */ "./src/img/divider.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-more/line.svg */ "./src/img/ic-more/line.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-4/icon.svg */ "./src/img/ic-4/icon.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ./img/ic-up/icon-up.svg */ "./src/img/ic-up/icon-up.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! ./img/highlight.svg */ "./src/img/highlight.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_node_modules_normalize_css_normalize_css__WEBPACK_IMPORTED_MODULE_2__["default"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_0___);
@@ -10634,27 +10633,8 @@ var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_4___);
 var ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_5___);
 var ___CSS_LOADER_URL_REPLACEMENT_6___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_6___);
-var ___CSS_LOADER_URL_REPLACEMENT_7___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_3___default()(___CSS_LOADER_URL_IMPORT_7___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `@font-face {
-  font-family: "TTLakes Regular";
-  src: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "TTLakes Medium";
-  src: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "TTLakes Bold";
-  src: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-html {
+___CSS_LOADER_EXPORT___.push([module.id, `html {
   box-sizing: border-box;
 }
 
@@ -10678,30 +10658,8 @@ body {
 }
 
 .blur {
-  opacity: 4%;
+  opacity: 0.04;
   pointer-events: none;
-}
-
-@media (max-width: 767px) {
-  .button-nav--call, .button-nav--chat, .button-nav--profile, .buttoun--hidden, .button--show-all, .price-table {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .hidden, .type-container--tablet-hidden, .tablet-hidden {
-    display: none;
-  }
-}
-@media (min-width: 1120px) {
-  .content {
-    margin-left: 320px;
-  }
-  .tablet-hidden, .type-container--tablet-hidden {
-    display: flex;
-  }
-  .desktop-hidden, .type-container--desktop-hidden {
-    display: none;
-  }
 }
 .feedback {
   padding: 24px 16px 75px;
@@ -10723,7 +10681,7 @@ body {
 }
 
 .feedback__title::before {
-  content: url(${___CSS_LOADER_URL_REPLACEMENT_1___});
+  content: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
   position: absolute;
   left: -16px;
   top: 36px;
@@ -10735,6 +10693,13 @@ body {
   margin-bottom: 16px;
   border-radius: 10px;
   border: 1px solid #EAEAEA;
+}
+
+.feedback__input::-moz-placeholder, .feedback__textarea::-moz-placeholder {
+  color: #B5B6BC;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
 }
 
 .feedback__input::placeholder, .feedback__textarea::placeholder {
@@ -10757,6 +10722,7 @@ body {
 }
 
 .feedback__link {
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: #FF3E79;
 }
@@ -10771,48 +10737,12 @@ body {
   position: absolute;
   right: 32px;
 }
-
-@media (min-width: 768px) {
-  .feedback {
-    width: 42%;
-    padding: 24px 24px 75px;
-    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
-  }
-  .feedback__title::before {
-    left: -24px;
-  }
-}
-@media (min-width: 1120px) {
-  .feedback {
-    width: 30%;
-    padding: 40px 32px;
-    right: 0;
-  }
-  .close-feedback {
-    position: fixed;
-    left: 64%;
-    top: 32px;
-    z-index: 12;
-  }
-  .feedback__title {
-    padding: 0;
-  }
-  .feedback__title::before {
-    content: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
-    position: absolute;
-    left: -32px;
-    top: -8px;
-  }
-  .button-send {
-    right: 48px;
-  }
-}
 .side-menu {
-  font-family: "TTLakes Regular";
+  font-family: "TT Lakes";
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
-  color: #1b1c21;
+  color: #1B1C21;
   margin: 0;
   padding-left: 16px;
   padding-right: 16px;
@@ -10880,7 +10810,7 @@ body {
 }
 
 .main-menu__item:hover {
-  color: #7e7e82;
+  color: #7E7E82;
 }
 
 .main-menu__item:first-child {
@@ -10888,12 +10818,13 @@ body {
 }
 
 .main-menu__item a {
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
 }
 
 .main-menu__item:hover::before {
-  content: url(${___CSS_LOADER_URL_REPLACEMENT_3___});
+  content: url(${___CSS_LOADER_URL_REPLACEMENT_1___});
   position: absolute;
   left: -16px;
   bottom: -12px;
@@ -10914,6 +10845,7 @@ body {
 .footer__mail {
   padding-top: 16px;
   display: block;
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
 }
@@ -10921,6 +10853,7 @@ body {
 .footer__phone {
   padding-top: 12px;
   display: block;
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
   font-size: 24px;
@@ -10931,6 +10864,7 @@ body {
 .footer__language {
   padding-top: 8px;
   display: inline-block;
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
   margin-right: 8px;
@@ -10938,37 +10872,7 @@ body {
 }
 
 .footer__language--active {
-  color: #7e7e82;
-}
-
-@media (min-width: 321px) {
-  .side-menu {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .main-menu__item:hover::before {
-    left: -24px;
-  }
-}
-@media (min-width: 768px) {
-  .side-menu {
-    width: 40%;
-  }
-}
-@media (min-width: 1120px) {
-  .side-menu-hidden {
-    display: flex;
-  }
-  .icon__burger {
-    display: none;
-  }
-  .side-menu {
-    max-width: 320px;
-    box-shadow: none;
-  }
-  .side-menu__header {
-    padding-top: 30px;
-  }
+  color: #7E7E82;
 }
 .call {
   padding: 24px 16px 75px;
@@ -10990,7 +10894,7 @@ body {
 }
 
 .call__title::before {
-  content: url(${___CSS_LOADER_URL_REPLACEMENT_1___});
+  content: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
   position: absolute;
   left: -16px;
   top: 36px;
@@ -11002,6 +10906,13 @@ body {
   margin-bottom: 16px;
   border-radius: 10px;
   border: 1px solid #EAEAEA;
+}
+
+.call__input::-moz-placeholder {
+  color: #B5B6BC;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
 }
 
 .call__input::placeholder {
@@ -11020,6 +10931,7 @@ body {
 }
 
 .call__link {
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: #FF3E79;
 }
@@ -11033,42 +10945,6 @@ body {
   height: 32px;
   position: absolute;
   right: 32px;
-}
-
-@media (min-width: 768px) {
-  .call {
-    width: 42%;
-    padding: 24px 24px 75px;
-    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
-  }
-  .call__title::before {
-    left: -24px;
-  }
-}
-@media (min-width: 1120px) {
-  .call {
-    width: 30%;
-    padding: 40px 32px;
-    right: 0;
-  }
-  .close-call {
-    position: fixed;
-    left: 64%;
-    top: 32px;
-    z-index: 12;
-  }
-  .call__title {
-    padding: 0;
-  }
-  .call__title::before {
-    content: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
-    position: absolute;
-    left: -32px;
-    top: -8px;
-  }
-  .button-send {
-    right: 48px;
-  }
 }
 .header {
   display: flex;
@@ -11109,7 +10985,7 @@ body {
 }
 
 .button-nav--repair::before {
-  content: url(${___CSS_LOADER_URL_REPLACEMENT_4___});
+  content: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
   position: absolute;
   top: 4px;
   left: -20px;
@@ -11118,35 +10994,6 @@ body {
 
 .logo {
   margin-right: auto;
-}
-
-@media (min-width: 768px) {
-  .header {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .button-nav--menu {
-    margin-right: 42px;
-    position: relative;
-  }
-  .button-nav--menu::after {
-    content: url(${___CSS_LOADER_URL_REPLACEMENT_4___});
-    position: absolute;
-    pointer-events: none;
-    left: 60px;
-    top: 4px;
-  }
-  .button-nav--repair, .button-nav--chat, .button-nav--call {
-    margin-right: 16px;
-  }
-  .button-nav--profile {
-    margin-right: 40px;
-  }
-}
-@media (min-width: 1120px) {
-  .header {
-    display: none;
-  }
 }
 .content__description {
   padding-top: 24px;
@@ -11170,7 +11017,7 @@ body {
 }
 
 .title-1::before {
-  content: url(${___CSS_LOADER_URL_REPLACEMENT_1___});
+  content: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
   position: absolute;
   left: 0;
 }
@@ -11193,124 +11040,34 @@ body {
   width: 100%;
   margin-bottom: 24px;
 }
-
-@media (min-width: 768px) {
-  .content__description {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .description {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  .description__all-p {
-    width: 50%;
-    padding-right: 48px;
-    margin: 0;
-  }
-  .description__p2 {
-    margin-bottom: 10px;
-  }
-  .description__image {
-    width: 50%;
-  }
-}
-@media (min-width: 1120px) {
-  .content__description {
-    padding: 0;
-  }
-  .title-1::before {
-    content: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
-    margin-left: 320px;
-  }
-  .title-1 {
-    margin-right: auto;
-    margin-bottom: 0;
-  }
-  .contetnt__button--repair {
-    display: flex;
-    background: none;
-    border: none;
-    cursor: pointer;
-    align-items: center;
-    margin-right: 32px;
-    text-decoration: none;
-    height: 40px;
-    padding: 0;
-  }
-  .content__button--check-status {
-    display: flex;
-    background: none;
-    border: none;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    height: 40px;
-    padding: 0;
-  }
-  .content__button-text {
-    font-family: "TT Lakes";
-    color: black;
-    margin-right: 8px;
-  }
-  .content__description {
-    padding: 0;
-  }
-  .content__top-box {
-    display: flex;
-    align-items: center;
-    padding-top: 42px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-bottom: 8px;
-  }
-  .description__image {
-    padding-right: 28px;
-  }
-  .description__all-p {
-    padding-left: 34px;
-    padding-right: 36px;
-  }
-  .description__p2 {
-    margin-bottom: 14px;
-  }
-}
-.price-container {
-  width: 260px;
-  height: 200px;
+.content__slide-menu {
   display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  background-color: #fff;
-  border: 1px solid #EAEAEA;
-  border-radius: 5px;
-  padding: 16px;
+  font-size: 16px;
+  overflow-x: scroll;
+  margin-bottom: 24px;
 }
 
-.price-container__description {
-  line-height: 18px;
-  letter-spacing: 0.2px;
-  margin-bottom: 16px;
-}
-
-.price-container__title {
+.content__link {
+  white-space: nowrap;
   color: #7E7E82;
-  line-height: 16px;
-  margin-bottom: 4px;
+  font-family: "TT Lakes";
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  padding-left: 16px;
 }
 
-.price-container__button-order {
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  width: 119px;
-  height: 32px;
-  position: absolute;
-  align-self: flex-end;
-  bottom: 16px;
+.content__link:hover {
+  border: 2px solid #B8FFEC;
+  background-color: #fff;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-right: 8px;
+  padding-bottom: 6px;
+  padding-left: 14px;
 }
-
 .swiper-1, .swiper-2, .swiper-3 {
   padding-bottom: 20px;
   padding-left: 16px;
@@ -11342,23 +11099,6 @@ body {
 .swiper-pagination-bullet-active {
   background-color: #B5B6BC;
 }
-
-@media (min-width: 768px) {
-  .swiper--hidden {
-    display: none;
-  }
-  .swiper-pagination {
-    display: none;
-  }
-  .swiper-1, .swiper-2, .swiper-3 {
-    padding: 0 24px 24px 24px;
-  }
-}
-@media (min-width: 1120px) {
-  .swiper-1, .swiper-2, .swiper-3 {
-    padding-left: 32px;
-  }
-}
 .brand-container {
   max-height: 72px;
   box-sizing: border-box;
@@ -11369,47 +11109,6 @@ body {
   border-radius: 5px;
   padding: 16px;
 }
-
-@media (min-width: 768px) {
-  .content__brands {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    row-gap: 16px;
-    column-gap: 24px;
-  }
-  .content__brands--item {
-    max-height: 72px;
-    min-width: 224px;
-    max-width: 224px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid #EAEAEA;
-    border-radius: 5px;
-    padding: 16px;
-  }
-  .tablet-hidden {
-    display: none;
-  }
-}
-@media (min-width: 1120px) {
-  .content__brands--item {
-    min-width: 240px;
-    max-width: 240px;
-  }
-  .tablet-hidden {
-    display: flex;
-  }
-  .desktop-hidden {
-    display: none;
-  }
-  .contant__brands-hidden {
-    column-gap: 32px;
-  }
-}
 .type-container {
   width: 240px;
   height: 160px;
@@ -11419,27 +11118,6 @@ body {
   border: 1px solid #EAEAEA;
   border-radius: 5px;
   padding: 16px;
-}
-
-@media (min-width: 768px) {
-  .content__brands, .content__types {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    row-gap: 16px;
-    column-gap: 24px;
-  }
-  .type-container--size {
-    min-width: 224px;
-    max-width: 224px;
-  }
-}
-@media (min-width: 1120px) {
-  .type-container--size {
-    min-width: 240px;
-    max-width: 240px;
-  }
 }
 .price-container {
   width: 260px;
@@ -11500,13 +11178,14 @@ body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: #1B1C21;
   font-weight: 500;
 }
 
 .commercial-content__offer-link::after {
-  content: url(${___CSS_LOADER_URL_REPLACEMENT_5___});
+  content: url(${___CSS_LOADER_URL_REPLACEMENT_3___});
   position: absolute;
   padding-left: 12px;
   padding-top: 2px;
@@ -11572,40 +11251,6 @@ body {
 .price-table__ltb {
   border-top-left-radius: 7px;
 }
-
-@media (min-width: 768px) {
-  .commercial-content {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .commercial-content__description {
-    background-color: #fff;
-    margin: 0 24px;
-  }
-  .commercial-content__note {
-    width: 60%;
-  }
-  .commercial-content__offer {
-    margin-bottom: 47px;
-  }
-}
-@media (min-width: 1120px) {
-  .price-table__title, .price-table td {
-    padding-left: 24px;
-  }
-  .price-table__buttton {
-    padding-right: 24px;
-  }
-  .commercial-content__note {
-    width: 44%;
-  }
-  .price-table {
-    margin-bottom: 32px;
-  }
-  .commercial-content__offer {
-    margin-bottom: 50px;
-  }
-}
 .footer {
   margin: 0;
   font-size: 14px;
@@ -11639,36 +11284,9 @@ body {
 }
 
 .footer__privacy-policy {
+  -webkit-text-decoration: none;
   text-decoration: none;
   color: #7E7E82;
-}
-
-@media (min-width: 768px) {
-  .footer {
-    display: flex;
-    padding: 0 24px;
-    padding-bottom: 25px;
-    justify-content: space-between;
-  }
-  .footer__description {
-    padding-top: 32px;
-    max-width: 30%;
-  }
-  .footer__description:first-child {
-    text-align: left;
-  }
-  .footer__description:last-child {
-    text-align: right;
-  }
-  .footer__privacy-policy {
-    padding-top: 32px;
-  }
-}
-@media (min-width: 1120px) {
-  .footer {
-    margin-left: 320px;
-    padding-bottom: 21px;
-  }
 }
 button {
   cursor: pointer;
@@ -11687,7 +11305,7 @@ button {
 }
 
 .button--read-more::before {
-  content: url(${___CSS_LOADER_URL_REPLACEMENT_6___});
+  content: url(${___CSS_LOADER_URL_REPLACEMENT_4___});
   position: absolute;
   left: 8px;
 }
@@ -11705,21 +11323,9 @@ button {
 }
 
 .button--hidden::before {
-  content: url(${___CSS_LOADER_URL_REPLACEMENT_7___});
+  content: url(${___CSS_LOADER_URL_REPLACEMENT_5___});
   position: absolute;
   left: 8px;
-}
-
-@media (min-width: 768px) {
-  .button--show-all {
-    left: 24px;
-    margin-bottom: 32px;
-  }
-}
-@media (min-width: 1120px) {
-  .button--show-all {
-    margin-bottom: 50px;
-  }
 }
 .brands__title::before {
   content: "";
@@ -11747,8 +11353,161 @@ button {
   letter-spacing: -0.2px;
   color: #7E7E82;
 }
-
-@media (min-width: 768px) {
+@media (min-width: 321px){
+  .side-menu {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .main-menu__item:hover::before {
+    left: -24px;
+  }
+}
+@media (min-width: 768px){
+  .hidden, .type-container--tablet-hidden, .tablet-hidden {
+    display: none;
+  }
+  .feedback {
+    width: 42%;
+    padding: 24px 24px 75px;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+  }
+  .feedback__title::before {
+    left: -24px;
+  }
+  .side-menu {
+    width: 40%;
+  }
+  .call {
+    width: 42%;
+    padding: 24px 24px 75px;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+  }
+  .call__title::before {
+    left: -24px;
+  }
+  .header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .button-nav--menu {
+    margin-right: 42px;
+    position: relative;
+  }
+  .button-nav--menu::after {
+    content: url(${___CSS_LOADER_URL_REPLACEMENT_2___});
+    position: absolute;
+    pointer-events: none;
+    left: 60px;
+    top: 4px;
+  }
+  .button-nav--repair, .button-nav--chat, .button-nav--call {
+    margin-right: 16px;
+  }
+  .button-nav--profile {
+    margin-right: 40px;
+  }
+  .content__description {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .description {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .description__all-p {
+    width: 50%;
+    padding-right: 48px;
+    margin: 0;
+  }
+  .description__p2 {
+    margin-bottom: 10px;
+  }
+  .description__image {
+    width: 50%;
+  }
+  .swiper--hidden {
+    display: none;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+  .swiper-1, .swiper-2, .swiper-3 {
+    padding: 0 24px 24px 24px;
+  }
+  .content__brands {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  .content__brands--item {
+    max-height: 72px;
+    min-width: 224px;
+    max-width: 224px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    padding: 16px;
+  }
+  .tablet-hidden {
+    display: none;
+  }
+  .content__brands, .content__types {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  .type-container--size {
+    min-width: 224px;
+    max-width: 224px;
+  }
+  .commercial-content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .commercial-content__description {
+    background-color: #fff;
+    margin: 0 24px;
+  }
+  .commercial-content__note {
+    width: 60%;
+  }
+  .commercial-content__offer {
+    margin-bottom: 47px;
+  }
+  .footer {
+    display: flex;
+    padding: 0 24px;
+    padding-bottom: 25px;
+    justify-content: space-between;
+  }
+  .footer__description {
+    padding-top: 32px;
+    max-width: 30%;
+  }
+  .footer__description:first-child {
+    text-align: left;
+  }
+  .footer__description:last-child {
+    text-align: right;
+  }
+  .footer__privacy-policy {
+    padding-top: 32px;
+  }
+  .button--show-all {
+    left: 24px;
+    margin-bottom: 32px;
+  }
   .brands__title {
     padding-left: 24px;
     margin-bottom: 24px;
@@ -11757,11 +11516,211 @@ button {
     margin-bottom: 31px;
   }
 }
-@media (min-width: 1120px) {
+@media (min-width: 1120px){
+  .content {
+    margin-left: 320px;
+  }
+  .tablet-hidden, .type-container--tablet-hidden {
+    display: flex;
+  }
+  .desktop-hidden, .type-container--desktop-hidden {
+    display: none;
+  }
+  .feedback {
+    width: 30%;
+    padding: 40px 32px;
+    right: 0;
+  }
+  .close-feedback {
+    position: fixed;
+    left: 64%;
+    top: 32px;
+    z-index: 12;
+  }
+  .feedback__title {
+    padding: 0;
+  }
+  .feedback__title::before {
+    content: url(${___CSS_LOADER_URL_REPLACEMENT_6___});
+    position: absolute;
+    left: -32px;
+    top: -8px;
+  }
+  .button-send {
+    right: 48px;
+  }
+  .side-menu-hidden {
+    display: flex;
+  }
+  .icon__burger {
+    display: none;
+  }
+  .side-menu {
+    max-width: 320px;
+    box-shadow: none;
+  }
+  .side-menu__header {
+    padding-top: 30px;
+  }
+  .call {
+    width: 30%;
+    padding: 40px 32px;
+    right: 0;
+  }
+  .close-call {
+    position: fixed;
+    left: 64%;
+    top: 32px;
+    z-index: 12;
+  }
+  .call__title {
+    padding: 0;
+  }
+  .call__title::before {
+    content: url(${___CSS_LOADER_URL_REPLACEMENT_6___});
+    position: absolute;
+    left: -32px;
+    top: -8px;
+  }
+  .button-send {
+    right: 48px;
+  }
+  .header {
+    display: none;
+  }
+  .content__description {
+    padding: 0;
+  }
+  .title-1::before {
+    content: url(${___CSS_LOADER_URL_REPLACEMENT_6___});
+    margin-left: 320px;
+  }
+  .title-1 {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  .contetnt__button--repair {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    margin-right: 32px;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    height: 40px;
+    padding: 0;
+  }
+  .content__button--check-status {
+    display: flex;
+    background: none;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    height: 40px;
+    padding: 0;
+  }
+  .content__button-text {
+    font-family: "TT Lakes";
+    color: black;
+    margin-right: 8px;
+  }
+  .content__description {
+    padding: 0;
+  }
+  .content__top-box {
+    display: flex;
+    align-items: center;
+    padding-top: 42px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 8px;
+  }
+  .description__image {
+    padding-right: 28px;
+  }
+  .description__all-p {
+    padding-left: 34px;
+    padding-right: 36px;
+  }
+  .description__p2 {
+    margin-bottom: 14px;
+  }
+  .content__links {
+    height: 88px;
+    padding-top: 30px;
+  }
+  .content__link:first-child {
+    margin-left: 0;
+  }
+  .content__link {
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-bottom: 0;
+  }
+  .content__link:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .content__slide-menu {
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    padding-left: 32px;
+  }
+  .swiper-1, .swiper-2, .swiper-3 {
+    padding-left: 32px;
+  }
+  .content__brands--item {
+    min-width: 240px;
+    max-width: 240px;
+  }
+  .tablet-hidden {
+    display: flex;
+  }
+  .desktop-hidden {
+    display: none;
+  }
+  .contant__brands-hidden {
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+  .type-container--size {
+    min-width: 240px;
+    max-width: 240px;
+  }
+  .price-table__title, .price-table td {
+    padding-left: 24px;
+  }
+  .price-table__buttton {
+    padding-right: 24px;
+  }
+  .commercial-content__note {
+    width: 44%;
+  }
+  .price-table {
+    margin-bottom: 32px;
+  }
+  .commercial-content__offer {
+    margin-bottom: 50px;
+  }
+  .footer {
+    margin-left: 320px;
+    padding-bottom: 21px;
+  }
+  .button--show-all {
+    margin-bottom: 50px;
+  }
   .brands__title {
     padding-left: 32px;
   }
-}`, "",{"version":3,"sources":["webpack://./src/style/_fonts.scss","webpack://./src/index.scss","webpack://./src/style/_style.scss","webpack://./src/style/_feedback.scss","webpack://./src/style/_nav.scss","webpack://./src/style/_call.scss","webpack://./src/style/_header.scss","webpack://./src/style/_content-description.scss","webpack://./src/style/_slide-menu.scss","webpack://./src/style/_swiper.scss","webpack://./src/style/_content-brands.scss","webpack://./src/style/_content-types.scss","webpack://./src/style/_price-container.scss","webpack://./src/style/_commercial-content.scss","webpack://./src/style/_footer.scss","webpack://./src/style/_buttons.scss","webpack://./src/style/_titles.scss"],"names":[],"mappings":"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","sourcesContent":["@font-face {\r\n    font-family: 'TTLakes Regular';\r\n    src: url('./font/TTLakes/TTLakes-Medium.woff') format('woff');\r\n    font-weight: 400;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face {\r\n    font-family: 'TTLakes Medium';\r\n    src: url('./font/TTLakes/TTLakes-Medium.woff') format('woff');\r\n    font-weight: 500;\r\n    font-style: normal;\r\n}\r\n\r\n@font-face {\r\n    font-family: 'TTLakes Bold';\r\n    src: url('./font/TTLakes/TTLakes-Medium.woff') format('woff');\r\n    font-weight: 700;\r\n    font-style: normal;\r\n}","@import '~normalize.css';\r\n@import 'style/fonts';\r\n@import 'style/style';\r\n@import 'style/feedback';\r\n@import 'style/nav';\r\n@import 'style/call';\r\n@import 'style/header';\r\n@import 'style/content-description';\r\n@import 'style/slide-menu';\r\n@import 'style/swiper';\r\n@import 'style/content-brands';\r\n@import 'style/content-types';\r\n@import 'style/price-container';\r\n@import 'style/commercial-content';\r\n@import 'style/footer';\r\n@import 'style/buttons';\r\n@import 'style/titles';","$background-color: #F8F8F8;\r\n\r\nhtml {\r\n    box-sizing: border-box;\r\n}\r\n*, *::after, *::before {\r\n    box-sizing: inherit;\r\n}\r\n\r\nbody {\r\n    font-family: 'TT Lakes';\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: $background-color;\r\n}\r\n\r\n.hidden {\r\n    display: none;\r\n}\r\n\r\n.description-hidden {\r\n    display: none;;\r\n}\r\n\r\n.blur {\r\n    opacity: 4%;\r\n    pointer-events: none;\r\n}\r\n\r\n@media (max-width: 767px) {\r\n    .button-nav--call, .button-nav--chat, .button-nav--profile, .buttoun--hidden, .button--show-all, .price-table {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .hidden, .type-container--tablet-hidden, .tablet-hidden {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n\r\n    .content {\r\n        margin-left: 320px;\r\n    }\r\n\r\n    .tablet-hidden, .type-container--tablet-hidden {\r\n        display: flex;\r\n    }\r\n\r\n    .desktop-hidden, .type-container--desktop-hidden {\r\n        display: none;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n$input-placeholder: #B5B6BC;\r\n$pink: #FF3E79;\r\n\r\n.feedback {\r\n    padding: 24px 16px 75px;\r\n    background-color: $white;\r\n    z-index: 11;\r\n    position: fixed;\r\n    height: 100%;\r\n    overflow: auto;\r\n}\r\n\r\n.feedback__title {\r\n    position: relative;\r\n    margin: 0;\r\n    margin-bottom: 24px;\r\n    padding-top: 40px;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    letter-spacing: -0.6px;\r\n}\r\n\r\n.feedback__title::before {\r\n    content: url('img/highlight-mobile.svg');\r\n    position: absolute;\r\n    left: -16px;\r\n    top: 36px;\r\n}\r\n\r\n.feedback__input, .feedback__textarea {\r\n    width: 100%;\r\n    padding: 12px 16px;\r\n    margin-bottom: 16px;\r\n    border-radius: 10px;\r\n    border: 1px solid $border;\r\n}\r\n\r\n.feedback__input::placeholder, .feedback__textarea::placeholder {\r\n    color: $input-placeholder;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n}\r\n\r\n.feedback__textarea {\r\n    height: 118px;\r\n}\r\n\r\n.feedback__caption {\r\n    margin: 0;\r\n    margin-bottom: 19px;\r\n    color: #7E7E82;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n}\r\n\r\n.feedback__link {\r\n    text-decoration: none;\r\n    color: $pink;\r\n}\r\n\r\n.button-send {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    position: absolute;\r\n    right: 32px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .feedback {\r\n        width: 42%;\r\n        padding: 24px 24px 75px;\r\n        box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);\r\n    }\r\n\r\n    .feedback__title::before {\r\n        left: -24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .feedback {\r\n        width: 30%;\r\n        padding: 40px 32px;\r\n        right: 0;\r\n    }\r\n\r\n    .close-feedback {\r\n        position: fixed;\r\n        left: 64%;\r\n        top: 32px;\r\n        z-index: 12;\r\n    }\r\n\r\n    .feedback__title {\r\n        padding: 0;\r\n    }\r\n\r\n    .feedback__title::before {\r\n        content: url('img/highlight.svg');\r\n        position: absolute;\r\n        left: -32px;\r\n        top: -8px;\r\n    }\r\n\r\n    .button-send {\r\n        right: 48px;\r\n    }\r\n}","$gray: #7e7e82;\r\n$white: #fff;\r\n$black: #1b1c21;\r\n\r\n.side-menu {\r\n  font-family: \"TTLakes Regular\";\r\n  font-size: 14px;\r\n  line-height: 24px;\r\n  font-weight: 500;\r\n  color: $black;\r\n  margin: 0;\r\n  padding-left: 16px;\r\n  padding-right: 16px;\r\n  width: 100%;\r\n  height: 100%;\r\n  position: fixed;\r\n  overflow: auto;\r\n  left: 0;\r\n  top: 0;\r\n  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),\r\n    -2px 0 4px 0 rgba(69, 79, 126, 0.02);\r\n  min-height: 100%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  background-color: $white;\r\n  z-index: 8;\r\n}\r\n\r\n.side-menu-hidden {\r\n  display: none;\r\n}\r\n\r\n.side-menu__header {\r\n  display: flex;\r\n  align-items: center;\r\n  padding-top: 18px;\r\n}\r\n\r\n.icon {\r\n  border: none;\r\n  border-radius: 50%;\r\n  background: transparent;\r\n  padding: 0;\r\n  width: 40px;\r\n  height: 40px;\r\n  cursor: pointer;\r\n}\r\n\r\n.icon:hover {\r\n  transition-duration: 1s;\r\n  opacity: 0.5;\r\n}\r\n\r\n.icon__burger {\r\n  margin-right: 16px;\r\n}\r\n\r\n.side-menu__logo {\r\n  width: 98px;\r\n  height: 52px;\r\n  margin-right: auto;\r\n}\r\n\r\n.main-menu {\r\n  margin: 0;\r\n  padding: 0;\r\n  padding-top: 22px;\r\n  padding-bottom: 32px;\r\n  list-style: none;\r\n  flex: 1 1 auto;\r\n}\r\n\r\n.main-menu__item {\r\n  position: relative;\r\n  padding-top: 24px;\r\n}\r\n\r\n.main-menu__item:hover {\r\n  color: $gray;\r\n}\r\n\r\n.main-menu__item:first-child {\r\n  padding-top: 0;\r\n}\r\n\r\n.main-menu__item a {\r\n  text-decoration: none;\r\n  color: inherit;\r\n}\r\n\r\n.main-menu__item:hover::before {\r\n  content: url(\"img/highlight-nav.svg\");\r\n  position: absolute;\r\n  left: -16px;\r\n  bottom: -12px;\r\n}\r\n\r\n.fotter__icons {\r\n  display: flex;\r\n}\r\n\r\n.icon__phone {\r\n  margin-right: 16px;\r\n}\r\n\r\n.icon__chat {\r\n  margin-right: 16px;\r\n}\r\n\r\n.footer__mail {\r\n  padding-top: 16px;\r\n  display: block;\r\n  text-decoration: none;\r\n  color: inherit;\r\n}\r\n\r\n.footer__phone {\r\n  padding-top: 12px;\r\n  display: block;\r\n  text-decoration: none;\r\n  color: inherit;\r\n  font-size: 24px;\r\n  line-height: 32px;\r\n  font-weight: 600;\r\n}\r\n\r\n.footer__language {\r\n  padding-top: 8px;\r\n  display: inline-block;\r\n  text-decoration: none;\r\n  color: inherit;\r\n  margin-right: 8px;\r\n  padding-bottom: 32px;\r\n}\r\n\r\n.footer__language--active {\r\n  color: $gray;\r\n}\r\n\r\n@media (min-width: 321px) {\r\n  .side-menu {\r\n    padding-left: 24px;\r\n    padding-right: 24px;\r\n  }\r\n  .main-menu__item:hover::before {\r\n    left: -24px;\r\n  }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .side-menu {\r\n    width: 40%;\r\n  }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n  .side-menu-hidden {\r\n    display: flex;\r\n  }\r\n\r\n  .icon__burger {\r\n    display: none;\r\n  }\r\n\r\n  .side-menu {\r\n    max-width: 320px;\r\n    box-shadow: none;\r\n  }\r\n\r\n  .side-menu__header {\r\n    padding-top: 30px;\r\n  }\r\n}\r\n","$white: #fff;\r\n$input-border: #EAEAEA;\r\n$input-placeholder: #B5B6BC;\r\n$gray: #7E7E82;\r\n$pink: #FF3E79;\r\n\r\n.call {\r\n    padding: 24px 16px 75px;\r\n    background-color: $white;\r\n    z-index: 12;\r\n    position: fixed;\r\n    height: 100%;\r\n    overflow: auto;\r\n}\r\n\r\n.call__title {\r\n    position: relative;\r\n    margin: 0;\r\n    margin-bottom: 24px;\r\n    padding-top: 40px;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    letter-spacing: -0.6px;\r\n}\r\n\r\n.call__title::before {\r\n    content: url('img/highlight-mobile.svg');\r\n    position: absolute;\r\n    left: -16px;\r\n    top: 36px;\r\n}\r\n\r\n.call__input  {\r\n    width: 100%;\r\n    padding: 12px 16px;\r\n    margin-bottom: 16px;\r\n    border-radius: 10px;\r\n    border: 1px solid $input-border;\r\n}\r\n\r\n.call__input::placeholder {\r\n    color: $input-placeholder;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n}\r\n\r\n.call__caption {\r\n    margin: 0;\r\n    margin-bottom: 19px;\r\n    color: $gray;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n}\r\n\r\n.call__link {\r\n    text-decoration: none;\r\n    color: $pink;\r\n}\r\n\r\n.button-send {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    position: absolute;\r\n    right: 32px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .call {\r\n        width: 42%;\r\n        padding: 24px 24px 75px;\r\n        box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);\r\n    }\r\n\r\n    .call__title::before {\r\n        left: -24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .call {\r\n        width: 30%;\r\n        padding: 40px 32px;\r\n        right: 0;\r\n    }\r\n\r\n    .close-call {\r\n        position: fixed;\r\n        left: 64%;\r\n        top: 32px;\r\n        z-index: 12;\r\n    }\r\n\r\n    .call__title {\r\n        padding: 0;\r\n    }\r\n\r\n    .call__title::before {\r\n        content: url('img/highlight.svg');\r\n        position: absolute;\r\n        left: -32px;\r\n        top: -8px;\r\n    }\r\n\r\n    .button-send {\r\n        right: 48px;\r\n    }\r\n}","$lite-green: #D9FFF5;\r\n$white: #fff;\r\n\r\n.header {\r\n    display: flex;\r\n    align-items: center;\r\n    background-color: $white;\r\n    height: 87px;\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n}\r\n\r\n.header::after{\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 1px;\r\n    background: $lite-green;\r\n    top: 87px;\r\n}\r\n\r\n.button-nav {\r\n    width: 40px;\r\n    height: 40px;\r\n    background: none;\r\n    border: none;\r\n    border-radius: 50%;\r\n    cursor: pointer;\r\n    padding: 0;\r\n}\r\n\r\n.button-nav--menu {\r\n    margin-right: 16px;\r\n}\r\n\r\n.button-nav--repair {\r\n    margin-right: 16px;\r\n    position: relative;\r\n}\r\n\r\n.button-nav--repair::before {\r\n    content: url('img/divider.svg');\r\n    position: absolute;\r\n    top: 4px;\r\n    left: -20px;\r\n    pointer-events: none;\r\n}\r\n\r\n.logo {\r\n    margin-right: auto;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .header {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .button-nav--menu {\r\n        margin-right: 42px;\r\n        position: relative;\r\n    }\r\n    .button-nav--menu::after {\r\n        content: url('img/divider.svg');\r\n        position: absolute;\r\n        pointer-events: none;\r\n        left: 60px;\r\n        top: 4px;\r\n    }\r\n\r\n    .button-nav--repair, .button-nav--chat, .button-nav--call {\r\n        margin-right: 16px;\r\n    }\r\n\r\n    .button-nav--profile {\r\n        margin-right: 40px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .header {\r\n        display: none;\r\n    }\r\n}",".content__description {\r\n    padding-top: 24px;\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n}\r\n\r\n.description {\r\n    font-size: 14px;\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n}\r\n\r\n.title-1 {\r\n    margin: 0;\r\n    font-size: 28px;\r\n    font-weight: bold;\r\n    line-height: 40px;\r\n    margin-bottom: 24px;\r\n    left: 16px;\r\n}\r\n\r\n.title-1::before {\r\n    content: url('img/highlight-mobile.svg');\r\n    position: absolute;\r\n    left: 0;\r\n}\r\n\r\n.contetnt__button--repair, .content__button--check-status {\r\n    display: none;\r\n}\r\n\r\n.description__all-p {\r\n    letter-spacing: 0.2px;\r\n    margin-bottom: 16px;\r\n}\r\n.description__p1, .description__p2 {\r\n    margin: 0;\r\n    margin-bottom: 16px;\r\n}\r\n\r\n.description__image {\r\n    width: 100%;\r\n    margin-bottom: 24px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .content__description {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .description {\r\n        display: flex;\r\n        flex-wrap: nowrap;\r\n    }\r\n\r\n    .description__all-p {\r\n        width: 50%;\r\n        padding-right: 48px;\r\n        margin: 0;\r\n    }\r\n\r\n    .description__p2 {\r\n        margin-bottom: 10px;\r\n    }\r\n\r\n    .description__image {\r\n        width: 50%;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n\r\n    .content__description {\r\n        padding: 0;\r\n    }\r\n\r\n    .title-1::before {\r\n        content: url('img/highlight.svg');\r\n        margin-left: 320px;\r\n    }\r\n\r\n    .title-1 {\r\n        margin-right: auto;\r\n        margin-bottom: 0;\r\n    }\r\n\r\n    .contetnt__button--repair {\r\n        display: flex;\r\n        background: none;\r\n        border: none;\r\n        cursor: pointer;\r\n        align-items: center;\r\n        margin-right: 32px;\r\n        text-decoration: none;\r\n        height: 40px;\r\n        padding: 0;\r\n    }\r\n\r\n    .content__button--check-status {\r\n        display: flex;\r\n        background: none;\r\n        border: none;\r\n        align-items: center;\r\n        cursor: pointer;\r\n        text-decoration: none;\r\n        height: 40px;\r\n        padding: 0;\r\n    }\r\n\r\n    .content__button-text {\r\n        font-family: 'TT Lakes';\r\n        color: black;\r\n        margin-right: 8px;\r\n    }\r\n\r\n    .content__description {\r\n        padding: 0;\r\n    }\r\n\r\n    .content__top-box {\r\n        display: flex;\r\n        align-items: center;\r\n        padding-top: 42px;\r\n        padding-left: 32px;\r\n        padding-right: 32px;\r\n        margin-bottom: 8px;\r\n    }\r\n\r\n    .description__image {\r\n        padding-right: 28px;\r\n    }\r\n\r\n    .description__all-p {\r\n        padding-left: 34px;\r\n        padding-right: 36px;\r\n    }\r\n\r\n    .description__p2 {\r\n        margin-bottom: 14px;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n$gray: #7E7E82;\r\n\r\n.price-container {\r\n    width: 260px;\r\n    height: 200px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    box-sizing: border-box;\r\n    background-color: $white;\r\n    border: 1px solid $border;\r\n    border-radius: 5px;\r\n    padding: 16px;\r\n}\r\n\r\n.price-container__description{\r\n    line-height: 18px;\r\n    letter-spacing: 0.2px;\r\n    margin-bottom: 16px;\r\n}\r\n\r\n.price-container__title {\r\n    color: $gray;\r\n    line-height: 16px;\r\n    margin-bottom: 4px;\r\n}\r\n\r\n.price-container__button-order {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    position: absolute;\r\n    align-self: flex-end;\r\n    bottom: 16px;\r\n}","$background-color: #DDDDDD;\r\n$active-color: #B5B6BC;\r\n\r\n.swiper-1, .swiper-2, .swiper-3 {\r\n    padding-bottom: 20px;\r\n    padding-left: 16px;\r\n}\r\n\r\n.swiper-wrapper {\r\n    align-items: center;\r\n}\r\n\r\n.swiper-slide__button {\r\n    align-self: flex-end;\r\n    margin-left: auto;\r\n}\r\n\r\n.swiper-slide__image {\r\n    margin-right: auto;\r\n}\r\n\r\n.swiper-pagination-bullet{\r\n    background-color: $background-color;\r\n    opacity: 1;\r\n}\r\n\r\n.swiper-pagination {\r\n    padding-top: 12px;\r\n    position: static;\r\n}\r\n\r\n.swiper-pagination-bullet-active {\r\n    background-color: $active-color;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .swiper--hidden {\r\n        display: none;\r\n    }\r\n\r\n    .swiper-pagination {\r\n        display: none;\r\n    }\r\n\r\n    .swiper-1, .swiper-2, .swiper-3 {\r\n        padding: 0 24px 24px 24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .swiper-1, .swiper-2, .swiper-3 {\r\n        padding-left: 32px;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n\r\n.brand-container {\r\n    max-height: 72px;\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    align-items: center;\r\n    background-color: $white;\r\n    border: 1px solid $border;\r\n    border-radius: 5px;\r\n    padding: 16px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .content__brands {\r\n        display: flex;\r\n        align-items: center;\r\n        align-content: center;\r\n        flex-wrap: wrap;\r\n        row-gap: 16px;\r\n        column-gap: 24px;\r\n    }\r\n\r\n    .content__brands--item {\r\n        max-height: 72px;\r\n        min-width: 224px;\r\n        max-width: 224px;\r\n        box-sizing: border-box;\r\n        display: flex;\r\n        align-items: center;\r\n        background-color: $white;\r\n        border: 1px solid $border;\r\n        border-radius: 5px;\r\n        padding: 16px;\r\n    }\r\n\r\n    .tablet-hidden {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .content__brands--item {\r\n        min-width: 240px;\r\n        max-width: 240px;\r\n    }\r\n\r\n    .tablet-hidden {\r\n        display: flex;\r\n    }\r\n\r\n    .desktop-hidden {\r\n        display: none;\r\n    }\r\n\r\n    .contant__brands-hidden {\r\n        column-gap: 32px;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n\r\n.type-container {\r\n    width: 240px;\r\n    height: 160px;\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    background-color: $white;\r\n    border: 1px solid $border;\r\n    border-radius: 5px;\r\n    padding: 16px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .content__brands, .content__types {\r\n        display: flex;\r\n        align-items: center;\r\n        align-content: center;\r\n        flex-wrap: wrap;\r\n        row-gap: 16px;\r\n        column-gap: 24px;\r\n    }\r\n\r\n    .type-container--size {\r\n        min-width: 224px;\r\n        max-width: 224px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .type-container--size {\r\n        min-width: 240px;\r\n        max-width: 240px;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n$gray: #7E7E82;\r\n\r\n.price-container {\r\n    width: 260px;\r\n    height: 200px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    box-sizing: border-box;\r\n    background-color: $white;\r\n    border: 1px solid $border;\r\n    border-radius: 5px;\r\n    padding: 16px;\r\n}\r\n\r\n.price-container__description{\r\n    line-height: 18px;\r\n    letter-spacing: 0.2px;\r\n    margin-bottom: 16px;\r\n}\r\n\r\n.price-container__title {\r\n    color: $gray;\r\n    line-height: 16px;\r\n    margin-bottom: 4px;\r\n}\r\n\r\n.price-container__button-order {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    position: absolute;\r\n    align-self: flex-end;\r\n    bottom: 16px;\r\n}","$white: #fff;\r\n$border-bottom: #EAEAEA;\r\n$gray: #7E7E82;\r\n\r\n.commercial-content {\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n    font-size: 14px;\r\n}\r\n\r\n.commercial-content__note {\r\n    margin: 0;\r\n    margin-bottom: 20px;\r\n    padding: 0;\r\n    line-height: 20px;\r\n    letter-spacing: 0.2px;\r\n}\r\n\r\n.commercial-content__offer {\r\n    padding: 0;\r\n    margin-bottom: 40px;\r\n}\r\n\r\n.commercial-content__offer-link {\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n    text-decoration: none;\r\n    color: #1B1C21;\r\n    font-weight: 500;\r\n\r\n}\r\n\r\n.commercial-content__offer-link::after {\r\n    content: url('img/ic-more/line.svg');\r\n    position: absolute;\r\n    padding-left: 12px;\r\n    padding-top: 2px;\r\n}\r\n\r\n.price-table {\r\n    border-collapse: collapse;\r\n    width: 100%;\r\n    margin-bottom: 24px;\r\n}\r\n\r\n.price-table td {\r\n    padding-left: 16px;\r\n    padding-top: 16px;\r\n    padding-bottom: 16px;\r\n}\r\n\r\n.price-table__rows {\r\n    background-color: $white;\r\n    border-bottom: 1px solid $border-bottom;\r\n}\r\n\r\n.price-table__rows:last-child {\r\n    border-bottom: none;\r\n}\r\n\r\n.price-table__title {\r\n    text-align: left;\r\n    font-weight: normal;\r\n    color: $gray;\r\n    line-height: 16px;\r\n    padding-bottom: 16px;\r\n    padding-left: 16px;\r\n}\r\n\r\n.button-make-order {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    cursor: pointer;\r\n}\r\n\r\n.price-table__buttton {\r\n    padding-right: 16px;\r\n    text-align: right;\r\n}\r\n\r\n.price-table__rbb {\r\n    border-bottom-right-radius: 7px;\r\n}\r\n\r\n.price-table__lbb {\r\n    border-bottom-left-radius: 7px;\r\n}\r\n\r\n.price-table__rtb {\r\n    border-top-right-radius: 7px;\r\n}\r\n\r\n.price-table__ltb {\r\n    border-top-left-radius: 7px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .commercial-content {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .commercial-content__description {\r\n        background-color: $white;\r\n        margin: 0 24px;\r\n    }\r\n\r\n    .commercial-content__note {\r\n        width: 60%;\r\n    }\r\n\r\n    .commercial-content__offer {\r\n        margin-bottom: 47px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n\r\n    .price-table__title, .price-table td {\r\n        padding-left: 24px;\r\n    }\r\n\r\n    .price-table__buttton {\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .commercial-content__note {\r\n        width: 44%;\r\n    }\r\n\r\n    .price-table {\r\n        margin-bottom: 32px;\r\n    }\r\n\r\n    .commercial-content__offer {\r\n        margin-bottom: 50px;\r\n    }\r\n}","$lite-green: #D9FFF5;\r\n$gray: #7E7E82;\r\n\r\n.footer {\r\n    margin: 0;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n    padding: 0 4px 19px;\r\n    text-align: center;\r\n    color: $gray;\r\n}\r\n\r\n.footer::before {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 1px;\r\n    background: $lite-green;\r\n}\r\n\r\n.footer__description {\r\n    margin: 0;\r\n    padding-top: 16px;\r\n    margin-bottom: 16px;\r\n}\r\n\r\n.footer__description:first-child {\r\n    white-space: pre;\r\n}\r\n\r\n.footer__description:last-child {\r\n    margin: 0;\r\n}\r\n\r\n.footer__privacy-policy {\r\n    text-decoration: none;\r\n    color: $gray;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .footer {\r\n        display: flex;\r\n        padding: 0 24px;\r\n        padding-bottom: 25px;\r\n        justify-content: space-between;\r\n\r\n    }\r\n\r\n    .footer__description {\r\n        padding-top: 32px;\r\n        max-width: 30%;\r\n    }\r\n\r\n    .footer__description:first-child {\r\n        text-align: left;\r\n    }\r\n\r\n    .footer__description:last-child {\r\n        text-align: right;\r\n    }\r\n\r\n    .footer__privacy-policy {\r\n        padding-top: 32px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .footer {\r\n        margin-left: 320px;\r\n        padding-bottom: 21px;\r\n    }\r\n}","button {\r\n    cursor: pointer;\r\n    color: black;\r\n}\r\n\r\n.button--read-more {\r\n    cursor: pointer;\r\n    display: block;\r\n    border: none;\r\n    font-family: 'TT Lakes';\r\n    font-size: 16px;\r\n    background: transparent;\r\n    position: relative;\r\n    padding-left: 32px;\r\n}\r\n\r\n.button--read-more::before{\r\n    content: url('img/ic-4/icon.svg');\r\n    position:absolute;\r\n    left: 8px;\r\n}\r\n\r\n.button--hidden{\r\n    cursor: pointer;\r\n    display: block;\r\n    border: none;\r\n    font-family: 'TT Lakes';\r\n    font-size: 16px;\r\n    background: transparent;\r\n    position: relative;\r\n    padding-left: 32px;\r\n    margin-bottom: 14px;\r\n}\r\n\r\n.button--hidden::before{\r\n    content: url('img/ic-up/icon-up.svg');\r\n    position:absolute;\r\n    left: 8px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .button--show-all {\r\n        left: 24px;\r\n        margin-bottom: 32px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .button--show-all {\r\n        margin-bottom: 50px;\r\n    }\r\n}","$lite-green: #D9FFF5;\r\n$gray: #7E7E82;\r\n\r\n.brands__title::before {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 1px;\r\n    background: $lite-green;\r\n}\r\n\r\n.brands__title{\r\n    position: relative;\r\n    background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);\r\n    padding: 16px;\r\n    margin-bottom: 16px;\r\n\r\n}\r\n\r\n.brands__title--mod {\r\n    margin: 0;\r\n    font-size: 16px;\r\n    text-transform: uppercase;\r\n    font-weight: normal;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n    color: $gray;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .brands__title{\r\n        padding-left: 24px;\r\n        margin-bottom: 24px;\r\n    }\r\n\r\n    .brands__title-price {\r\n        margin-bottom: 31px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .brands__title{\r\n        padding-left: 32px;\r\n    }\r\n}"],"sourceRoot":""}]);
+}
+@media (max-width: 767px){
+  .button-nav--call, .button-nav--chat, .button-nav--profile, .buttoun--hidden, .button--show-all, .price-table {
+    display: none;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/style/_style.scss","webpack://./src/index.scss","webpack://./src/style/_feedback.scss","webpack://./src/style/_nav.scss","webpack://./src/style/_call.scss","webpack://./src/style/_header.scss","webpack://./src/style/_content-description.scss","webpack://./src/style/_slide-menu.scss","webpack://./src/style/_swiper.scss","webpack://./src/style/_content-brands.scss","webpack://./src/style/_content-types.scss","webpack://./src/style/_price-container.scss","webpack://./src/style/_commercial-content.scss","webpack://./src/style/_footer.scss","webpack://./src/style/_buttons.scss","webpack://./src/style/_titles.scss","webpack://./<no source>"],"names":[],"mappings":"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","sourcesContent":["$background-color: #F8F8F8;\r\n\r\nhtml {\r\n    box-sizing: border-box;\r\n}\r\n*, *::after, *::before {\r\n    box-sizing: inherit;\r\n}\r\n\r\nbody {\r\n    font-family: 'TT Lakes';\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: $background-color;\r\n}\r\n\r\n.hidden {\r\n    display: none;\r\n}\r\n\r\n.description-hidden {\r\n    display: none;;\r\n}\r\n\r\n.blur {\r\n    opacity: 4%;\r\n    pointer-events: none;\r\n}\r\n\r\n@media (max-width: 767px) {\r\n    .button-nav--call, .button-nav--chat, .button-nav--profile, .buttoun--hidden, .button--show-all, .price-table {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .hidden, .type-container--tablet-hidden, .tablet-hidden {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n\r\n    .content {\r\n        margin-left: 320px;\r\n    }\r\n\r\n    .tablet-hidden, .type-container--tablet-hidden {\r\n        display: flex;\r\n    }\r\n\r\n    .desktop-hidden, .type-container--desktop-hidden {\r\n        display: none;\r\n    }\r\n}","@import '~normalize.css';\r\n@import 'style/fonts';\r\n@import 'style/style';\r\n@import 'style/feedback';\r\n@import 'style/nav';\r\n@import 'style/call';\r\n@import 'style/header';\r\n@import 'style/content-description';\r\n@import 'style/slide-menu';\r\n@import 'style/swiper';\r\n@import 'style/content-brands';\r\n@import 'style/content-types';\r\n@import 'style/price-container';\r\n@import 'style/commercial-content';\r\n@import 'style/footer';\r\n@import 'style/buttons';\r\n@import 'style/titles';","$white: #fff;\r\n$border: #EAEAEA;\r\n$input-placeholder: #B5B6BC;\r\n$pink: #FF3E79;\r\n\r\n.feedback {\r\n    padding: 24px 16px 75px;\r\n    background-color: $white;\r\n    z-index: 11;\r\n    position: fixed;\r\n    height: 100%;\r\n    overflow: auto;\r\n}\r\n\r\n.feedback__title {\r\n    position: relative;\r\n    margin: 0;\r\n    margin-bottom: 24px;\r\n    padding-top: 40px;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    letter-spacing: -0.6px;\r\n}\r\n\r\n.feedback__title::before {\r\n    content: url('../img/highlight-mobile.svg');\r\n    position: absolute;\r\n    left: -16px;\r\n    top: 36px;\r\n}\r\n\r\n.feedback__input, .feedback__textarea {\r\n    width: 100%;\r\n    padding: 12px 16px;\r\n    margin-bottom: 16px;\r\n    border-radius: 10px;\r\n    border: 1px solid $border;\r\n}\r\n\r\n.feedback__input::placeholder, .feedback__textarea::placeholder {\r\n    color: $input-placeholder;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n}\r\n\r\n.feedback__textarea {\r\n    height: 118px;\r\n}\r\n\r\n.feedback__caption {\r\n    margin: 0;\r\n    margin-bottom: 19px;\r\n    color: #7E7E82;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n}\r\n\r\n.feedback__link {\r\n    text-decoration: none;\r\n    color: $pink;\r\n}\r\n\r\n.button-send {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    position: absolute;\r\n    right: 32px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .feedback {\r\n        width: 42%;\r\n        padding: 24px 24px 75px;\r\n        box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);\r\n    }\r\n\r\n    .feedback__title::before {\r\n        left: -24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .feedback {\r\n        width: 30%;\r\n        padding: 40px 32px;\r\n        right: 0;\r\n    }\r\n\r\n    .close-feedback {\r\n        position: fixed;\r\n        left: 64%;\r\n        top: 32px;\r\n        z-index: 12;\r\n    }\r\n\r\n    .feedback__title {\r\n        padding: 0;\r\n    }\r\n\r\n    .feedback__title::before {\r\n        content: url('../img/highlight.svg');\r\n        position: absolute;\r\n        left: -32px;\r\n        top: -8px;\r\n    }\r\n\r\n    .button-send {\r\n        right: 48px;\r\n    }\r\n}","$gray: #7E7E82;\r\n$white: #fff;\r\n$black: #1B1C21;\r\n\r\n.side-menu {\r\n    font-family: 'TT Lakes';\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    font-weight: 500;\r\n    color: $black;\r\n    margin: 0;\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n    width: 100%;\r\n    height: 100%;\r\n    position: fixed;\r\n    overflow: auto;\r\n    left: 0;\r\n    top: 0;\r\n    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);\r\n    min-height: 100%;\r\n    display: flex;\r\n    flex-direction: column;\r\n    background-color: $white;\r\n    z-index: 8;\r\n}\r\n\r\n.side-menu-hidden {\r\n    display: none;\r\n}\r\n\r\n.side-menu__header {\r\n    display: flex;\r\n    align-items: center;\r\n    padding-top: 18px;\r\n}\r\n\r\n.icon {\r\n    border: none;\r\n    border-radius: 50%;\r\n    background: transparent;\r\n    padding: 0;\r\n    width: 40px;\r\n    height: 40px;\r\n    cursor: pointer;\r\n}\r\n\r\n.icon:hover {\r\n    transition-duration: 1s;\r\n    opacity: 0.5;\r\n}\r\n\r\n.icon__burger {\r\n    margin-right: 16px;\r\n}\r\n\r\n.side-menu__logo {\r\n    width: 98px;\r\n    height: 52px;\r\n    margin-right: auto;\r\n}\r\n\r\n.main-menu {\r\n    margin: 0;\r\n    padding: 0;\r\n    padding-top: 22px;\r\n    padding-bottom: 32px;\r\n    list-style: none;\r\n    flex: 1 1 auto;\r\n}\r\n\r\n.main-menu__item {\r\n    position: relative;\r\n    padding-top: 24px;\r\n}\r\n\r\n.main-menu__item:hover {\r\n    color: $gray;\r\n}\r\n\r\n.main-menu__item:first-child {\r\n    padding-top: 0;\r\n}\r\n\r\n.main-menu__item a {\r\n    text-decoration: none;\r\n    color: inherit;\r\n}\r\n\r\n.main-menu__item:hover::before {\r\n    content: url('../img/highlight-nav.svg');\r\n    position: absolute;\r\n    left: -16px;\r\n    bottom: -12px;\r\n}\r\n\r\n.fotter__icons {\r\n    display: flex;\r\n}\r\n\r\n.icon__phone {\r\n    margin-right: 16px;\r\n}\r\n\r\n.icon__chat {\r\n    margin-right: 16px;\r\n}\r\n\r\n.footer__mail {\r\n    padding-top: 16px;\r\n    display: block;\r\n    text-decoration: none;\r\n    color: inherit;\r\n}\r\n\r\n.footer__phone {\r\n    padding-top: 12px;\r\n    display: block;\r\n    text-decoration: none;\r\n    color: inherit;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    font-weight: 600;\r\n}\r\n\r\n.footer__language {\r\n    padding-top: 8px;\r\n    display: inline-block;\r\n    text-decoration: none;\r\n    color: inherit;\r\n    margin-right: 8px;\r\n    padding-bottom: 32px;\r\n}\r\n\r\n.footer__language--active {\r\n    color: $gray;\r\n}\r\n\r\n@media (min-width: 321px) {\r\n    .side-menu {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    } \r\n    .main-menu__item:hover::before {\r\n        left: -24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .side-menu {\r\n        width: 40%;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .side-menu-hidden {\r\n        display: flex;\r\n    }\r\n\r\n    .icon__burger {\r\n        display: none;\r\n    }\r\n\r\n    .side-menu {\r\n        max-width: 320px;\r\n        box-shadow: none;\r\n    }\r\n\r\n    .side-menu__header {\r\n        padding-top: 30px;\r\n    }\r\n}","$white: #fff;\r\n$input-border: #EAEAEA;\r\n$input-placeholder: #B5B6BC;\r\n$gray: #7E7E82;\r\n$pink: #FF3E79;\r\n\r\n.call {\r\n    padding: 24px 16px 75px;\r\n    background-color: $white;\r\n    z-index: 12;\r\n    position: fixed;\r\n    height: 100%;\r\n    overflow: auto;\r\n}\r\n\r\n.call__title {\r\n    position: relative;\r\n    margin: 0;\r\n    margin-bottom: 24px;\r\n    padding-top: 40px;\r\n    font-size: 24px;\r\n    line-height: 32px;\r\n    letter-spacing: -0.6px;\r\n}\r\n\r\n.call__title::before {\r\n    content: url('../img/highlight-mobile.svg');\r\n    position: absolute;\r\n    left: -16px;\r\n    top: 36px;\r\n}\r\n\r\n.call__input  {\r\n    width: 100%;\r\n    padding: 12px 16px;\r\n    margin-bottom: 16px;\r\n    border-radius: 10px;\r\n    border: 1px solid $input-border;\r\n}\r\n\r\n.call__input::placeholder {\r\n    color: $input-placeholder;\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n}\r\n\r\n.call__caption {\r\n    margin: 0;\r\n    margin-bottom: 19px;\r\n    color: $gray;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n}\r\n\r\n.call__link {\r\n    text-decoration: none;\r\n    color: $pink;\r\n}\r\n\r\n.button-send {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    position: absolute;\r\n    right: 32px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .call {\r\n        width: 42%;\r\n        padding: 24px 24px 75px;\r\n        box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);\r\n    }\r\n\r\n    .call__title::before {\r\n        left: -24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .call {\r\n        width: 30%;\r\n        padding: 40px 32px;\r\n        right: 0;\r\n    }\r\n\r\n    .close-call {\r\n        position: fixed;\r\n        left: 64%;\r\n        top: 32px;\r\n        z-index: 12;\r\n    }\r\n\r\n    .call__title {\r\n        padding: 0;\r\n    }\r\n\r\n    .call__title::before {\r\n        content: url('../img/highlight.svg');\r\n        position: absolute;\r\n        left: -32px;\r\n        top: -8px;\r\n    }\r\n\r\n    .button-send {\r\n        right: 48px;\r\n    }\r\n}","$lite-green: #D9FFF5;\r\n$white: #fff;\r\n\r\n.header {\r\n    display: flex;\r\n    align-items: center;\r\n    background-color: $white;\r\n    height: 87px;\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n}\r\n\r\n.header::after{\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 1px;\r\n    background: $lite-green;\r\n    top: 87px;\r\n}\r\n\r\n.button-nav {\r\n    width: 40px;\r\n    height: 40px;\r\n    background: none;\r\n    border: none;\r\n    border-radius: 50%;\r\n    cursor: pointer;\r\n    padding: 0;\r\n}\r\n\r\n.button-nav--menu {\r\n    margin-right: 16px;\r\n}\r\n\r\n.button-nav--repair {\r\n    margin-right: 16px;\r\n    position: relative;\r\n}\r\n\r\n.button-nav--repair::before {\r\n    content: url('../img/divider.svg');\r\n    position: absolute;\r\n    top: 4px;\r\n    left: -20px;\r\n    pointer-events: none;\r\n}\r\n\r\n.logo {\r\n    margin-right: auto;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .header {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .button-nav--menu {\r\n        margin-right: 42px;\r\n        position: relative;\r\n    }\r\n    .button-nav--menu::after {\r\n        content: url('../img/divider.svg');\r\n        position: absolute;\r\n        pointer-events: none;\r\n        left: 60px;\r\n        top: 4px;\r\n    }\r\n\r\n    .button-nav--repair, .button-nav--chat, .button-nav--call {\r\n        margin-right: 16px;\r\n    }\r\n\r\n    .button-nav--profile {\r\n        margin-right: 40px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .header {\r\n        display: none;\r\n    }\r\n}",".content__description {\r\n    padding-top: 24px;\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n}\r\n\r\n.description {\r\n    font-size: 14px;\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n}\r\n\r\n.title-1 {\r\n    margin: 0;\r\n    font-size: 28px;\r\n    font-weight: bold;\r\n    line-height: 40px;\r\n    margin-bottom: 24px;\r\n    left: 16px;\r\n}\r\n\r\n.title-1::before {\r\n    content: url('../img/highlight-mobile.svg');\r\n    position: absolute;\r\n    left: 0;\r\n}\r\n\r\n.contetnt__button--repair, .content__button--check-status {\r\n    display: none;\r\n}\r\n\r\n.description__all-p {\r\n    letter-spacing: 0.2px;\r\n    margin-bottom: 16px;\r\n}\r\n.description__p1, .description__p2 {\r\n    margin: 0;\r\n    margin-bottom: 16px;\r\n}\r\n\r\n.description__image {\r\n    width: 100%;\r\n    margin-bottom: 24px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .content__description {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .description {\r\n        display: flex;\r\n        flex-wrap: nowrap;\r\n    }\r\n\r\n    .description__all-p {\r\n        width: 50%;\r\n        padding-right: 48px;\r\n        margin: 0;\r\n    }\r\n\r\n    .description__p2 {\r\n        margin-bottom: 10px;\r\n    }\r\n\r\n    .description__image {\r\n        width: 50%;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n\r\n    .content__description {\r\n        padding: 0;\r\n    }\r\n\r\n    .title-1::before {\r\n        content: url('../img/highlight.svg');\r\n        margin-left: 320px;\r\n    }\r\n\r\n    .title-1 {\r\n        margin-right: auto;\r\n        margin-bottom: 0;\r\n    }\r\n\r\n    .contetnt__button--repair {\r\n        display: flex;\r\n        background: none;\r\n        border: none;\r\n        cursor: pointer;\r\n        align-items: center;\r\n        margin-right: 32px;\r\n        text-decoration: none;\r\n        height: 40px;\r\n        padding: 0;\r\n    }\r\n\r\n    .content__button--check-status {\r\n        display: flex;\r\n        background: none;\r\n        border: none;\r\n        align-items: center;\r\n        cursor: pointer;\r\n        text-decoration: none;\r\n        height: 40px;\r\n        padding: 0;\r\n    }\r\n\r\n    .content__button-text {\r\n        font-family: 'TT Lakes';\r\n        color: black;\r\n        margin-right: 8px;\r\n    }\r\n\r\n    .content__description {\r\n        padding: 0;\r\n    }\r\n\r\n    .content__top-box {\r\n        display: flex;\r\n        align-items: center;\r\n        padding-top: 42px;\r\n        padding-left: 32px;\r\n        padding-right: 32px;\r\n        margin-bottom: 8px;\r\n    }\r\n\r\n    .description__image {\r\n        padding-right: 28px;\r\n    }\r\n\r\n    .description__all-p {\r\n        padding-left: 34px;\r\n        padding-right: 36px;\r\n    }\r\n\r\n    .description__p2 {\r\n        margin-bottom: 14px;\r\n    }\r\n}","$gray: #7E7E82;\r\n$white: #fff;\r\n$lite-green: #B8FFEC;\r\n\r\n.content__slide-menu {\r\n    display: flex;\r\n    font-size: 16px;\r\n    overflow-x: scroll;\r\n    margin-bottom: 24px;\r\n}\r\n\r\n.content__link {\r\n    white-space: nowrap;\r\n    color: $gray;\r\n    font-family: \"TT Lakes\";\r\n    text-decoration: none;\r\n    padding-top: 8px;\r\n    padding-right: 10px;\r\n    padding-bottom: 8px;\r\n    padding-left: 16px;\r\n}\r\n\r\n.content__link:hover {\r\n    border: 2px solid $lite-green;\r\n    background-color: $white;\r\n    border-radius: 5px;\r\n    padding-top: 6px;\r\n    padding-right: 8px;\r\n    padding-bottom: 6px;\r\n    padding-left: 14px;\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .content__links {\r\n        height: 88px;\r\n        padding-top: 30px;\r\n    }\r\n\r\n    .content__link:first-child{\r\n        margin-left: 0;\r\n    }\r\n\r\n    .content__link {\r\n        padding-left: 22px;\r\n        padding-right: 22px;\r\n        margin-bottom: 0;\r\n    }\r\n\r\n    .content__link:hover {\r\n        padding-left: 20px;\r\n        padding-right: 20px;\r\n    }\r\n\r\n    .content__slide-menu {\r\n        flex-wrap: wrap;\r\n        margin-bottom: 16px;\r\n        padding-left: 32px;\r\n    }\r\n}","$background-color: #DDDDDD;\r\n$active-color: #B5B6BC;\r\n\r\n.swiper-1, .swiper-2, .swiper-3 {\r\n    padding-bottom: 20px;\r\n    padding-left: 16px;\r\n}\r\n\r\n.swiper-wrapper {\r\n    align-items: center;\r\n}\r\n\r\n.swiper-slide__button {\r\n    align-self: flex-end;\r\n    margin-left: auto;\r\n}\r\n\r\n.swiper-slide__image {\r\n    margin-right: auto;\r\n}\r\n\r\n.swiper-pagination-bullet{\r\n    background-color: $background-color;\r\n    opacity: 1;\r\n}\r\n\r\n.swiper-pagination {\r\n    padding-top: 12px;\r\n    position: static;\r\n}\r\n\r\n.swiper-pagination-bullet-active {\r\n    background-color: $active-color;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .swiper--hidden {\r\n        display: none;\r\n    }\r\n\r\n    .swiper-pagination {\r\n        display: none;\r\n    }\r\n\r\n    .swiper-1, .swiper-2, .swiper-3 {\r\n        padding: 0 24px 24px 24px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .swiper-1, .swiper-2, .swiper-3 {\r\n        padding-left: 32px;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n\r\n.brand-container {\r\n    max-height: 72px;\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    align-items: center;\r\n    background-color: $white;\r\n    border: 1px solid $border;\r\n    border-radius: 5px;\r\n    padding: 16px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .content__brands {\r\n        display: flex;\r\n        align-items: center;\r\n        align-content: center;\r\n        flex-wrap: wrap;\r\n        row-gap: 16px;\r\n        column-gap: 24px;\r\n    }\r\n\r\n    .content__brands--item {\r\n        max-height: 72px;\r\n        min-width: 224px;\r\n        max-width: 224px;\r\n        box-sizing: border-box;\r\n        display: flex;\r\n        align-items: center;\r\n        background-color: $white;\r\n        border: 1px solid $border;\r\n        border-radius: 5px;\r\n        padding: 16px;\r\n    }\r\n\r\n    .tablet-hidden {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .content__brands--item {\r\n        min-width: 240px;\r\n        max-width: 240px;\r\n    }\r\n\r\n    .tablet-hidden {\r\n        display: flex;\r\n    }\r\n\r\n    .desktop-hidden {\r\n        display: none;\r\n    }\r\n\r\n    .contant__brands-hidden {\r\n        column-gap: 32px;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n\r\n.type-container {\r\n    width: 240px;\r\n    height: 160px;\r\n    box-sizing: border-box;\r\n    display: flex;\r\n    background-color: $white;\r\n    border: 1px solid $border;\r\n    border-radius: 5px;\r\n    padding: 16px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n\r\n    .content__brands, .content__types {\r\n        display: flex;\r\n        align-items: center;\r\n        align-content: center;\r\n        flex-wrap: wrap;\r\n        row-gap: 16px;\r\n        column-gap: 24px;\r\n    }\r\n\r\n    .type-container--size {\r\n        min-width: 224px;\r\n        max-width: 224px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .type-container--size {\r\n        min-width: 240px;\r\n        max-width: 240px;\r\n    }\r\n}","$white: #fff;\r\n$border: #EAEAEA;\r\n$gray: #7E7E82;\r\n\r\n.price-container {\r\n    width: 260px;\r\n    height: 200px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    box-sizing: border-box;\r\n    background-color: $white;\r\n    border: 1px solid $border;\r\n    border-radius: 5px;\r\n    padding: 16px;\r\n}\r\n\r\n.price-container__description{\r\n    line-height: 18px;\r\n    letter-spacing: 0.2px;\r\n    margin-bottom: 16px;\r\n}\r\n\r\n.price-container__title {\r\n    color: $gray;\r\n    line-height: 16px;\r\n    margin-bottom: 4px;\r\n}\r\n\r\n.price-container__button-order {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    position: absolute;\r\n    align-self: flex-end;\r\n    bottom: 16px;\r\n}","$white: #fff;\r\n$border-bottom: #EAEAEA;\r\n$gray: #7E7E82;\r\n\r\n.commercial-content {\r\n    padding-left: 16px;\r\n    padding-right: 16px;\r\n    font-size: 14px;\r\n}\r\n\r\n.commercial-content__note {\r\n    margin: 0;\r\n    margin-bottom: 20px;\r\n    padding: 0;\r\n    line-height: 20px;\r\n    letter-spacing: 0.2px;\r\n}\r\n\r\n.commercial-content__offer {\r\n    padding: 0;\r\n    margin-bottom: 40px;\r\n}\r\n\r\n.commercial-content__offer-link {\r\n    font-size: 16px;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n    text-decoration: none;\r\n    color: #1B1C21;\r\n    font-weight: 500;\r\n\r\n}\r\n\r\n.commercial-content__offer-link::after {\r\n    content: url('../img/ic-more/line.svg');\r\n    position: absolute;\r\n    padding-left: 12px;\r\n    padding-top: 2px;\r\n}\r\n\r\n.price-table {\r\n    border-collapse: collapse;\r\n    width: 100%;\r\n    margin-bottom: 24px;\r\n}\r\n\r\n.price-table td {\r\n    padding-left: 16px;\r\n    padding-top: 16px;\r\n    padding-bottom: 16px;\r\n}\r\n\r\n.price-table__rows {\r\n    background-color: $white;\r\n    border-bottom: 1px solid $border-bottom;\r\n}\r\n\r\n.price-table__rows:last-child {\r\n    border-bottom: none;\r\n}\r\n\r\n.price-table__title {\r\n    text-align: left;\r\n    font-weight: normal;\r\n    color: $gray;\r\n    line-height: 16px;\r\n    padding-bottom: 16px;\r\n    padding-left: 16px;\r\n}\r\n\r\n.button-make-order {\r\n    margin: 0;\r\n    padding: 0;\r\n    background-color: transparent;\r\n    border: none;\r\n    width: 119px;\r\n    height: 32px;\r\n    cursor: pointer;\r\n}\r\n\r\n.price-table__buttton {\r\n    padding-right: 16px;\r\n    text-align: right;\r\n}\r\n\r\n.price-table__rbb {\r\n    border-bottom-right-radius: 7px;\r\n}\r\n\r\n.price-table__lbb {\r\n    border-bottom-left-radius: 7px;\r\n}\r\n\r\n.price-table__rtb {\r\n    border-top-right-radius: 7px;\r\n}\r\n\r\n.price-table__ltb {\r\n    border-top-left-radius: 7px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .commercial-content {\r\n        padding-left: 24px;\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .commercial-content__description {\r\n        background-color: $white;\r\n        margin: 0 24px;\r\n    }\r\n\r\n    .commercial-content__note {\r\n        width: 60%;\r\n    }\r\n\r\n    .commercial-content__offer {\r\n        margin-bottom: 47px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n\r\n    .price-table__title, .price-table td {\r\n        padding-left: 24px;\r\n    }\r\n\r\n    .price-table__buttton {\r\n        padding-right: 24px;\r\n    }\r\n\r\n    .commercial-content__note {\r\n        width: 44%;\r\n    }\r\n\r\n    .price-table {\r\n        margin-bottom: 32px;\r\n    }\r\n\r\n    .commercial-content__offer {\r\n        margin-bottom: 50px;\r\n    }\r\n}","$lite-green: #D9FFF5;\r\n$gray: #7E7E82;\r\n\r\n.footer {\r\n    margin: 0;\r\n    font-size: 14px;\r\n    line-height: 16px;\r\n    padding: 0 4px 19px;\r\n    text-align: center;\r\n    color: $gray;\r\n}\r\n\r\n.footer::before {\r\n    content: \"\";\r\n    position: absolute;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 1px;\r\n    background: $lite-green;\r\n}\r\n\r\n.footer__description {\r\n    margin: 0;\r\n    padding-top: 16px;\r\n    margin-bottom: 16px;\r\n}\r\n\r\n.footer__description:first-child {\r\n    white-space: pre;\r\n}\r\n\r\n.footer__description:last-child {\r\n    margin: 0;\r\n}\r\n\r\n.footer__privacy-policy {\r\n    text-decoration: none;\r\n    color: $gray;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .footer {\r\n        display: flex;\r\n        padding: 0 24px;\r\n        padding-bottom: 25px;\r\n        justify-content: space-between;\r\n\r\n    }\r\n\r\n    .footer__description {\r\n        padding-top: 32px;\r\n        max-width: 30%;\r\n    }\r\n\r\n    .footer__description:first-child {\r\n        text-align: left;\r\n    }\r\n\r\n    .footer__description:last-child {\r\n        text-align: right;\r\n    }\r\n\r\n    .footer__privacy-policy {\r\n        padding-top: 32px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .footer {\r\n        margin-left: 320px;\r\n        padding-bottom: 21px;\r\n    }\r\n}","button {\r\n    cursor: pointer;\r\n    color: black;\r\n}\r\n\r\n.button--read-more {\r\n    cursor: pointer;\r\n    display: block;\r\n    border: none;\r\n    font-family: 'TT Lakes';\r\n    font-size: 16px;\r\n    background: transparent;\r\n    position: relative;\r\n    padding-left: 32px;\r\n}\r\n\r\n.button--read-more::before{\r\n    content: url('../img/ic-4/icon.svg');\r\n    position:absolute;\r\n    left: 8px;\r\n}\r\n\r\n.button--hidden{\r\n    cursor: pointer;\r\n    display: block;\r\n    border: none;\r\n    font-family: 'TT Lakes';\r\n    font-size: 16px;\r\n    background: transparent;\r\n    position: relative;\r\n    padding-left: 32px;\r\n    margin-bottom: 14px;\r\n}\r\n\r\n.button--hidden::before{\r\n    content: url('../img/ic-up/icon-up.svg');\r\n    position:absolute;\r\n    left: 8px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .button--show-all {\r\n        left: 24px;\r\n        margin-bottom: 32px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .button--show-all {\r\n        margin-bottom: 50px;\r\n    }\r\n}","$lite-green: #D9FFF5;\r\n$gray: #7E7E82;\r\n\r\n.brands__title::before {\r\n    content: \"\";\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: 1px;\r\n    background: $lite-green;\r\n}\r\n\r\n.brands__title{\r\n    position: relative;\r\n    background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);\r\n    padding: 16px;\r\n    margin-bottom: 16px;\r\n\r\n}\r\n\r\n.brands__title--mod {\r\n    margin: 0;\r\n    font-size: 16px;\r\n    text-transform: uppercase;\r\n    font-weight: normal;\r\n    line-height: 24px;\r\n    letter-spacing: -0.2px;\r\n    color: $gray;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .brands__title{\r\n        padding-left: 24px;\r\n        margin-bottom: 24px;\r\n    }\r\n\r\n    .brands__title-price {\r\n        margin-bottom: 31px;\r\n    }\r\n}\r\n\r\n@media (min-width: 1120px) {\r\n    .brands__title{\r\n        padding-left: 32px;\r\n    }\r\n}",null],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -12048,7 +12007,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./index.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.scss");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_group_css_media_queries_loader_lib_index_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_1_use_5_index_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../node_modules/group-css-media-queries-loader/lib/index.js!../node_modules/resolve-url-loader/index.js!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[5]!./index.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/group-css-media-queries-loader/lib/index.js!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[5]!./src/index.scss");
 
       
       
@@ -12070,12 +12029,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_group_css_media_queries_loader_lib_index_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_1_use_5_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_group_css_media_queries_loader_lib_index_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_1_use_5_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_group_css_media_queries_loader_lib_index_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_1_use_5_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_group_css_media_queries_loader_lib_index_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_1_use_5_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -12353,17 +12312,6 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/font/TTLakes/TTLakes-Medium.woff":
-/*!**********************************************!*\
-  !*** ./src/font/TTLakes/TTLakes-Medium.woff ***!
-  \**********************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/fonts/TTLakes-Medium..woff";
-
-/***/ }),
-
 /***/ "./src/img/Group.svg":
 /*!***************************!*\
   !*** ./src/img/Group.svg ***!
@@ -12371,7 +12319,7 @@ module.exports = __webpack_require__.p + "assets/fonts/TTLakes-Medium..woff";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "8d05ff132974ac19e9aa.svg";
+module.exports = __webpack_require__.p + "assets/fonts/Group..svg";
 
 /***/ }),
 
@@ -12393,7 +12341,7 @@ module.exports = __webpack_require__.p + "b4908f9f6466908cade5.jpg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "e511fb75185766606d26.svg";
+module.exports = __webpack_require__.p + "assets/fonts/Apple..svg";
 
 /***/ }),
 
@@ -12404,7 +12352,7 @@ module.exports = __webpack_require__.p + "e511fb75185766606d26.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "4c4a1118c24593530faf.svg";
+module.exports = __webpack_require__.p + "assets/fonts/Bosch..svg";
 
 /***/ }),
 
@@ -12415,7 +12363,7 @@ module.exports = __webpack_require__.p + "4c4a1118c24593530faf.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "9fbe031e808318804c11.svg";
+module.exports = __webpack_require__.p + "assets/fonts/Lenovo..svg";
 
 /***/ }),
 
@@ -12426,7 +12374,7 @@ module.exports = __webpack_require__.p + "9fbe031e808318804c11.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "0e31df8e2b45aa706e17.svg";
+module.exports = __webpack_require__.p + "assets/fonts/Samsung..svg";
 
 /***/ }),
 
@@ -12437,7 +12385,7 @@ module.exports = __webpack_require__.p + "0e31df8e2b45aa706e17.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "7b3fceca29e7f6945aba.svg";
+module.exports = __webpack_require__.p + "assets/fonts/ViewSonic..svg";
 
 /***/ }),
 
@@ -12448,7 +12396,7 @@ module.exports = __webpack_require__.p + "7b3fceca29e7f6945aba.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "4b95c1ad9857447f2473.svg";
+module.exports = __webpack_require__.p + "assets/fonts/acer..svg";
 
 /***/ }),
 
@@ -12459,7 +12407,7 @@ module.exports = __webpack_require__.p + "4b95c1ad9857447f2473.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "6875ce0ec873fb87b08f.svg";
+module.exports = __webpack_require__.p + "assets/fonts/go..svg";
 
 /***/ }),
 
@@ -12470,7 +12418,7 @@ module.exports = __webpack_require__.p + "6875ce0ec873fb87b08f.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "30866bed4e8409143ac4.svg";
+module.exports = __webpack_require__.p + "assets/fonts/hp..svg";
 
 /***/ }),
 
@@ -12481,7 +12429,7 @@ module.exports = __webpack_require__.p + "30866bed4e8409143ac4.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "54477419fdee328d9f0e.svg";
+module.exports = __webpack_require__.p + "assets/fonts/sony..svg";
 
 /***/ }),
 
@@ -12492,7 +12440,7 @@ module.exports = __webpack_require__.p + "54477419fdee328d9f0e.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "94c3af3b43efd866e888.svg";
+module.exports = __webpack_require__.p + "assets/fonts/divider..svg";
 
 /***/ }),
 
@@ -12503,7 +12451,7 @@ module.exports = __webpack_require__.p + "94c3af3b43efd866e888.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "9a2ccdcc34915f5be0ba.svg";
+module.exports = __webpack_require__.p + "assets/fonts/highlight-mobile..svg";
 
 /***/ }),
 
@@ -12514,7 +12462,7 @@ module.exports = __webpack_require__.p + "9a2ccdcc34915f5be0ba.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "25a40053ad7930f8846c.svg";
+module.exports = __webpack_require__.p + "assets/fonts/highlight-nav..svg";
 
 /***/ }),
 
@@ -12525,7 +12473,7 @@ module.exports = __webpack_require__.p + "25a40053ad7930f8846c.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "103a15f5b961a98120f4.svg";
+module.exports = __webpack_require__.p + "assets/fonts/highlight..svg";
 
 /***/ }),
 
@@ -12536,7 +12484,7 @@ module.exports = __webpack_require__.p + "103a15f5b961a98120f4.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "2f17fb686448b54d2818.svg";
+module.exports = __webpack_require__.p + "assets/fonts/repair..svg";
 
 /***/ }),
 
@@ -12547,7 +12495,7 @@ module.exports = __webpack_require__.p + "2f17fb686448b54d2818.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "58550d2ce0686acd6a5d.svg";
+module.exports = __webpack_require__.p + "assets/fonts/checkstatus..svg";
 
 /***/ }),
 
@@ -12558,7 +12506,7 @@ module.exports = __webpack_require__.p + "58550d2ce0686acd6a5d.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "d11d607d2acc71c45d35.svg";
+module.exports = __webpack_require__.p + "assets/fonts/icon..svg";
 
 /***/ }),
 
@@ -12569,7 +12517,7 @@ module.exports = __webpack_require__.p + "d11d607d2acc71c45d35.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "a28f84d657fbea487336.svg";
+module.exports = __webpack_require__.p + "assets/fonts/call..svg";
 
 /***/ }),
 
@@ -12580,7 +12528,7 @@ module.exports = __webpack_require__.p + "a28f84d657fbea487336.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "b90495a6685d94d1c0f4.svg";
+module.exports = __webpack_require__.p + "assets/fonts/chat..svg";
 
 /***/ }),
 
@@ -12591,7 +12539,7 @@ module.exports = __webpack_require__.p + "b90495a6685d94d1c0f4.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "ae85981350f2d871efc0.svg";
+module.exports = __webpack_require__.p + "assets/fonts/profile..svg";
 
 /***/ }),
 
@@ -12602,7 +12550,7 @@ module.exports = __webpack_require__.p + "ae85981350f2d871efc0.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "66cc31aab0ddfd1c3197.svg";
+module.exports = __webpack_require__.p + "assets/fonts/close..svg";
 
 /***/ }),
 
@@ -12613,7 +12561,7 @@ module.exports = __webpack_require__.p + "66cc31aab0ddfd1c3197.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "53d59c13af7f137c3e75.svg";
+module.exports = __webpack_require__.p + "assets/fonts/line..svg";
 
 /***/ }),
 
@@ -12624,7 +12572,7 @@ module.exports = __webpack_require__.p + "53d59c13af7f137c3e75.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "83f3e279e0f58942443b.svg";
+module.exports = __webpack_require__.p + "assets/fonts/search..svg";
 
 /***/ }),
 
@@ -12635,7 +12583,7 @@ module.exports = __webpack_require__.p + "83f3e279e0f58942443b.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "4492836ea12af8a48444.svg";
+module.exports = __webpack_require__.p + "assets/fonts/icon-up..svg";
 
 /***/ }),
 
@@ -12646,7 +12594,7 @@ module.exports = __webpack_require__.p + "4492836ea12af8a48444.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "280270d4ebd2aeff2fc2.svg";
+module.exports = __webpack_require__.p + "assets/fonts/burger..svg";
 
 /***/ }),
 
@@ -12657,7 +12605,7 @@ module.exports = __webpack_require__.p + "280270d4ebd2aeff2fc2.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "7bf1f53ba15e36ff8429.svg";
+module.exports = __webpack_require__.p + "assets/fonts/order..svg";
 
 /***/ }),
 
@@ -12668,7 +12616,7 @@ module.exports = __webpack_require__.p + "7bf1f53ba15e36ff8429.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "b5188ac322f6e8a59f61.svg";
+module.exports = __webpack_require__.p + "assets/fonts/send-form..svg";
 
 /***/ })
 
@@ -12818,4 +12766,4 @@ module.exports = __webpack_require__.p + "b5188ac322f6e8a59f61.svg";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.ba5adf30d85071eb8d9f.js.map
+//# sourceMappingURL=main.19b108a71bddfb8cc728.js.map
